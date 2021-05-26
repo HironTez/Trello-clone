@@ -44,10 +44,9 @@ const updateTask = (id, boardId, data) => {
         task.userId = data.userId !== null? data.userId: task.userId;
         task.boardId = data.boardId !== null? data.boardId: task.boardId;
         task.columnId = data.columnId !== null? data.columnId: task.columnId;
-        return true
-    } 
-        return false
-    
+        return true;
+    };
+        return false;
 };
 
 /**
@@ -61,10 +60,9 @@ const deleteTask = (id, boardId) => {
     if (task !== undefined) {
         const index = db.indexOf(task);
         db.splice(index, 1);
-        return true
-    } 
-        return false
-    
+        return true;
+    };
+        return false;
 };
 
 /**
@@ -75,10 +73,9 @@ const deleteTask = (id, boardId) => {
 const dataValidation = data => {
     const {title, order, description, boardId} = data;
     if ((title === undefined || typeof title !== 'string') || (order === undefined || typeof order !== 'number') || (description === undefined || typeof description !== 'string') || (boardId === undefined || typeof boardId !== 'string')) {
-        return false
-    } 
-        return true
-    
+        return false;
+    };
+        return true;
 };
 
 module.exports = { getAllByBoard, getById, addTask, updateTask, deleteTask, dataValidation };

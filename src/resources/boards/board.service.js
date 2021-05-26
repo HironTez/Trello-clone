@@ -38,9 +38,9 @@ const updateBoard = (id, data) => {
             newColumn.order = order;
             return newColumn;
         });
-        return true
-    } 
-        return false  
+        return true;
+    };
+        return false;
 };
 
 /**
@@ -60,12 +60,11 @@ const deleteBoard = id => {
             if (item.boardId === id) {
                 const boardIndex = db.indexOf(item);
                 db.splice(boardIndex, 1);
-            }
+            };
         });
-        return true
-    } 
-        return false
-    
+        return true;
+    };
+        return false;
 };
 
 /**

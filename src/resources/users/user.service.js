@@ -33,9 +33,9 @@ const updateUser = (id, data) => {
         user.name = data.name;
         user.login = data.login;
         user.password = data.password;
-        return true
-    } 
-        return false
+        return true;
+    };
+        return false;
 };
 
 /**
@@ -54,12 +54,12 @@ const deleteUser = id => {
         db.forEach(item => {
             if (item.userId === id) {
                 const task = db[db.indexOf(item)];
-                task.userId = null
+                task.userId = null;
             };
         });
-        return true
-    } 
-        return false
+        return true;
+    };
+        return false;
 };
 
 /**
@@ -70,9 +70,9 @@ const deleteUser = id => {
 const dataValidation = data => {
     const {name, login, password} = data;
     if ((name === undefined || typeof name !== 'string') || (login === undefined || typeof login !== 'string') || (password === undefined || typeof password !== 'string')) {
-        return false
-    } 
-        return true
+        return false;
+    };
+        return true;
 };
 
 module.exports = { getAll, getById, addUser, updateUser, deleteUser, dataValidation };
