@@ -1,24 +1,25 @@
 import {db} from '../../db.controller';
-import {LooseObject, User} from '../../types';
+import {User} from '../../types';
+import {GetAll, GetById, AddUser, UpdateUser, DeleteUser} from './user.types';
 
 /**
  * Returns an array of all users
  * @returns {array} Array of all users
  */
-const getAll = () => db['users'];
+const getAll: GetAll = () => db['users'];
 
 /**
  * Returns the user with the specified ID
  * @param {string} id ID user to search
  * @returns {object} User with the specified ID
  */
-const getById = (id: string) => db['users'].find(user => user['id'] === id);
+const getById: GetById = (id: string) => db['users'].find(user => user['id'] === id);
 
 /**
  * Adds a user to the DataBase
  * @param {object} user User to add to the DataBase
  */
-const addUser = (user: User) => {
+const addUser: AddUser = (user: User) => {
     db['users'].push(user);
 };
 
@@ -28,14 +29,15 @@ const addUser = (user: User) => {
  * @param {object} data Data to update
  * @returns {boolean} User updated successfully
  */
-const updateUser = (id: string, data: LooseObject) => {
+const updateUser: UpdateUser = (id: string, data: User) => {
     const user = getById(id);
     if (user !== undefined) {
         user['name'] = data['name'];
         user['login'] = data['login'];
         user['password'] = data['password'];
+        
         return true;
-    };
+    }
         return false;
 };
 
@@ -44,7 +46,7 @@ const updateUser = (id: string, data: LooseObject) => {
  * @param {string} id ID user to delete
  * @returns {boolean} User deleted successfully
  */
-const deleteUser = (id: string) => {
+const deleteUser: DeleteUser = (id: string) => {
     const user = getById(id);
     if (user !== undefined) {
         // Delete user
@@ -55,25 +57,12 @@ const deleteUser = (id: string) => {
         db['tasks'].forEach(task => {
             if (task['userId'] === id) {
                 task['userId'] = null;
-            };
+            }
         });
 
         return true;
-    };
+    }
         return false;
 };
 
-/**
- * Checks the validity of data types
- * @param {object} data Data to validation
- * @returns {boolean} The data is of the correct types
- */
-const dataValidation = (data: LooseObject) => {
-    const {name, login, password} = data;
-    if ((name === undefined || typeof name !== 'string') || (login === undefined || typeof login !== 'string') || (password === undefined || typeof password !== 'string')) {
-        return false;
-    };
-        return true;
-};
-
-export = { getAll, getById, addUser, updateUser, deleteUser, dataValidation };
+export = { getAll, getById, addUser, updateUser, deleteUser };
