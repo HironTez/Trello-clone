@@ -18,8 +18,6 @@ router.route('/:id').get(async (req, res) => {
 
 // Create user
 router.route('/').post(async (req, res) => {
-    // Data validation
-    if (!usersService.dataValidation(req.body)) return res.status(422).send();
     // Create new user
     const user = new User(req.body);
     usersService.addUser(user);
@@ -29,7 +27,6 @@ router.route('/').post(async (req, res) => {
 
 // Update user
 router.route('/:id').put(async (req, res) => {
-    if (!usersService.dataValidation(req.body)) return res.status(422).send();
     const userUpdated = usersService.updateUser(req.params.id, req.body);
     return userUpdated? res.json(req.body): res.status(404).send();
 });
