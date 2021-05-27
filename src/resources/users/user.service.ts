@@ -65,4 +65,4 @@ const deleteUser: DeleteUser = (id: string) => {
         return false;
 };
 
-export = { getAll, getById, addUser, updateUser, deleteUser };
+export = {getAll, getById, addUser, updateUser, deleteUser};

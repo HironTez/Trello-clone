@@ -20,8 +20,8 @@ class User {
     }
 
     static toResponse(user: UserType) {
-        const { id, name, login } = user;
-        return { id, name, login };
+        const {id, name, login} = user;
+        return {id, name, login};
     }
 }
 
