@@ -29,8 +29,8 @@ class Task {
     }
 
     static toResponse(task: TaskType) {
-        const { id, title, description, userId, boardId, columnId, order } = task;
-        return { id, title, description, userId, boardId, columnId, order };
+        const {id, title, description, userId, boardId, columnId, order} = task;
+        return {id, title, description, userId, boardId, columnId, order};
     }
 }
 

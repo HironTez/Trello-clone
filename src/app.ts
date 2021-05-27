@@ -18,7 +18,7 @@ app.use('/', (req: typeof express.request, res: typeof express.response, next: F
     if (req.originalUrl === '/') {
         res.send('Service is running!');
         return;
-    }
+    };
     next();
 });
 
