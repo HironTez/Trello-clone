@@ -1,9 +1,10 @@
-const router = require('express').Router();
-const Board = require('./board.model');
-const boardsService = require('./board.service');
+import Router from 'express';
+import Board from './board.model';
+import boardsService from './board.service';
+const router = Router();
 
 // Get all boards
-router.route('/').get(async (req, res) => {
+router.route('/').get(async (_req, res) => {
   const boards = await boardsService.getAll(); // Get boards
   res.json(boards); // Return result
 });
@@ -40,4 +41,4 @@ router.route('/:id').delete(async (req, res) => {
   return boardDeleted? res.status(204).send(): res.status(404).send();
 });
 
-module.exports = router;
+export = router;
