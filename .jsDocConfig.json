@@ -10,28 +10,3 @@
         "recurse": true
     }
 }
-
-// {
-//     "recurseDepth": 10,
-//     "source": {
-//         "includePattern": ".+\\.ts|js(doc|x)?$",
-//         "excludePattern": "(^|\\/|\\\\)_",
-//         "include": ["./src/"],
-//         "exclude": ["node_modules"]
-//     },
-//     "sourceType": "es2020",
-//     "tags": {
-//         "allowUnknownTags": true,
-//         "dictionaries": ["jsdoc","closure"]
-//     },
-//     "templates": {
-//         "cleverLinks": false,
-//         "monospaceLinks": false
-//     },
-//     "opts": {
-//         "template": "node_modules/docdash",
-//         "encoding": "utf8",
-//         "destination": "./doc/jsdoc",    
-//         "recurse": true              
-//     }
-// }
