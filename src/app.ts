@@ -10,7 +10,7 @@ import userRouter from './resources/users/user.router';
 import boardRouter from './resources/boards/board.router';
 import taskRouter from './resources/tasks/task.router';
 
-const app = express();
+const app = express(); // Initialize express
 const swaggerDocument = YAML.load(path.join(__dirname, '../doc/api.yaml'));
 
 app.use(express.json());
@@ -24,7 +24,7 @@ app.use('/', (req: Request, res: Response, next: NextFunction) => {
     if (req.originalUrl === '/') {
         res.send('Service is running!');
         return;
-    }
+    } 
     next();
 });
 
@@ -33,5 +33,7 @@ app.use('/boards', boardRouter);
 app.use('/boards/:id/tasks', taskRouter);
 
 errorHandler(); // Activate handler & logger error
+
+Promise.reject(Error('Oops!'))
 
 export = app;

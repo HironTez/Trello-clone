@@ -36,6 +36,7 @@
     "node/no-missing-require": 0,
     "node/no-missing-import": 0,
     "import/no-useless-path-segments": 0,
-    "import/no-unresolved": 0
+    "import/no-unresolved": 0,
+    "no-process-exit": 0
   }
 }
