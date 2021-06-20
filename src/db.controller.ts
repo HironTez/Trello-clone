@@ -1,4 +1,4 @@
-import {DB} from './types';
+import { DB } from './types';
 
 const db: DB = {
     users: [],
@@ -6,4 +6,4 @@ const db: DB = {
     tasks: []
 };
 
-export {db};
+export { db };
