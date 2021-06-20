@@ -1,0 +1,67 @@
+[2021-06-20 19:45:35] Url: /users; Query parameters: {}; Body: {}; Status code: 200
+[2021-06-20 19:45:35] Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-06-20 19:45:35] Url: /users/1a5b1f0b-13d3-4d0c-bbce-580c0968909d; Query parameters: {}; Body: {}; Status code: 200
+[2021-06-20 19:45:35] Url: /users/1a5b1f0b-13d3-4d0c-bbce-580c0968909d; Query parameters: {}; Body: {}; Status code: 204
+[2021-06-20 19:45:35] Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+ Status code: 204
+[2021-06-20 19:45:35] Url: /users/dd31eb3a-6818-4715-a3ec-aa5b693b8f3c; Query parameters: {}; Body: {};[2021-06-20 19:45:35] Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-06-20 19:45:35] Url: /users/1a6fcb25-e6bc-4436-80ca-f3a3d792bec4; Query parameters: {}; Body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"1a6fcb25-e6bc-4436-80ca-f3a3d792bec4"}; Status code: 200
+[2021-06-20 19:45:35] Url: /users/1a6fcb25-e6bc-4436-80ca-f3a3d792bec4; Query parameters: {}; Body: {}; Status code: 200
+[2021-06-20 19:45:35] Url: /users/1a6fcb25-e6bc-4436-80ca-f3a3d792bec4; Query parameters: {}; Body: {}; Status code: 204
+[2021-06-20 19:45:35] Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-06-20 19:45:36] Url: /users/56c50db2-30c9-4df3-aa35-22f91ded7a16; Query parameters: {}; Body: {}; Status code: 204
+[2021-06-20 19:45:36] Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-06-20 19:45:36] Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}; Status code: 201
+[2021-06-20 19:45:36] Url: /boards/d7ac1107-5e35-4625-90c5-0c8611037359/tasks; Query parameters: {}; Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"5bd4569e-e60e-4581-8a17-a395e148a893","boardId":"d7ac1107-5e35-4625-90c5-0c8611037359"}; Status code: 201
+[2021-06-20 19:45:36] Url: /boards/d7ac1107-5e35-4625-90c5-0c8611037359/tasks; Query parameters: {}; Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"5bd4569e-e60e-4581-8a17-a395e148a893","boardId":"d7ac1107-5e35-4625-90c5-0c8611037359"}; Status code: 201
+[2021-06-20 19:45:36] Url: /users/5bd4569e-e60e-4581-8a17-a395e148a893; Query parameters: {}; Body: {}; Status code: 204
+[2021-06-20 19:45:36] Url: /boards/d7ac1107-5e35-4625-90c5-0c8611037359/tasks/79e291ef-a3d1-47be-ba83-76005567d284; Query parameters: {}; Body: {}; Status code: 200
+[2021-06-20 19:45:36] Url: /boards/d7ac1107-5e35-4625-90c5-0c8611037359/tasks/1d01c3d2-8057-4cf7-b3ca-e526729b62a4; Query parameters: {}; Body: {}; Status code: 200
+[2021-06-20 19:45:36] Url: /boards/d7ac1107-5e35-4625-90c5-0c8611037359/tasks/79e291ef-a3d1-47be-ba83-76005567d284; Query parameters: {}; Body: {}; Status code: 204
+[2021-06-20 19:45:36] Url: /boards/d7ac1107-5e35-4625-90c5-0c8611037359/tasks/1d01c3d2-8057-4cf7-b3ca-e526729b62a4; Query parameters: {}; Body: {}; Status code: 204
+[2021-06-20 19:45:36] Url: /boards/d7ac1107-5e35-4625-90c5-0c8611037359; Query parameters: {}; Body: {}; Status code: 204
+[2021-06-20 19:45:36] Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}; Status code: 201
+[2021-06-20 19:45:36] Url: /boards; Query parameters: {}; Body: {}; Status code: 200
+[2021-06-20 19:45:36] Url: /boards; Query parameters: {}; Body: {}; Status code: 200
+[2021-06-20 19:45:36] Url: /boards/e960c9f6-3fcd-4c74-9042-03ab83da2495; Query parameters: {}; Body: {}; Status code: 200
+[2021-06-20 19:45:36] Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}; Status code: 201
+[2021-06-20 19:45:36] Url: /boards/803a697b-c62e-49c5-80ba-d780e92add97; Query parameters: {}; Body: {}; Status code: 204
+[2021-06-20 19:45:36] Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}; Status code: 201
+[2021-06-20 19:45:36] Url: /boards/e2e63b87-3b83-4074-9510-3bcbf5856c5b; Query parameters: {}; Body: {"id":"e2e63b87-3b83-4074-9510-3bcbf5856c5b","title":"Autotest updated board","columns":[{"title":"Backlog","order":1,"id":"4fb813d9-8582-45d0-8352-ab111a64d14d"},{"title":"Sprint","order":2,"id":"a3605e12-b31c-4974-8a83-57c0bbf4beca"}]}; Status code: 200
+[2021-06-20 19:45:36] Url: /boards/e2e63b87-3b83-4074-9510-3bcbf5856c5b; Query parameters: {}; Body: {}; Status code: 200
+[2021-06-20 19:45:36] Url: /boards/e2e63b87-3b83-4074-9510-3bcbf5856c5b; Query parameters: {}; Body: {}; Status code: 204
+[2021-06-20 19:45:36] Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}; Status code: 201
+[2021-06-20 19:45:36] Url: /boards/830ce43e-c04d-4abb-83b6-28b340755da7; Query parameters: {}; Body: {}; Status code: 204
+[2021-06-20 19:45:36] Url: /boards/830ce43e-c04d-4abb-83b6-28b340755da7; Query parameters: {}; Body: {}; Status code: 404
+[2021-06-20 19:45:36] Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}; Status code: 201
+[2021-06-20 19:45:36] Url: /boards/8b4ac7c0-2b24-4c2d-bc52-30b49d31dfdb/tasks; Query parameters: {}; Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"8b4ac7c0-2b24-4c2d-bc52-30b49d31dfdb","userId":null,"columnId":null}; Status code: 201
+[2021-06-20 19:45:36] Url: /boards/8b4ac7c0-2b24-4c2d-bc52-30b49d31dfdb/tasks; Query parameters: {}; Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"8b4ac7c0-2b24-4c2d-bc52-30b49d31dfdb","userId":null,"columnId":null}; Status code: 201
+[2021-06-20 19:45:36] Url: /boards/8b4ac7c0-2b24-4c2d-bc52-30b49d31dfdb/tasks; Query parameters: {}; Body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"8b4ac7c0-2b24-4c2d-bc52-30b49d31dfdb","userId":null,"columnId":null}; Status code: 201
+[2021-06-20 19:45:36] Url: /boards/8b4ac7c0-2b24-4c2d-bc52-30b49d31dfdb/tasks; Query parameters: {}; Body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"8b4ac7c0-2b24-4c2d-bc52-30b49d31dfdb","userId":null,"columnId":null}; Status code: 201
+[2021-06-20 19:45:36] Url: /boards/8b4ac7c0-2b24-4c2d-bc52-30b49d31dfdb/tasks; Query parameters: {}; Body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"8b4ac7c0-2b24-4c2d-bc52-30b49d31dfdb","userId":null,"columnId":null}; Status code: 201
+[2021-06-20 19:45:36] Url: /boards/8b4ac7c0-2b24-4c2d-bc52-30b49d31dfdb/tasks/46e24b0b-b1cc-4245-b53e-7acd52861494; Query parameters: {}; Body: {}; Status code: 200
+[2021-06-20 19:45:36] Url: /boards/8b4ac7c0-2b24-4c2d-bc52-30b49d31dfdb/tasks/036b85af-12e3-4e76-a43e-dacacc1282ad; Query parameters: {}; Body: {}; Status code: 200
+[2021-06-20 19:45:36] Url: /boards/8b4ac7c0-2b24-4c2d-bc52-30b49d31dfdb/tasks/d7b4b50d-7e67-4eb6-9ff7-549ed486a88c; Query parameters: {}; Body: {}; Status code: 200
+[2021-06-20 19:45:36] Url: /boards/8b4ac7c0-2b24-4c2d-bc52-30b49d31dfdb/tasks/60596d03-4311-479a-8001-1271717be6c7; Query parameters: {}; Body: {}; Status code: 200
+[2021-06-20 19:45:36] Url: /boards/8b4ac7c0-2b24-4c2d-bc52-30b49d31dfdb/tasks/a4228952-3afa-41a5-82a6-eb8602e36c3e; Query parameters: {}; Body: {}; Status code: 200
+[2021-06-20 19:45:36] Url: /boards/8b4ac7c0-2b24-4c2d-bc52-30b49d31dfdb; Query parameters: {}; Body: {}; Status code: 204
+[2021-06-20 19:45:36] Url: /boards/8b4ac7c0-2b24-4c2d-bc52-30b49d31dfdb/tasks/46e24b0b-b1cc-4245-b53e-7acd52861494; Query parameters: {}; Body: {}; Status code: 404
+[2021-06-20 19:45:36] Url: /boards/8b4ac7c0-2b24-4c2d-bc52-30b49d31dfdb/tasks/036b85af-12e3-4e76-a43e-dacacc1282ad; Query parameters: {}; Body: {};[2021-06-20 19:45:36] Url: /boards/8b4ac7c0-2b24-4c2d-bc52-30b49d31dfdb/tasks/d7b4b50d-7e67-4eb6-9ff7-549ed486a88c; Query parameters: {}; Body: {}; Status code: 404
+[2021-06-20 19:45:36] Url: /boards/8b4ac7c0-2b24-4c2d-bc52-30b49d31dfdb/tasks/60596d03-4311-479a-8001-1271717be6c7; Query parameters: {}; Body: {}; Status code: 404
+[2021-06-20 19:45:36] Url: /boards/8b4ac7c0-2b24-4c2d-bc52-30b49d31dfdb/tasks/a4228952-3afa-41a5-82a6-eb8602e36c3e; Query parameters: {}; Body: {}; Status code: 404
+ Status code: 404
+[2021-06-20 19:45:36] Url: /boards/e960c9f6-3fcd-4c74-9042-03ab83da2495; Query parameters: {}; Body: {}; Status code: 204
+[2021-06-20 19:45:36] Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}; Status code: 201
+[2021-06-20 19:45:36] Url: /boards/8708fc73-24a3-449c-9a83-0c3e4b9cd68b/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}; Status code: 201
+[2021-06-20 19:45:36] Url: /boards/8708fc73-24a3-449c-9a83-0c3e4b9cd68b/tasks; Query parameters: {}; Body: {}; Status code: 200
+[2021-06-20 19:45:36] Url: /boards/8708fc73-24a3-449c-9a83-0c3e4b9cd68b/tasks; Query parameters: {}; Body: {}; Status code: 200
+[2021-06-20 19:45:36] Url: /boards/8708fc73-24a3-449c-9a83-0c3e4b9cd68b/tasks/c9599982-2295-4778-ae48-1e3f3996b8fd; Query parameters: {}; Body: {}; Status code: 200
+[2021-06-20 19:45:36] Url: /boards/8708fc73-24a3-449c-9a83-0c3e4b9cd68b/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}; Status code: 201
+[2021-06-20 19:45:36] Url: /boards/8708fc73-24a3-449c-9a83-0c3e4b9cd68b/tasks/98cb3ebf-c235-4215-9936-86e073506504; Query parameters: {}; Body: {}; Status code: 204
+[2021-06-20 19:45:36] Url: /boards/8708fc73-24a3-449c-9a83-0c3e4b9cd68b/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}; Status code: 201
+[2021-06-20 19:45:36] Url: /boards/8708fc73-24a3-449c-9a83-0c3e4b9cd68b/tasks/b4e3851d-3c13-4ab6-a940-dfa49e07757d; Query parameters: {}; Body: {"id":"b4e3851d-3c13-4ab6-a940-dfa49e07757d","title":"Autotest updated task","description":"Lorem ipsum","userId":null,"boardId":"8708fc73-24a3-449c-9a83-0c3e4b9cd68b","columnId":null,"order":0}; Status code: 200
+[2021-06-20 19:45:36] Url: /boards/8708fc73-24a3-449c-9a83-0c3e4b9cd68b/tasks/b4e3851d-3c13-4ab6-a940-dfa49e07757d; Query parameters: {}; Body: {}; Status code: 200
+[2021-06-20 19:45:36] Url: /boards/8708fc73-24a3-449c-9a83-0c3e4b9cd68b/tasks/c9599982-2295-4778-ae48-1e3f3996b8fd; Query parameters: {}; Body: {}; Status code: 200
+[2021-06-20 19:45:36] Url: /boards/8708fc73-24a3-449c-9a83-0c3e4b9cd68b/tasks/c9599982-2295-4778-ae48-1e3f3996b8fd; Query parameters: {}; Body: {}; Status code: 204
+[2021-06-20 19:45:36] Url: /boards/8708fc73-24a3-449c-9a83-0c3e4b9cd68b/tasks/c9599982-2295-4778-ae48-1e3f3996b8fd; Query parameters: {}; Body: {}; Status code: 404
+[2021-06-20 19:45:36] Url: /boards/8708fc73-24a3-449c-9a83-0c3e4b9cd68b; Query parameters: {}; Body: {}; Status code: 204
