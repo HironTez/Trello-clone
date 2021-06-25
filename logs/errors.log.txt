@@ -1,0 +1,27 @@
+DataTypeNotSupportedError: Data type "Object" in "Task.userId" is not supported by "postgres" database.
+DataTypeNotSupportedError: Data type "Object" in "Task.userId" is not supported by "postgres" database.
+DataTypeNotSupportedError: Data type "string | null" in "Task.userId" is not supported by "postgres" database.
+DataTypeNotSupportedError: Data type "string" in "Task.userId" is not supported by "postgres" database.
+DataTypeNotSupportedError: Data type "Object" in "Task.userId" is not supported by "postgres" database.
+DataTypeNotSupportedError: Data type "Object" in "Task.userId" is not supported by "postgres" database.
+DataTypeNotSupportedError: Data type "Object" in "Task.userId" is not supported by "postgres" database.
+DataTypeNotSupportedError: Data type "Object" in "Task.userId" is not supported by "postgres" database.
+QueryFailedError: insert or update on table "task" violates foreign key constraint "FK_f316d3fe53497d4d8a2957db8b9"
+DataTypeNotSupportedError: Data type "Object" in "Task.userId" is not supported by "postgres" database.
+DataTypeNotSupportedError: Data type "string" in "Task.userId" is not supported by "postgres" database.
+DataTypeNotSupportedError: Data type "Object" in "Task.userId" is not supported by "postgres" database.
+QueryFailedError: insert or update on table "task" violates foreign key constraint "FK_f316d3fe53497d4d8a2957db8b9"
+QueryFailedError: insert or update on table "task" violates foreign key constraint "FK_f316d3fe53497d4d8a2957db8b9"
+QueryFailedError: insert or update on table "task" violates foreign key constraint "FK_f316d3fe53497d4d8a2957db8b9"
+QueryFailedError: insert or update on table "task" violates foreign key constraint "FK_f316d3fe53497d4d8a2957db8b9"
+DataTypeNotSupportedError: Data type "string" in "Task.userId" is not supported by "postgres" database.
+DataTypeNotSupportedError: Data type "string" in "Task.userId" is not supported by "postgres" database.
+DataTypeNotSupportedError: Data type "string" in "Task.userId" is not supported by "postgres" database.
+QueryFailedError: insert or update on table "task" violates foreign key constraint "FK_f316d3fe53497d4d8a2957db8b9"
+QueryFailedError: insert or update on table "task" violates foreign key constraint "FK_f316d3fe53497d4d8a2957db8b9"
+DataTypeNotSupportedError: Data type "Object" in "Task.userId" is not supported by "postgres" database.
+QueryFailedError: insert or update on table "task" violates foreign key constraint "FK_f316d3fe53497d4d8a2957db8b9"
+QueryFailedError: insert or update on table "task" violates foreign key constraint "FK_f316d3fe53497d4d8a2957db8b9"
+QueryFailedError: insert or update on table "task" violates foreign key constraint "FK_f316d3fe53497d4d8a2957db8b9"
+QueryFailedError: insert or update on table "task" violates foreign key constraint "FK_f316d3fe53497d4d8a2957db8b9"
+QueryFailedError: insert or update on table "task" violates foreign key constraint "FK_f316d3fe53497d4d8a2957db8b9"
