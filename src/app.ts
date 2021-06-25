@@ -9,7 +9,6 @@ import reqErrorHandler from './middleware/request.error.handler';
 import userRouter from './resources/users/user.router';
 import boardRouter from './resources/boards/board.router';
 import taskRouter from './resources/tasks/task.router';
-import "reflect-metadata";
 
 const app = express(); // Initialize express
 const swaggerDocument = YAML.load(path.join(__dirname, '../doc/api.yaml'));
