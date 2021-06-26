@@ -17,9 +17,17 @@ const authenticateToken = (req: Request, res: Response, next: NextFunction): voi
                 req.user = user as { userId: string, login: string };
             } else {
                 res.sendStatus(403);
+<<<<<<< HEAD
             }
         });
     }
+=======
+            };
+        });
+    } else {
+        res.sendStatus(401);
+    };
+>>>>>>> e6c3f222ab41e29de2b5c3bae20d248579a8ddd5
 
     next();
 };

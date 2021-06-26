@@ -23,6 +23,10 @@ const getById: GetById = (id: string) => db['users'].find(user => user['id'] ===
 const addUser: AddUser = async (user: User) => {
     const passwordHash = await hash(user.password, 10);
     db['users'].push({...user, ...{password: passwordHash}});
+<<<<<<< HEAD
+=======
+    console.log(user.password, {...user, ...{password: passwordHash}});
+>>>>>>> e6c3f222ab41e29de2b5c3bae20d248579a8ddd5
 };
 
 /**

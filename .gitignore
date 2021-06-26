@@ -1,2 +1,12 @@
 node_modules
+<<<<<<< HEAD
 .env
+=======
+src/logs/requests.log.txt
+<<<<<<< HEAD
+src/logs/errors.log.txt
+.env
+=======
+src/logs/errors.log.txt
+>>>>>>> 8f3efbcb442c9639dc213c748777f38f92af3e6e
+>>>>>>> e6c3f222ab41e29de2b5c3bae20d248579a8ddd5
