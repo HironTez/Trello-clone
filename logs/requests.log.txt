@@ -337,6 +337,7 @@
 [2021-06-26 13:42:35] Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}; Status code: 401
 [2021-06-26 13:42:35] Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}; Status code: 401
 [2021-06-26 13:42:35] Url: /boards/undefined; Query parameters: {}; Body: {}; Status code: 401
+<<<<<<< HEAD
 [2021-06-26 14:8:5] Url: /users; Query parameters: {}; Body: {}; Status code: 401
 [2021-06-26 14:8:5] Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 401
 [2021-06-26 14:8:5] Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 401
@@ -694,3 +695,5 @@
 [2021-06-26 14:17:23] Url: /boards/46dfdad5-2399-4e65-8518-2a4f8aad48cc/tasks/cb54cb91-ce96-4190-aa76-22205bcd6f9c; Query parameters: {}; Body: {}; Status code: 204
 [2021-06-26 14:17:23] Url: /boards/46dfdad5-2399-4e65-8518-2a4f8aad48cc/tasks/cb54cb91-ce96-4190-aa76-22205bcd6f9c; Query parameters: {}; Body: {}; Status code: 404
 [2021-06-26 14:17:23] Url: /boards/46dfdad5-2399-4e65-8518-2a4f8aad48cc; Query parameters: {}; Body: {}; Status code: 204
+=======
+>>>>>>> e6c3f222ab41e29de2b5c3bae20d248579a8ddd5
