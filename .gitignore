@@ -1,1 +1,4 @@
 node_modules
+src/logs/requests.log.txt
+src/logs/errors.log.txt
+.env
