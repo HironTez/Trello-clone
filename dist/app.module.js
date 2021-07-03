@@ -10,18 +10,22 @@ exports.AppModule = void 0;
 const common_1 = require("@nestjs/common");
 const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
-const serve_static_1 = require("@nestjs/serve-static");
-const path_1 = require("path");
+const json_headers_middleware_1 = require("./middleware/json.headers.middleware");
+const req_log_middleware_1 = require("./middleware/req.log.middleware");
 let AppModule = class AppModule {
+    configure(consumer) {
+        consumer
+            .apply(json_headers_middleware_1.JsonHeadersMiddleware, req_log_middleware_1.ReqLogMiddleware)
+            .forRoutes({
+            path: '*', method: common_1.RequestMethod.ALL
+        });
+    }
+    ;
 };
 AppModule = __decorate([
     common_1.Module({
-        imports: [
-            serve_static_1.ServeStaticModule.forRoot({
-                rootPath: path_1.join(__dirname, '..', 'public'),
-            })
-        ],
-        controllers: [app_controller_1.MainPageController],
+        imports: [],
+        controllers: [app_controller_1.MainPageController, app_controller_1.UsersController],
         providers: [app_service_1.AppService],
     })
 ], AppModule);

@@ -1,0 +1,76 @@
+[2021-07-03 12:39:14] Method: GET; Url: /users; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 12:39:14] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 12:39:14] Method: GET; Url: /users/cd275274-3eda-4558-acf9-dfa701116fb5; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 12:39:14] Method: DELETE; Url: /users/cd275274-3eda-4558-acf9-dfa701116fb5; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 12:39:14] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 12:39:14] Method: DELETE; Url: /users/60474330-e36a-434f-a4de-c1909ec8aa59; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 12:39:14] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 12:39:14] Method: PUT; Url: /users/64dabae5-70b6-4e6c-93f6-6e4e82a17524; Query parameters: {}; Body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"64dabae5-70b6-4e6c-93f6-6e4e82a17524"}; Status code: 200
+[2021-07-03 12:39:14] Method: GET; Url: /users/64dabae5-70b6-4e6c-93f6-6e4e82a17524; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 12:39:14] Method: DELETE; Url: /users/64dabae5-70b6-4e6c-93f6-6e4e82a17524; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 12:39:14] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 12:39:14] Method: DELETE; Url: /users/0ab130e2-a70a-4ccb-a723-b1ccfb5da82e; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 12:39:14] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 12:39:14] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}; Status code: 404
+[2021-07-03 12:39:15] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}; Status code: 404
+[2021-07-03 12:39:15] Method: POST; Url: /boards/undefined/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}; Status code: 404
+[2021-07-03 12:39:15] Method: GET; Url: /boards/undefined/tasks; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 12:39:15] Method: GET; Url: /boards/undefined/tasks; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 12:39:15] Method: POST; Url: /boards/undefined/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}; Status code: 404
+[2021-07-03 12:39:15] Method: POST; Url: /boards/undefined/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}; Status code: 404
+[2021-07-03 12:39:15] Method: PUT; Url: /boards/undefined/tasks/undefined; Query parameters: {}; Body: {"statusCode":404,"message":"Cannot POST /boards/undefined/tasks","error":"Not Found","title":"Autotest updated task"}; Status code: 404
+[2021-07-03 12:39:15] Method: GET; Url: /boards/undefined/tasks/undefined; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 12:39:15] Method: DELETE; Url: /boards/undefined; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 12:39:15] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}; Status code: 404
+[2021-07-03 12:39:15] Method: GET; Url: /boards; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 12:39:15] Method: GET; Url: /boards; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 12:39:15] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}; Status code: 404
+[2021-07-03 12:39:15] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}; Status code: 404
+[2021-07-03 12:39:15] Method: PUT; Url: /boards/undefined; Query parameters: {}; Body: {"statusCode":404,"message":"Cannot POST /boards","error":"Not Found","title":"Autotest updated board"}; Status code: 404
+[2021-07-03 12:39:15] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}; Status code: 404
+[2021-07-03 12:39:15] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}; Status code: 404
+[2021-07-03 12:39:15] Method: DELETE; Url: /boards/undefined; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 13:1:17] Starting Nest application...
+[2021-07-03 13:1:17] AppModule dependencies initialized
+[2021-07-03 13:1:17] MainPageController {}:
+[2021-07-03 13:1:17] Mapped {, GET} route
+[2021-07-03 13:1:17] UsersController {/users}:
+[2021-07-03 13:1:17] Mapped {/users, GET} route
+[2021-07-03 13:1:17] Mapped {/users/:id, GET} route
+[2021-07-03 13:1:17] Mapped {/users, POST} route
+[2021-07-03 13:1:17] Mapped {/users/:id, PUT} route
+[2021-07-03 13:1:17] Mapped {/users/:id, DELETE} route
+[2021-07-03 13:1:17] Nest application successfully started
+[2021-07-03 13:1:38] Starting Nest application...
+[2021-07-03 13:1:38] AppModule dependencies initialized
+[2021-07-03 13:1:38] MainPageController {}:
+[2021-07-03 13:1:38] Mapped {, GET} route
+[2021-07-03 13:1:38] UsersController {/users}:
+[2021-07-03 13:1:38] Mapped {/users, GET} route
+[2021-07-03 13:1:38] Mapped {/users/:id, GET} route
+[2021-07-03 13:1:38] Mapped {/users, POST} route
+[2021-07-03 13:1:38] Mapped {/users/:id, PUT} route
+[2021-07-03 13:1:38] Mapped {/users/:id, DELETE} route
+[2021-07-03 13:1:38] Nest application successfully started
+[2021-07-03 13:2:14] Starting Nest application...
+[2021-07-03 13:2:14] AppModule dependencies initialized
+[2021-07-03 13:2:14] MainPageController {}:
+[2021-07-03 13:2:14] Mapped {, GET} route
+[2021-07-03 13:2:14] UsersController {/users}:
+[2021-07-03 13:2:14] Mapped {/users, GET} route
+[2021-07-03 13:2:14] Mapped {/users/:id, GET} route
+[2021-07-03 13:2:14] Mapped {/users, POST} route
+[2021-07-03 13:2:14] Mapped {/users/:id, PUT} route
+[2021-07-03 13:2:14] Mapped {/users/:id, DELETE} route
+[2021-07-03 13:2:14] Nest application successfully started
+[2021-07-03 13:22:35] Starting Nest application...
+[2021-07-03 13:22:35] AppModule dependencies initialized
+[2021-07-03 13:22:35] MainPageController {}:
+[2021-07-03 13:22:35] Mapped {, GET} route
+[2021-07-03 13:22:35] UsersController {/users}:
+[2021-07-03 13:22:35] Mapped {/users, GET} route
+[2021-07-03 13:22:35] Mapped {/users/:id, GET} route
+[2021-07-03 13:22:35] Mapped {/users, POST} route
+[2021-07-03 13:22:35] Mapped {/users/:id, PUT} route
+[2021-07-03 13:22:35] Mapped {/users/:id, DELETE} route
+[2021-07-03 13:22:35] Nest application successfully started

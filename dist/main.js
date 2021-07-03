@@ -6,8 +6,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const core_1 = require("@nestjs/core");
 const app_module_1 = require("./app.module");
 const config_1 = __importDefault(require("./common/config"));
+const logger_middleware_1 = require("./modules/logger.middleware");
 async function bootstrap() {
-    const app = await core_1.NestFactory.create(app_module_1.AppModule);
+    const app = await core_1.NestFactory.create(app_module_1.AppModule, {
+        logger: new logger_middleware_1.MyLogger()
+    });
     await app.listen(config_1.default);
     console.log(`Service is running http://localhost:${config_1.default}`);
 }

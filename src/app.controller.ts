@@ -1,8 +1,9 @@
 import { Controller, Get } from '@nestjs/common';
 import { AppService } from './app.service';
+import { UsersController } from './resources/users/user.controller';
 
 @Controller()
-export class MainPageController {
+class MainPageController {
     constructor(private readonly appService: AppService) { };
 
     @Get()
@@ -10,3 +11,5 @@ export class MainPageController {
         return this.appService.main();
     };
 };
+
+export { MainPageController, UsersController }
