@@ -25,7 +25,7 @@ let AppModule = class AppModule {
 AppModule = __decorate([
     common_1.Module({
         imports: [],
-        controllers: [app_controller_1.MainPageController, app_controller_1.UsersController],
+        controllers: [app_controller_1.MainPageController, app_controller_1.UsersController, app_controller_1.BoardsController, app_controller_1.TasksController],
         providers: [app_service_1.AppService],
     })
 ], AppModule);

@@ -6,7 +6,7 @@ interface UserT {
 }
 
 interface ColumnT {
-    id: string;
+    id: string | undefined;
     title: string;
     order: number;
 }
@@ -18,7 +18,7 @@ interface BoardT {
 }
 
 interface TaskT {
-    id: string | null;
+    id: string;
     title: string;
     order: number;
     description: string;

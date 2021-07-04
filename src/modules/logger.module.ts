@@ -6,7 +6,7 @@ export class MyLogger extends Logger {
     log(message: string) {
         logger.log(`[${getTime()}] ${message}`, true);
     };
-    error(message: string, _trace: string) {
-        logger.error(`[${getTime()}] ${message}`);
+    error(_message: string, trace: string) {
+        logger.error(`[${getTime()}] ${trace}`);
     };
 }

@@ -5,7 +5,7 @@ interface UserT {
     password: string;
 }
 interface ColumnT {
-    id: string;
+    id: string | undefined;
     title: string;
     order: number;
 }
@@ -15,7 +15,7 @@ interface BoardT {
     columns: Array<ColumnT>;
 }
 interface TaskT {
-    id: string | null;
+    id: string;
     title: string;
     order: number;
     description: string;

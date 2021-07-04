@@ -1,76 +1,1166 @@
-[2021-07-03 12:39:14] Method: GET; Url: /users; Query parameters: {}; Body: {}; Status code: 200
-[2021-07-03 12:39:14] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
-[2021-07-03 12:39:14] Method: GET; Url: /users/cd275274-3eda-4558-acf9-dfa701116fb5; Query parameters: {}; Body: {}; Status code: 200
-[2021-07-03 12:39:14] Method: DELETE; Url: /users/cd275274-3eda-4558-acf9-dfa701116fb5; Query parameters: {}; Body: {}; Status code: 204
-[2021-07-03 12:39:14] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
-[2021-07-03 12:39:14] Method: DELETE; Url: /users/60474330-e36a-434f-a4de-c1909ec8aa59; Query parameters: {}; Body: {}; Status code: 204
-[2021-07-03 12:39:14] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
-[2021-07-03 12:39:14] Method: PUT; Url: /users/64dabae5-70b6-4e6c-93f6-6e4e82a17524; Query parameters: {}; Body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"64dabae5-70b6-4e6c-93f6-6e4e82a17524"}; Status code: 200
-[2021-07-03 12:39:14] Method: GET; Url: /users/64dabae5-70b6-4e6c-93f6-6e4e82a17524; Query parameters: {}; Body: {}; Status code: 200
-[2021-07-03 12:39:14] Method: DELETE; Url: /users/64dabae5-70b6-4e6c-93f6-6e4e82a17524; Query parameters: {}; Body: {}; Status code: 204
-[2021-07-03 12:39:14] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
-[2021-07-03 12:39:14] Method: DELETE; Url: /users/0ab130e2-a70a-4ccb-a723-b1ccfb5da82e; Query parameters: {}; Body: {}; Status code: 204
-[2021-07-03 12:39:14] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
-[2021-07-03 12:39:14] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}; Status code: 404
-[2021-07-03 12:39:15] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}; Status code: 404
-[2021-07-03 12:39:15] Method: POST; Url: /boards/undefined/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}; Status code: 404
-[2021-07-03 12:39:15] Method: GET; Url: /boards/undefined/tasks; Query parameters: {}; Body: {}; Status code: 404
-[2021-07-03 12:39:15] Method: GET; Url: /boards/undefined/tasks; Query parameters: {}; Body: {}; Status code: 404
-[2021-07-03 12:39:15] Method: POST; Url: /boards/undefined/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}; Status code: 404
-[2021-07-03 12:39:15] Method: POST; Url: /boards/undefined/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}; Status code: 404
-[2021-07-03 12:39:15] Method: PUT; Url: /boards/undefined/tasks/undefined; Query parameters: {}; Body: {"statusCode":404,"message":"Cannot POST /boards/undefined/tasks","error":"Not Found","title":"Autotest updated task"}; Status code: 404
-[2021-07-03 12:39:15] Method: GET; Url: /boards/undefined/tasks/undefined; Query parameters: {}; Body: {}; Status code: 404
-[2021-07-03 12:39:15] Method: DELETE; Url: /boards/undefined; Query parameters: {}; Body: {}; Status code: 404
-[2021-07-03 12:39:15] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}; Status code: 404
-[2021-07-03 12:39:15] Method: GET; Url: /boards; Query parameters: {}; Body: {}; Status code: 404
-[2021-07-03 12:39:15] Method: GET; Url: /boards; Query parameters: {}; Body: {}; Status code: 404
-[2021-07-03 12:39:15] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}; Status code: 404
-[2021-07-03 12:39:15] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}; Status code: 404
-[2021-07-03 12:39:15] Method: PUT; Url: /boards/undefined; Query parameters: {}; Body: {"statusCode":404,"message":"Cannot POST /boards","error":"Not Found","title":"Autotest updated board"}; Status code: 404
-[2021-07-03 12:39:15] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}; Status code: 404
-[2021-07-03 12:39:15] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}; Status code: 404
-[2021-07-03 12:39:15] Method: DELETE; Url: /boards/undefined; Query parameters: {}; Body: {}; Status code: 404
-[2021-07-03 13:1:17] Starting Nest application...
-[2021-07-03 13:1:17] AppModule dependencies initialized
-[2021-07-03 13:1:17] MainPageController {}:
-[2021-07-03 13:1:17] Mapped {, GET} route
-[2021-07-03 13:1:17] UsersController {/users}:
-[2021-07-03 13:1:17] Mapped {/users, GET} route
-[2021-07-03 13:1:17] Mapped {/users/:id, GET} route
-[2021-07-03 13:1:17] Mapped {/users, POST} route
-[2021-07-03 13:1:17] Mapped {/users/:id, PUT} route
-[2021-07-03 13:1:17] Mapped {/users/:id, DELETE} route
-[2021-07-03 13:1:17] Nest application successfully started
-[2021-07-03 13:1:38] Starting Nest application...
-[2021-07-03 13:1:38] AppModule dependencies initialized
-[2021-07-03 13:1:38] MainPageController {}:
-[2021-07-03 13:1:38] Mapped {, GET} route
-[2021-07-03 13:1:38] UsersController {/users}:
-[2021-07-03 13:1:38] Mapped {/users, GET} route
-[2021-07-03 13:1:38] Mapped {/users/:id, GET} route
-[2021-07-03 13:1:38] Mapped {/users, POST} route
-[2021-07-03 13:1:38] Mapped {/users/:id, PUT} route
-[2021-07-03 13:1:38] Mapped {/users/:id, DELETE} route
-[2021-07-03 13:1:38] Nest application successfully started
-[2021-07-03 13:2:14] Starting Nest application...
-[2021-07-03 13:2:14] AppModule dependencies initialized
-[2021-07-03 13:2:14] MainPageController {}:
-[2021-07-03 13:2:14] Mapped {, GET} route
-[2021-07-03 13:2:14] UsersController {/users}:
-[2021-07-03 13:2:14] Mapped {/users, GET} route
-[2021-07-03 13:2:14] Mapped {/users/:id, GET} route
-[2021-07-03 13:2:14] Mapped {/users, POST} route
-[2021-07-03 13:2:14] Mapped {/users/:id, PUT} route
-[2021-07-03 13:2:14] Mapped {/users/:id, DELETE} route
-[2021-07-03 13:2:14] Nest application successfully started
-[2021-07-03 13:22:35] Starting Nest application...
-[2021-07-03 13:22:35] AppModule dependencies initialized
-[2021-07-03 13:22:35] MainPageController {}:
-[2021-07-03 13:22:35] Mapped {, GET} route
-[2021-07-03 13:22:35] UsersController {/users}:
-[2021-07-03 13:22:35] Mapped {/users, GET} route
-[2021-07-03 13:22:35] Mapped {/users/:id, GET} route
-[2021-07-03 13:22:35] Mapped {/users, POST} route
-[2021-07-03 13:22:35] Mapped {/users/:id, PUT} route
-[2021-07-03 13:22:35] Mapped {/users/:id, DELETE} route
-[2021-07-03 13:22:35] Nest application successfully started
+[2021-07-03 15:32:9] Starting Nest application...
+[2021-07-03 15:32:9] AppModule dependencies initialized
+[2021-07-03 15:32:9] MainPageController {}:
+[2021-07-03 15:32:9] Mapped {, GET} route
+[2021-07-03 15:32:9] UsersController {/users}:
+[2021-07-03 15:32:9] Mapped {/users, GET} route
+[2021-07-03 15:32:9] Mapped {/users/:id, GET} route
+[2021-07-03 15:32:9] Mapped {/users, POST} route
+[2021-07-03 15:32:9] Mapped {/users/:id, PUT} route
+[2021-07-03 15:32:9] Mapped {/users/:id, DELETE} route
+[2021-07-03 15:32:9] BoardsController {/boards}:
+[2021-07-03 15:32:10] Mapped {/boards, GET} route
+[2021-07-03 15:32:10] Mapped {/boards/:id, GET} route
+[2021-07-03 15:32:10] Mapped {/boards, POST} route
+[2021-07-03 15:32:10] Mapped {/boards/:id, PUT} route
+[2021-07-03 15:32:10] Mapped {/boards/:id, DELETE} route
+[2021-07-03 15:32:10] Nest application successfully started
+[2021-07-03 15:32:24] Starting Nest application...
+[2021-07-03 15:32:24] AppModule dependencies initialized
+[2021-07-03 15:32:24] MainPageController {}:
+[2021-07-03 15:32:24] Mapped {, GET} route
+[2021-07-03 15:32:24] UsersController {/users}:
+[2021-07-03 15:32:24] Mapped {/users, GET} route
+[2021-07-03 15:32:24] Mapped {/users/:id, GET} route
+[2021-07-03 15:32:24] Mapped {/users, POST} route
+[2021-07-03 15:32:24] Mapped {/users/:id, PUT} route
+[2021-07-03 15:32:24] Mapped {/users/:id, DELETE} route
+[2021-07-03 15:32:24] BoardsController {/boards}:
+[2021-07-03 15:32:24] Mapped {/boards, GET} route
+[2021-07-03 15:32:24] Mapped {/boards/:id, GET} route
+[2021-07-03 15:32:24] Mapped {/boards, POST} route
+[2021-07-03 15:32:24] Mapped {/boards/:id, PUT} route
+[2021-07-03 15:32:24] Mapped {/boards/:id, DELETE} route
+[2021-07-03 15:32:24] Nest application successfully started
+[2021-07-03 15:32:44] Starting Nest application...
+[2021-07-03 15:32:44] AppModule dependencies initialized
+[2021-07-03 15:32:44] MainPageController {}:
+[2021-07-03 15:32:44] Mapped {, GET} route
+[2021-07-03 15:32:44] UsersController {/users}:
+[2021-07-03 15:32:44] Mapped {/users, GET} route
+[2021-07-03 15:32:44] Mapped {/users/:id, GET} route
+[2021-07-03 15:32:44] Mapped {/users, POST} route
+[2021-07-03 15:32:44] Mapped {/users/:id, PUT} route
+[2021-07-03 15:32:44] Mapped {/users/:id, DELETE} route
+[2021-07-03 15:32:44] BoardsController {/boards}:
+[2021-07-03 15:32:44] Mapped {/boards, GET} route
+[2021-07-03 15:32:44] Mapped {/boards/:id, GET} route
+[2021-07-03 15:32:44] Mapped {/boards, POST} route
+[2021-07-03 15:32:44] Mapped {/boards/:id, PUT} route
+[2021-07-03 15:32:44] Mapped {/boards/:id, DELETE} route
+[2021-07-03 15:32:44] Nest application successfully started
+[2021-07-03 15:33:24] Starting Nest application...
+[2021-07-03 15:33:24] AppModule dependencies initialized
+[2021-07-03 15:33:24] MainPageController {}:
+[2021-07-03 15:33:24] UsersController {/users}:
+[2021-07-03 15:33:24] Mapped {/users, GET} route
+[2021-07-03 15:33:24] Mapped {/users/:id, GET} route
+[2021-07-03 15:33:24] Mapped {/users/:id, PUT} route
+[2021-07-03 15:33:24] Mapped {/users/:id, DELETE} route
+[2021-07-03 15:33:24] Mapped {/boards, GET} route
+[2021-07-03 15:33:24] Mapped {, GET} route
+[2021-07-03 15:33:24] Mapped {/boards/:id, GET} route
+[2021-07-03 15:33:24] BoardsController {/boards}:
+[2021-07-03 15:33:24] Mapped {/boards, POST} route
+[2021-07-03 15:33:24] Mapped {/users, POST} route
+[2021-07-03 15:33:24] Mapped {/boards/:id, DELETE} route
+[2021-07-03 15:33:24] Nest application successfully started
+[2021-07-03 15:33:24] Mapped {/boards/:id, PUT} route
+[2021-07-03 15:40:16] Starting Nest application...
+[2021-07-03 15:40:16] AppModule dependencies initialized
+[2021-07-03 15:40:16] MainPageController {}:
+[2021-07-03 15:40:16] Mapped {, GET} route
+[2021-07-03 15:40:16] UsersController {/users}:
+[2021-07-03 15:40:16] Mapped {/users, GET} route
+[2021-07-03 15:40:16] Mapped {/users/:id, GET} route
+[2021-07-03 15:40:16] Mapped {/users, POST} route
+[2021-07-03 15:40:16] Mapped {/users/:id, PUT} route
+[2021-07-03 15:40:16] Mapped {/users/:id, DELETE} route
+[2021-07-03 15:40:16] BoardsController {/boards}:
+[2021-07-03 15:40:16] Mapped {/boards, GET} route
+[2021-07-03 15:40:16] Mapped {/boards/:id, GET} route
+[2021-07-03 15:40:16] Mapped {/boards/:id, PUT} route
+[2021-07-03 15:40:16] Mapped {/boards/:id, DELETE} route
+[2021-07-03 15:40:16] Mapped {/boards, POST} route
+[2021-07-03 15:40:16] Nest application successfully started
+[2021-07-03 15:42:55] Starting Nest application...
+[2021-07-03 15:42:55] AppModule dependencies initialized
+[2021-07-03 15:42:55] MainPageController {}:
+[2021-07-03 15:42:55] Mapped {, GET} route
+[2021-07-03 15:42:55] UsersController {/users}:
+[2021-07-03 15:42:55] Mapped {/users, GET} route
+[2021-07-03 15:42:55] Mapped {/users/:id, GET} route
+[2021-07-03 15:42:55] Mapped {/users, POST} route
+[2021-07-03 15:42:55] Mapped {/users/:id, PUT} route
+[2021-07-03 15:42:55] Mapped {/users/:id, DELETE} route
+[2021-07-03 15:42:55] BoardsController {/boards}:
+[2021-07-03 15:42:55] Mapped {/boards, GET} route
+[2021-07-03 15:42:55] Mapped {/boards/:id, GET} route
+[2021-07-03 15:42:55] Mapped {/boards, POST} route
+[2021-07-03 15:42:55] Mapped {/boards/:id, PUT} route
+[2021-07-03 15:42:55] Mapped {/boards/:id, DELETE} route
+[2021-07-03 15:42:55] Nest application successfully started
+[2021-07-03 15:43:45] Starting Nest application...
+[2021-07-03 15:43:45] AppModule dependencies initialized
+[2021-07-03 15:43:45] UsersController {/users}:
+[2021-07-03 15:43:45] Mapped {, GET} route
+[2021-07-03 15:43:45] MainPageController {}:
+[2021-07-03 15:43:45] Mapped {/users/:id, GET} route
+[2021-07-03 15:43:45] Mapped {/users, POST} route
+[2021-07-03 15:43:45] Mapped {/users, GET} route
+[2021-07-03 15:43:45] Mapped {/users/:id, PUT} route
+[2021-07-03 15:43:45] BoardsController {/boards}:
+[2021-07-03 15:43:45] Mapped {/users/:id, DELETE} route
+[2021-07-03 15:43:45] Mapped {/boards, GET} route
+[2021-07-03 15:43:45] Mapped {/boards/:id, GET} route
+[2021-07-03 15:43:45] Mapped {/boards, POST} route
+[2021-07-03 15:43:45] Mapped {/boards/:id, PUT} route
+[2021-07-03 15:43:45] Mapped {/boards/:id, DELETE} route
+[2021-07-03 15:43:45] Nest application successfully started
+[2021-07-03 15:44:51] Starting Nest application...
+[2021-07-03 15:44:51] AppModule dependencies initialized
+[2021-07-03 15:44:51] MainPageController {}:
+[2021-07-03 15:44:51] UsersController {/users}:
+[2021-07-03 15:44:51] Mapped {, GET} route
+[2021-07-03 15:44:51] Mapped {/users, GET} route
+[2021-07-03 15:44:51] Mapped {/users/:id, GET} route
+[2021-07-03 15:44:51] Mapped {/users, POST} route
+[2021-07-03 15:44:51] Mapped {/users/:id, PUT} route
+[2021-07-03 15:44:51] Mapped {/users/:id, DELETE} route
+[2021-07-03 15:44:51] BoardsController {/boards}:
+[2021-07-03 15:44:51] Mapped {/boards, GET} route
+[2021-07-03 15:44:51] Mapped {/boards/:id, GET} route
+[2021-07-03 15:44:51] Mapped {/boards, POST} route
+[2021-07-03 15:44:51] Mapped {/boards/:id, PUT} route
+[2021-07-03 15:44:51] Mapped {/boards/:id, DELETE} route
+[2021-07-03 15:44:51] Nest application successfully started
+[2021-07-03 15:45:50] Starting Nest application...
+[2021-07-03 15:45:50] AppModule dependencies initialized
+[2021-07-03 15:45:50] MainPageController {}:
+[2021-07-03 15:45:50] Mapped {, GET} route
+[2021-07-03 15:45:50] UsersController {/users}:
+[2021-07-03 15:45:50] Mapped {/users, GET} route
+[2021-07-03 15:45:50] Mapped {/users/:id, GET} route
+[2021-07-03 15:45:50] Mapped {/users, POST} route
+[2021-07-03 15:45:50] Mapped {/users/:id, PUT} route
+[2021-07-03 15:45:50] Mapped {/users/:id, DELETE} route
+[2021-07-03 15:45:50] BoardsController {/boards}:
+[2021-07-03 15:45:50] Mapped {/boards, GET} route
+[2021-07-03 15:45:50] Mapped {/boards/:id, GET} route
+[2021-07-03 15:45:50] Mapped {/boards, POST} route
+[2021-07-03 15:45:50] Mapped {/boards/:id, PUT} route
+[2021-07-03 15:45:50] Mapped {/boards/:id, DELETE} route
+[2021-07-03 15:45:50] Nest application successfully started
+[2021-07-03 15:46:3] Starting Nest application...
+[2021-07-03 15:46:3] AppModule dependencies initialized
+[2021-07-03 15:46:3] Mapped {, GET} route
+[2021-07-03 15:46:3] MainPageController {}:
+[2021-07-03 15:46:3] UsersController {/users}:
+[2021-07-03 15:46:3] Mapped {/users, GET} route
+[2021-07-03 15:46:3] Mapped {/users/:id, GET} route
+[2021-07-03 15:46:3] Mapped {/users, POST} route
+[2021-07-03 15:46:3] Mapped {/users/:id, PUT} route
+[2021-07-03 15:46:3] Mapped {/users/:id, DELETE} route
+[2021-07-03 15:46:3] BoardsController {/boards}:
+[2021-07-03 15:46:3] Mapped {/boards, GET} route
+[2021-07-03 15:46:3] Mapped {/boards/:id, GET} route
+[2021-07-03 15:46:3] Mapped {/boards, POST} route
+[2021-07-03 15:46:3] Mapped {/boards/:id, PUT} route
+[2021-07-03 15:46:3] Mapped {/boards/:id, DELETE} route
+[2021-07-03 15:46:3] Nest application successfully started
+[2021-07-03 16:49:22] Starting Nest application...
+[2021-07-03 16:49:22] AppModule dependencies initialized
+[2021-07-03 16:49:22] MainPageController {}:
+[2021-07-03 16:49:22] Mapped {, GET} route
+[2021-07-03 16:49:22] UsersController {/users}:
+[2021-07-03 16:49:22] Mapped {/users, GET} route
+[2021-07-03 16:49:22] Mapped {/users/:id, GET} route
+[2021-07-03 16:49:22] Mapped {/users, POST} route
+[2021-07-03 16:49:22] Mapped {/users/:id, PUT} route
+[2021-07-03 16:49:22] Mapped {/users/:id, DELETE} route
+[2021-07-03 16:49:22] BoardsController {/boards}:
+[2021-07-03 16:49:22] Mapped {/boards, GET} route
+[2021-07-03 16:49:22] Mapped {/boards/:id, GET} route
+[2021-07-03 16:49:22] Mapped {/boards, POST} route
+[2021-07-03 16:49:22] Mapped {/boards/:id, PUT} route
+[2021-07-03 16:49:22] Mapped {/boards/:id, DELETE} route
+[2021-07-03 16:49:22] Nest application successfully started
+[2021-07-03 16:49:48] Starting Nest application...
+[2021-07-03 16:49:48] AppModule dependencies initialized
+[2021-07-03 16:49:48] MainPageController {}:
+[2021-07-03 16:49:48] Mapped {, GET} route
+[2021-07-03 16:49:48] UsersController {/users}:
+[2021-07-03 16:49:48] Mapped {/users, GET} route
+[2021-07-03 16:49:48] Mapped {/users/:id, GET} route
+[2021-07-03 16:49:48] Mapped {/users, POST} route
+[2021-07-03 16:49:48] Mapped {/users/:id, PUT} route
+[2021-07-03 16:49:48] Mapped {/users/:id, DELETE} route
+[2021-07-03 16:49:48] BoardsController {/boards}:
+[2021-07-03 16:49:48] Mapped {/boards, GET} route
+[2021-07-03 16:49:48] Mapped {/boards/:id, GET} route
+[2021-07-03 16:49:48] Mapped {/boards, POST} route
+[2021-07-03 16:49:48] Mapped {/boards/:id, PUT} route
+[2021-07-03 16:49:48] Mapped {/boards/:id, DELETE} route
+[2021-07-03 16:49:48] Nest application successfully started
+[2021-07-03 16:50:56] Starting Nest application...
+[2021-07-03 16:50:56] AppModule dependencies initialized
+[2021-07-03 16:50:56] MainPageController {}:
+[2021-07-03 16:50:56] Mapped {, GET} route
+[2021-07-03 16:50:56] UsersController {/users}:
+[2021-07-03 16:50:56] Mapped {/users, GET} route
+[2021-07-03 16:50:56] Mapped {/users/:id, GET} route
+[2021-07-03 16:50:56] Mapped {/users, POST} route
+[2021-07-03 16:50:56] Mapped {/users/:id, PUT} route
+[2021-07-03 16:50:56] Mapped {/users/:id, DELETE} route
+[2021-07-03 16:50:56] BoardsController {/boards}:
+[2021-07-03 16:50:56] Mapped {/boards, GET} route
+[2021-07-03 16:50:56] Mapped {/boards/:id, GET} route
+[2021-07-03 16:50:56] Mapped {/boards, POST} route
+[2021-07-03 16:50:56] Mapped {/boards/:id, PUT} route
+[2021-07-03 16:50:56] Mapped {/boards/:id, DELETE} route
+[2021-07-03 16:50:56] Nest application successfully started
+[2021-07-03 16:51:7] Starting Nest application...
+[2021-07-03 16:51:7] AppModule dependencies initialized
+[2021-07-03 16:51:7] Mapped {, GET} route
+[2021-07-03 16:51:7] MainPageController {}:
+[2021-07-03 16:51:7] UsersController {/users}:
+[2021-07-03 16:51:7] Mapped {/users, GET} route
+[2021-07-03 16:51:7] Mapped {/users/:id, GET} route
+[2021-07-03 16:51:7] Mapped {/users, POST} route
+[2021-07-03 16:51:7] Mapped {/users/:id, PUT} route
+[2021-07-03 16:51:7] Mapped {/users/:id, DELETE} route
+[2021-07-03 16:51:7] BoardsController {/boards}:
+[2021-07-03 16:51:7] Mapped {/boards, GET} route
+[2021-07-03 16:51:7] Mapped {/boards/:id, GET} route
+[2021-07-03 16:51:7] Mapped {/boards, POST} route
+[2021-07-03 16:51:7] Mapped {/boards/:id, PUT} route
+[2021-07-03 16:51:7] Mapped {/boards/:id, DELETE} route
+[2021-07-03 16:51:7] TasksController {/boards/:boardId/tasks}:
+[2021-07-03 16:51:7] Mapped {/boards/:boardId/tasks, GET} route
+[2021-07-03 16:51:7] Mapped {/boards/:boardId/tasks, POST} route
+[2021-07-03 16:51:7] Mapped {/boards/:boardId/tasks/:id, PUT} route
+[2021-07-03 16:51:7] Mapped {/boards/:boardId/tasks/:id, GET} route
+[2021-07-03 16:51:7] Nest application successfully started
+[2021-07-03 16:51:7] Mapped {/boards/:boardId/tasks/:id, DELETE} route
+[2021-07-03 16:51:38] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"6b95bfac-763f-40ba-90ee-0876cdd39da9"},{"title":"Sprint","order":2,"id":"eb62a5f8-d961-447e-8d9c-38e2bb49dca4"}]}; Status code: 201
+[2021-07-03 16:51:38] Method: GET; Url: /boards; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 16:51:38] Method: GET; Url: /boards; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 16:51:38] Method: GET; Url: /boards/4573fc3d-e9dd-4506-a416-03eb93e3bf37; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 16:51:38] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"a6cd7345-3853-43a8-b1e8-b9059b515c2b"},{"title":"Sprint","order":2,"id":"379d541f-89d6-4d8b-a4d4-9ff592241b01"}]}; Status code: 201
+[2021-07-03 16:51:38] Method: DELETE; Url: /boards/569fae46-5de2-430f-9439-2edb94931e0b; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 16:51:38] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"f326fb44-9ffc-4941-a520-fbbf273cca94"},{"title":"Sprint","order":2,"id":"0e858a86-e55f-40a2-9dea-ea7305ecb637"}]}; Status code: 201
+[2021-07-03 16:51:38] Method: PUT; Url: /boards/a873331f-de6f-469f-85ea-855caf7c62d8; Query parameters: {}; Body: {"id":"a873331f-de6f-469f-85ea-855caf7c62d8","title":"Autotest updated board","columns":[{"title":"Backlog","order":1,"id":"16f6c41d-f8f1-4991-8dbe-8dbb0548d35b"},{"title":"Sprint","order":2,"id":"6ef2f784-9f5d-42f4-9601-363f33e849cf"}]}; Status code: 200
+[2021-07-03 16:51:38] Method: GET; Url: /boards/a873331f-de6f-469f-85ea-855caf7c62d8; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 16:51:38] Method: DELETE; Url: /boards/a873331f-de6f-469f-85ea-855caf7c62d8; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 16:51:38] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"20515cef-5207-4d46-9685-38719c26c438"},{"title":"Sprint","order":2,"id":"43723231-6a6c-4cc8-9497-1c6c09873041"}]}; Status code: 201
+[2021-07-03 16:51:38] Method: DELETE; Url: /boards/b57ecb59-bd89-43a8-8eba-47b485bafee5; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 16:51:38] Method: GET; Url: /boards/b57ecb59-bd89-43a8-8eba-47b485bafee5; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 16:51:38] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"0a4fc09e-de85-4aa9-b877-86423f3e2481"},{"title":"Sprint","order":2,"id":"69e59f34-24a9-4a39-9293-f811ee9eac1a"}]}; Status code: 201
+[2021-07-03 16:51:38] Method: POST; Url: /boards/7830619f-507f-4645-a3fa-ca68aaf52b76/tasks; Query parameters: {}; Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"7830619f-507f-4645-a3fa-ca68aaf52b76","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 16:51:38] Method: POST; Url: /boards/7830619f-507f-4645-a3fa-ca68aaf52b76/tasks; Query parameters: {}; Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"7830619f-507f-4645-a3fa-ca68aaf52b76","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 16:51:38] Method: POST; Url: /boards/7830619f-507f-4645-a3fa-ca68aaf52b76/tasks; Query parameters: {}; Body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"7830619f-507f-4645-a3fa-ca68aaf52b76","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 16:51:38] Method: POST; Url: /boards/7830619f-507f-4645-a3fa-ca68aaf52b76/tasks; Query parameters: {}; Body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"7830619f-507f-4645-a3fa-ca68aaf52b76","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 16:51:38] Method: POST; Url: /boards/7830619f-507f-4645-a3fa-ca68aaf52b76/tasks; Query parameters: {}; Body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"7830619f-507f-4645-a3fa-ca68aaf52b76","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 16:51:38] Method: GET; Url: /boards/7830619f-507f-4645-a3fa-ca68aaf52b76/tasks/849d05bc-731f-48b1-a6f2-e3c53fb237ce; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 16:51:38] Method: GET; Url: /boards/7830619f-507f-4645-a3fa-ca68aaf52b76/tasks/34c40d9d-7d09-4b3d-b8d6-d9c37ddc77b3; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 16:51:38] Method: GET; Url: /boards/7830619f-507f-4645-a3fa-ca68aaf52b76/tasks/b3543357-3047-44bc-bd71-f0b0ee29e59a; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 16:51:38] Method: GET; Url: /boards/7830619f-507f-4645-a3fa-ca68aaf52b76/tasks/482aea09-e290-4ec4-93cb-72e0b29c1e11; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 16:51:38] Method: GET; Url: /boards/7830619f-507f-4645-a3fa-ca68aaf52b76/tasks/5399912c-b41a-4840-8ac1-bbecb81b607c; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 16:51:38] Method: DELETE; Url: /boards/7830619f-507f-4645-a3fa-ca68aaf52b76; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 16:51:38] Method: GET; Url: /boards/7830619f-507f-4645-a3fa-ca68aaf52b76/tasks/849d05bc-731f-48b1-a6f2-e3c53fb237ce; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 16:51:38] Method: GET; Url: /boards/7830619f-507f-4645-a3fa-ca68aaf52b76/tasks/34c40d9d-7d09-4b3d-b8d6-d9c37ddc77b3; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 16:51:38] Method: GET; Url: /boards/7830619f-507f-4645-a3fa-ca68aaf52b76/tasks/482aea09-e290-4ec4-93cb-72e0b29c1e11; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 16:51:38] Method: GET; Url: /boards/7830619f-507f-4645-a3fa-ca68aaf52b76/tasks/b3543357-3047-44bc-bd71-f0b0ee29e59a; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 16:51:38] Method: GET; Url: /boards/7830619f-507f-4645-a3fa-ca68aaf52b76/tasks/5399912c-b41a-4840-8ac1-bbecb81b607c; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 16:51:39] Method: DELETE; Url: /boards/4573fc3d-e9dd-4506-a416-03eb93e3bf37; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 16:51:39] Method: GET; Url: /users; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 16:51:39] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 16:51:39] Method: GET; Url: /users/da3cc1ba-baac-497b-85d5-f6fb71fda590; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 16:51:39] Method: DELETE; Url: /users/da3cc1ba-baac-497b-85d5-f6fb71fda590; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 16:51:39] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 16:51:39] Method: DELETE; Url: /users/b2e46fcf-2ef7-4f05-9fa9-4451fdc6386c; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 16:51:39] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 16:51:39] Method: PUT; Url: /users/8a63e090-05d3-40ce-9de3-305d8510708e; Query parameters: {}; Body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"8a63e090-05d3-40ce-9de3-305d8510708e"}; Status code: 200
+[2021-07-03 16:51:39] Method: GET; Url: /users/8a63e090-05d3-40ce-9de3-305d8510708e; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 16:51:39] Method: DELETE; Url: /users/8a63e090-05d3-40ce-9de3-305d8510708e; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 16:51:39] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 16:51:39] Method: DELETE; Url: /users/a5b26d85-fe4e-4555-bbd9-243b48388c95; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 16:51:39] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 16:51:39] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"a39a2c27-6675-489f-8f6f-facf2a333055"},{"title":"Sprint","order":2,"id":"07c7aaa8-f30d-4139-ba50-8130df0d8615"}]}; Status code: 201
+[2021-07-03 16:51:39] Method: POST; Url: /boards/0dd6b6ad-5f25-479b-9b84-8a40acab8a17/tasks; Query parameters: {}; Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"e8203248-f16d-401b-914d-a0f21f1ffdd7","boardId":"0dd6b6ad-5f25-479b-9b84-8a40acab8a17"}; Status code: 201
+[2021-07-03 16:51:39] Method: POST; Url: /boards/0dd6b6ad-5f25-479b-9b84-8a40acab8a17/tasks; Query parameters: {}; Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"e8203248-f16d-401b-914d-a0f21f1ffdd7","boardId":"0dd6b6ad-5f25-479b-9b84-8a40acab8a17"}; Status code: 201
+[2021-07-03 16:51:39] Method: DELETE; Url: /users/e8203248-f16d-401b-914d-a0f21f1ffdd7; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 16:51:39] Method: GET; Url: /boards/0dd6b6ad-5f25-479b-9b84-8a40acab8a17/tasks/c9f03652-17f3-4bd2-9bad-102da2fe1898; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 16:51:39] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"66a9808c-130e-4037-a3be-0221d96da165"},{"title":"Sprint","order":2,"id":"071cff95-a100-42c0-83e0-be14781b4afe"}]}; Status code: 201
+[2021-07-03 16:51:39] Method: POST; Url: /boards/f7589ed8-76e6-4bcc-a6af-8da45a95dbc9/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}; Status code: 201
+[2021-07-03 16:51:39] Method: GET; Url: /boards/f7589ed8-76e6-4bcc-a6af-8da45a95dbc9/tasks; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 16:51:39] Method: GET; Url: /boards/f7589ed8-76e6-4bcc-a6af-8da45a95dbc9/tasks; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 16:51:39] Method: POST; Url: /boards/f7589ed8-76e6-4bcc-a6af-8da45a95dbc9/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}; Status code: 201
+[2021-07-03 16:51:39] Method: POST; Url: /boards/f7589ed8-76e6-4bcc-a6af-8da45a95dbc9/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}; Status code: 201
+[2021-07-03 16:51:39] Method: PUT; Url: /boards/null/tasks/8b9346f7-ed63-40bd-8611-e31a779da5a4; Query parameters: {}; Body: {"id":"8b9346f7-ed63-40bd-8611-e31a779da5a4","title":"Autotest updated task","description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null,"order":0}; Status code: 200
+[2021-07-03 16:51:39] Method: GET; Url: /boards/null/tasks/8b9346f7-ed63-40bd-8611-e31a779da5a4; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 16:51:39] Method: GET; Url: /boards/f7589ed8-76e6-4bcc-a6af-8da45a95dbc9/tasks/7e191f4d-1ce4-4259-92d3-c33ad5d087cc; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 16:51:39] Method: DELETE; Url: /boards/f7589ed8-76e6-4bcc-a6af-8da45a95dbc9; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 16:53:42] Starting Nest application...
+[2021-07-03 16:53:42] AppModule dependencies initialized
+[2021-07-03 16:53:42] MainPageController {}:
+[2021-07-03 16:53:42] Mapped {, GET} route
+[2021-07-03 16:53:42] UsersController {/users}:
+[2021-07-03 16:53:42] Mapped {/users, GET} route
+[2021-07-03 16:53:42] Mapped {/users/:id, GET} route
+[2021-07-03 16:53:42] Mapped {/users, POST} route
+[2021-07-03 16:53:42] Mapped {/users/:id, PUT} route
+[2021-07-03 16:53:42] Mapped {/users/:id, DELETE} route
+[2021-07-03 16:53:42] BoardsController {/boards}:
+[2021-07-03 16:53:42] Mapped {/boards, GET} route
+[2021-07-03 16:53:42] Mapped {/boards/:id, GET} route
+[2021-07-03 16:53:42] Mapped {/boards, POST} route
+[2021-07-03 16:53:42] Mapped {/boards/:id, PUT} route
+[2021-07-03 16:53:42] Mapped {/boards/:id, DELETE} route
+[2021-07-03 16:53:42] TasksController {/boards/:boardId/tasks}:
+[2021-07-03 16:53:42] Mapped {/boards/:boardId/tasks, GET} route
+[2021-07-03 16:53:42] Mapped {/boards/:boardId/tasks/:id, GET} route
+[2021-07-03 16:53:42] Mapped {/boards/:boardId/tasks, POST} route
+[2021-07-03 16:53:42] Mapped {/boards/:boardId/tasks/:id, PUT} route
+[2021-07-03 16:53:42] Nest application successfully started
+[2021-07-03 16:53:42] Mapped {/boards/:boardId/tasks/:id, DELETE} route
+[2021-07-03 17:9:4] Starting Nest application...
+[2021-07-03 17:9:4] AppModule dependencies initialized
+[2021-07-03 17:9:4] MainPageController {}:
+[2021-07-03 17:9:4] Mapped {, GET} route
+[2021-07-03 17:9:4] UsersController {/users}:
+[2021-07-03 17:9:4] Mapped {/users, GET} route
+[2021-07-03 17:9:4] Mapped {/users/:id, GET} route
+[2021-07-03 17:9:4] Mapped {/users, POST} route
+[2021-07-03 17:9:4] Mapped {/users/:id, PUT} route
+[2021-07-03 17:9:4] Mapped {/users/:id, DELETE} route
+[2021-07-03 17:9:4] BoardsController {/boards}:
+[2021-07-03 17:9:4] Mapped {/boards, GET} route
+[2021-07-03 17:9:4] Mapped {/boards/:id, GET} route
+[2021-07-03 17:9:4] Mapped {/boards, POST} route
+[2021-07-03 17:9:4] Mapped {/boards/:id, PUT} route
+[2021-07-03 17:9:4] Mapped {/boards/:id, DELETE} route
+[2021-07-03 17:9:4] TasksController {/boards/:boardId/tasks}:
+[2021-07-03 17:9:4] Mapped {/boards/:boardId/tasks, GET} route
+[2021-07-03 17:9:4] Mapped {/boards/:boardId/tasks/:id, GET} route
+[2021-07-03 17:9:4] Mapped {/boards/:boardId/tasks, POST} route
+[2021-07-03 17:9:4] Mapped {/boards/:boardId/tasks/:id, PUT} route
+[2021-07-03 17:9:4] Mapped {/boards/:boardId/tasks/:id, DELETE} route
+[2021-07-03 17:9:4] Nest application successfully started
+[2021-07-03 17:10:17] Starting Nest application...
+[2021-07-03 17:10:17] AppModule dependencies initialized
+[2021-07-03 17:10:17] MainPageController {}:
+[2021-07-03 17:10:17] Mapped {, GET} route
+[2021-07-03 17:10:17] UsersController {/users}:
+[2021-07-03 17:10:17] Mapped {/users, GET} route
+[2021-07-03 17:10:17] Mapped {/users/:id, GET} route
+[2021-07-03 17:10:17] Mapped {/users, POST} route
+[2021-07-03 17:10:17] Mapped {/users/:id, PUT} route
+[2021-07-03 17:10:17] Mapped {/users/:id, DELETE} route
+[2021-07-03 17:10:17] BoardsController {/boards}:
+[2021-07-03 17:10:17] Mapped {/boards, GET} route
+[2021-07-03 17:10:17] Mapped {/boards/:id, GET} route
+[2021-07-03 17:10:17] Mapped {/boards, POST} route
+[2021-07-03 17:10:17] Mapped {/boards/:id, PUT} route
+[2021-07-03 17:10:17] Mapped {/boards/:id, DELETE} route
+[2021-07-03 17:10:17] TasksController {/boards/:boardId/tasks}:
+[2021-07-03 17:10:17] Mapped {/boards/:boardId/tasks, GET} route
+[2021-07-03 17:10:17] Mapped {/boards/:boardId/tasks/:id, GET} route
+[2021-07-03 17:10:17] Mapped {/boards/:boardId/tasks, POST} route
+[2021-07-03 17:10:17] Mapped {/boards/:boardId/tasks/:id, PUT} route
+[2021-07-03 17:10:17] Mapped {/boards/:boardId/tasks/:id, DELETE} route
+[2021-07-03 17:10:17] Nest application successfully started
+[2021-07-03 17:10:19] Starting Nest application...
+[2021-07-03 17:10:19] AppModule dependencies initialized
+[2021-07-03 17:10:19] MainPageController {}:
+[2021-07-03 17:10:19] Mapped {, GET} route
+[2021-07-03 17:10:19] UsersController {/users}:
+[2021-07-03 17:10:19] Mapped {/users, GET} route
+[2021-07-03 17:10:19] Mapped {/users/:id, GET} route
+[2021-07-03 17:10:19] Mapped {/users, POST} route
+[2021-07-03 17:10:19] Mapped {/users/:id, PUT} route
+[2021-07-03 17:10:19] Mapped {/users/:id, DELETE} route
+[2021-07-03 17:10:19] BoardsController {/boards}:
+[2021-07-03 17:10:19] Mapped {/boards, GET} route
+[2021-07-03 17:10:19] Mapped {/boards/:id, GET} route
+[2021-07-03 17:10:19] Mapped {/boards, POST} route
+[2021-07-03 17:10:19] Mapped {/boards/:id, PUT} route
+[2021-07-03 17:10:19] Mapped {/boards/:id, DELETE} route
+[2021-07-03 17:10:19] TasksController {/boards/:boardId/tasks}:
+[2021-07-03 17:10:19] Mapped {/boards/:boardId/tasks, GET} route
+[2021-07-03 17:10:19] Mapped {/boards/:boardId/tasks/:id, GET} route
+[2021-07-03 17:10:19] Mapped {/boards/:boardId/tasks/:id, PUT} route
+[2021-07-03 17:10:19] Mapped {/boards/:boardId/tasks/:id, DELETE} route
+[2021-07-03 17:10:19] Mapped {/boards/:boardId/tasks, POST} route
+[2021-07-03 17:10:19] Nest application successfully started
+[2021-07-03 17:11:20] Starting Nest application...
+[2021-07-03 17:11:20] AppModule dependencies initialized
+[2021-07-03 17:11:20] MainPageController {}:
+[2021-07-03 17:11:20] Mapped {, GET} route
+[2021-07-03 17:11:20] UsersController {/users}:
+[2021-07-03 17:11:20] Mapped {/users, GET} route
+[2021-07-03 17:11:20] Mapped {/users/:id, GET} route
+[2021-07-03 17:11:20] Mapped {/users, POST} route
+[2021-07-03 17:11:20] Mapped {/users/:id, PUT} route
+[2021-07-03 17:11:20] Mapped {/users/:id, DELETE} route
+[2021-07-03 17:11:20] BoardsController {/boards}:
+[2021-07-03 17:11:20] Mapped {/boards, GET} route
+[2021-07-03 17:11:20] Mapped {/boards/:id, GET} route
+[2021-07-03 17:11:20] Mapped {/boards, POST} route
+[2021-07-03 17:11:20] Mapped {/boards/:id, PUT} route
+[2021-07-03 17:11:20] Mapped {/boards/:id, DELETE} route
+[2021-07-03 17:11:20] TasksController {/boards/:boardId/tasks}:
+[2021-07-03 17:11:20] Mapped {/boards/:boardId/tasks, GET} route
+[2021-07-03 17:11:20] Mapped {/boards/:boardId/tasks/:id, GET} route
+[2021-07-03 17:11:20] Mapped {/boards/:boardId/tasks, POST} route
+[2021-07-03 17:11:20] Mapped {/boards/:boardId/tasks/:id, PUT} route
+[2021-07-03 17:11:20] Mapped {/boards/:boardId/tasks/:id, DELETE} route
+[2021-07-03 17:11:20] Nest application successfully started
+[2021-07-03 17:11:58] Starting Nest application...
+[2021-07-03 17:11:58] AppModule dependencies initialized
+[2021-07-03 17:11:58] MainPageController {}:
+[2021-07-03 17:11:58] Mapped {, GET} route
+[2021-07-03 17:11:58] UsersController {/users}:
+[2021-07-03 17:11:58] Mapped {/users, GET} route
+[2021-07-03 17:11:58] Mapped {/users/:id, GET} route
+[2021-07-03 17:11:58] Mapped {/users/:id, PUT} route
+[2021-07-03 17:11:58] Mapped {/users, POST} route
+[2021-07-03 17:11:58] Mapped {/users/:id, DELETE} route
+[2021-07-03 17:11:58] BoardsController {/boards}:
+[2021-07-03 17:11:58] Mapped {/boards, GET} route
+[2021-07-03 17:11:58] Mapped {/boards/:id, GET} route
+[2021-07-03 17:11:58] Mapped {/boards, POST} route
+[2021-07-03 17:11:58] Mapped {/boards/:id, PUT} route
+[2021-07-03 17:11:58] Mapped {/boards/:id, DELETE} route
+[2021-07-03 17:11:58] TasksController {/boards/:boardId/tasks}:
+[2021-07-03 17:11:58] Mapped {/boards/:boardId/tasks, GET} route
+[2021-07-03 17:11:58] Mapped {/boards/:boardId/tasks/:id, GET} route
+[2021-07-03 17:11:58] Mapped {/boards/:boardId/tasks, POST} route
+[2021-07-03 17:11:58] Mapped {/boards/:boardId/tasks/:id, PUT} route
+[2021-07-03 17:11:58] Mapped {/boards/:boardId/tasks/:id, DELETE} route
+[2021-07-03 17:11:58] Nest application successfully started
+[2021-07-03 17:12:5] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"2398c40f-9c8a-400b-b7ac-05b4b7dbf532"},{"title":"Sprint","order":2,"id":"6d1e97f8-5b4a-4aa5-8edb-3d1998ef92f2"}]}; Status code: 201
+[2021-07-03 17:12:5] Method: GET; Url: /boards; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:12:5] Method: GET; Url: /boards; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:12:5] Method: GET; Url: /boards/aa49b89a-6076-42f5-9988-92cf1cc9890e; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:12:5] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"e92bb04b-dba3-44f2-a706-07c71ca72431"},{"title":"Sprint","order":2,"id":"f3ca399f-c2be-4592-b4dd-c0f7768b8bd7"}]}; Status code: 201
+[2021-07-03 17:12:5] Method: DELETE; Url: /boards/8d133eda-516f-459a-a2f0-f7c9ea552c98; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:12:5] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"3f68d2ad-f5c1-415f-85ff-bccd89a85c3f"},{"title":"Sprint","order":2,"id":"6ff0c13f-2066-4b5d-bdba-8a2402148841"}]}; Status code: 201
+[2021-07-03 17:12:5] Method: PUT; Url: /boards/753d2d10-4827-473c-b746-2554cb34ae92; Query parameters: {}; Body: {"id":"753d2d10-4827-473c-b746-2554cb34ae92","title":"Autotest updated board","columns":[{"title":"Backlog","order":1,"id":"48e7025a-1ce6-4bcb-a49e-769f947bb16c"},{"title":"Sprint","order":2,"id":"7d982907-d9c1-41d9-9b4c-bacc37668334"}]}; Status code: 200
+[2021-07-03 17:12:5] Method: GET; Url: /boards/753d2d10-4827-473c-b746-2554cb34ae92; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:12:5] Method: DELETE; Url: /boards/753d2d10-4827-473c-b746-2554cb34ae92; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:12:5] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"5ece95fa-7b4a-4ac4-a88a-8e3f4dc9b39b"},{"title":"Sprint","order":2,"id":"219581da-5b3e-4181-9e75-7a0197c03d94"}]}; Status code: 201
+[2021-07-03 17:12:5] Method: DELETE; Url: /boards/b0bff077-ef14-47b5-a132-0eb57d4ea175; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:12:5] Method: GET; Url: /boards/b0bff077-ef14-47b5-a132-0eb57d4ea175; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:12:5] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"9878fdda-f2d8-43a5-878f-24929c5eef93"},{"title":"Sprint","order":2,"id":"659906c9-4bb5-4dbe-8438-2ba8e475588a"}]}; Status code: 201
+[2021-07-03 17:12:5] Method: POST; Url: /boards/e1f01df7-d82f-4240-8da4-35aae9da5d03/tasks; Query parameters: {}; Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"e1f01df7-d82f-4240-8da4-35aae9da5d03","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:12:5] Method: POST; Url: /boards/e1f01df7-d82f-4240-8da4-35aae9da5d03/tasks; Query parameters: {}; Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"e1f01df7-d82f-4240-8da4-35aae9da5d03","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:12:5] Method: POST; Url: /boards/e1f01df7-d82f-4240-8da4-35aae9da5d03/tasks; Query parameters: {}; Body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"e1f01df7-d82f-4240-8da4-35aae9da5d03","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:12:5] Method: POST; Url: /boards/e1f01df7-d82f-4240-8da4-35aae9da5d03/tasks; Query parameters: {}; Body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"e1f01df7-d82f-4240-8da4-35aae9da5d03","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:12:5] Method: POST; Url: /boards/e1f01df7-d82f-4240-8da4-35aae9da5d03/tasks; Query parameters: {}; Body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"e1f01df7-d82f-4240-8da4-35aae9da5d03","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:12:5] Method: GET; Url: /boards/e1f01df7-d82f-4240-8da4-35aae9da5d03/tasks/f7a05ab7-3193-4d09-b87e-243aa5bd5dad; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:12:5] Method: GET; Url: /boards/e1f01df7-d82f-4240-8da4-35aae9da5d03/tasks/8c94d01a-ead8-4269-9d42-9c36d9ccb036; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:12:5] Method: GET; Url: /boards/e1f01df7-d82f-4240-8da4-35aae9da5d03/tasks/35a3d27d-30c5-4736-8532-46319131fdc7; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:12:5] Method: GET; Url: /boards/e1f01df7-d82f-4240-8da4-35aae9da5d03/tasks/e58f1ddc-5780-4c7c-91f7-bcf14300ce82; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:12:5] Method: GET; Url: /boards/e1f01df7-d82f-4240-8da4-35aae9da5d03/tasks/398eab1f-ce03-4c50-aa0f-e2775a974025; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:12:5] Method: DELETE; Url: /boards/e1f01df7-d82f-4240-8da4-35aae9da5d03; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:12:5] Method: GET; Url: /boards/e1f01df7-d82f-4240-8da4-35aae9da5d03/tasks/f7a05ab7-3193-4d09-b87e-243aa5bd5dad; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:12:5] Method: GET; Url: /boards/e1f01df7-d82f-4240-8da4-35aae9da5d03/tasks/e58f1ddc-5780-4c7c-91f7-bcf14300ce82; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:12:5] Method: GET; Url: /boards/e1f01df7-d82f-4240-8da4-35aae9da5d03/tasks/398eab1f-ce03-4c50-aa0f-e2775a974025; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:12:5] Method: GET; Url: /boards/e1f01df7-d82f-4240-8da4-35aae9da5d03/tasks/35a3d27d-30c5-4736-8532-46319131fdc7; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:12:5] Method: GET; Url: /boards/e1f01df7-d82f-4240-8da4-35aae9da5d03/tasks/8c94d01a-ead8-4269-9d42-9c36d9ccb036; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:12:6] Method: DELETE; Url: /boards/aa49b89a-6076-42f5-9988-92cf1cc9890e; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:12:6] Method: GET; Url: /users; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:12:6] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:12:6] Method: GET; Url: /users/36c33f48-ed6a-4d76-a56c-9ed47d7d1bed; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:12:6] Method: DELETE; Url: /users/36c33f48-ed6a-4d76-a56c-9ed47d7d1bed; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:12:6] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:12:6] Method: DELETE; Url: /users/9dd5c89e-731c-4879-a627-fa48d04d94c5; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:12:6] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:12:6] Method: PUT; Url: /users/d06b86a5-73bd-4406-8084-808fe91d81b3; Query parameters: {}; Body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"d06b86a5-73bd-4406-8084-808fe91d81b3"}; Status code: 200
+[2021-07-03 17:12:6] Method: GET; Url: /users/d06b86a5-73bd-4406-8084-808fe91d81b3; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:12:6] Method: DELETE; Url: /users/d06b86a5-73bd-4406-8084-808fe91d81b3; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:12:6] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:12:6] Method: DELETE; Url: /users/becc1182-b652-4cb9-bd53-b94200970ddb; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:12:6] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:12:6] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"458e0439-5603-4e16-899d-f8e5f3f1e8d1"},{"title":"Sprint","order":2,"id":"59bccc19-d780-401d-9cc4-508d17c79635"}]}; Status code: 201
+[2021-07-03 17:12:6] Method: POST; Url: /boards/f4ac2452-4196-4edb-8342-2a0c9ef9ddc9/tasks; Query parameters: {}; Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"f9909b6e-483f-47d0-a7e4-6d4b8e6386e8","boardId":"f4ac2452-4196-4edb-8342-2a0c9ef9ddc9"}; Status code: 201
+[2021-07-03 17:12:6] Method: POST; Url: /boards/f4ac2452-4196-4edb-8342-2a0c9ef9ddc9/tasks; Query parameters: {}; Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"f9909b6e-483f-47d0-a7e4-6d4b8e6386e8","boardId":"f4ac2452-4196-4edb-8342-2a0c9ef9ddc9"}; Status code: 201
+[2021-07-03 17:12:6] Method: DELETE; Url: /users/f9909b6e-483f-47d0-a7e4-6d4b8e6386e8; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:12:6] Method: GET; Url: /boards/f4ac2452-4196-4edb-8342-2a0c9ef9ddc9/tasks/2151934a-4259-4d77-a856-2d3b05c059ba; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:12:6] Method: GET; Url: /boards/f4ac2452-4196-4edb-8342-2a0c9ef9ddc9/tasks/075d4dcf-0983-492f-8e7d-72abb2de220c; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:12:6] Method: DELETE; Url: /boards/f4ac2452-4196-4edb-8342-2a0c9ef9ddc9/tasks/075d4dcf-0983-492f-8e7d-72abb2de220c; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:12:6] Method: DELETE; Url: /boards/f4ac2452-4196-4edb-8342-2a0c9ef9ddc9/tasks/2151934a-4259-4d77-a856-2d3b05c059ba; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:12:6] Method: DELETE; Url: /boards/f4ac2452-4196-4edb-8342-2a0c9ef9ddc9; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:12:6] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"24ba3ea9-9145-4c47-87e7-ad0539f17f68"},{"title":"Sprint","order":2,"id":"98501c4f-a9c6-4dde-ab82-d93e4266abd8"}]}; Status code: 201
+[2021-07-03 17:12:6] Method: POST; Url: /boards/6ff7e8e1-2bfa-45a7-92b0-be04cfe8f85d/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:12:6] Method: GET; Url: /boards/6ff7e8e1-2bfa-45a7-92b0-be04cfe8f85d/tasks; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:12:6] Method: GET; Url: /boards/6ff7e8e1-2bfa-45a7-92b0-be04cfe8f85d/tasks; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:12:6] Method: POST; Url: /boards/6ff7e8e1-2bfa-45a7-92b0-be04cfe8f85d/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:12:6] Method: POST; Url: /boards/6ff7e8e1-2bfa-45a7-92b0-be04cfe8f85d/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:12:6] Method: PUT; Url: /boards/null/tasks/39254f3d-8ecd-4d15-b380-0279e27e49c7; Query parameters: {}; Body: {"id":"39254f3d-8ecd-4d15-b380-0279e27e49c7","title":"Autotest updated task","description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null,"order":0}; Status code: 200
+[2021-07-03 17:12:6] Method: GET; Url: /boards/null/tasks/39254f3d-8ecd-4d15-b380-0279e27e49c7; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:12:6] Method: GET; Url: /boards/6ff7e8e1-2bfa-45a7-92b0-be04cfe8f85d/tasks/d04441aa-eec4-406c-ae58-095d16829c4c; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:12:6] Method: DELETE; Url: /boards/6ff7e8e1-2bfa-45a7-92b0-be04cfe8f85d; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:20:11] Starting Nest application...
+[2021-07-03 17:20:11] AppModule dependencies initialized
+[2021-07-03 17:20:11] MainPageController {}:
+[2021-07-03 17:20:11] Mapped {, GET} route
+[2021-07-03 17:20:11] UsersController {/users}:
+[2021-07-03 17:20:11] Mapped {/users, GET} route
+[2021-07-03 17:20:11] Mapped {/users/:id, GET} route
+[2021-07-03 17:20:11] Mapped {/users, POST} route
+[2021-07-03 17:20:11] Mapped {/users/:id, PUT} route
+[2021-07-03 17:20:11] Mapped {/users/:id, DELETE} route
+[2021-07-03 17:20:11] BoardsController {/boards}:
+[2021-07-03 17:20:11] Mapped {/boards, GET} route
+[2021-07-03 17:20:11] Mapped {/boards/:id, GET} route
+[2021-07-03 17:20:11] Mapped {/boards, POST} route
+[2021-07-03 17:20:11] Mapped {/boards/:id, PUT} route
+[2021-07-03 17:20:11] Mapped {/boards/:id, DELETE} route
+[2021-07-03 17:20:11] TasksController {/boards/:boardId/tasks}:
+[2021-07-03 17:20:11] Mapped {/boards/:boardId/tasks, GET} route
+[2021-07-03 17:20:11] Mapped {/boards/:boardId/tasks/:id, GET} route
+[2021-07-03 17:20:11] Mapped {/boards/:boardId/tasks, POST} route
+[2021-07-03 17:20:11] Mapped {/boards/:boardId/tasks/:id, PUT} route
+[2021-07-03 17:20:11] Mapped {/boards/:boardId/tasks/:id, DELETE} route
+[2021-07-03 17:20:11] Nest application successfully started
+[2021-07-03 17:21:51] Starting Nest application...
+[2021-07-03 17:21:51] AppModule dependencies initialized
+[2021-07-03 17:21:51] MainPageController {}:
+[2021-07-03 17:21:51] Mapped {, GET} route
+[2021-07-03 17:21:51] UsersController {/users}:
+[2021-07-03 17:21:51] Mapped {/users, GET} route
+[2021-07-03 17:21:51] Mapped {/users/:id, GET} route
+[2021-07-03 17:21:51] Mapped {/users, POST} route
+[2021-07-03 17:21:51] Mapped {/users/:id, PUT} route
+[2021-07-03 17:21:51] Mapped {/users/:id, DELETE} route
+[2021-07-03 17:21:51] BoardsController {/boards}:
+[2021-07-03 17:21:51] Mapped {/boards, GET} route
+[2021-07-03 17:21:51] Mapped {/boards/:id, GET} route
+[2021-07-03 17:21:51] Mapped {/boards, POST} route
+[2021-07-03 17:21:51] Mapped {/boards/:id, PUT} route
+[2021-07-03 17:21:51] Mapped {/boards/:id, DELETE} route
+[2021-07-03 17:21:51] TasksController {/boards/:boardId/tasks}:
+[2021-07-03 17:21:51] Mapped {/boards/:boardId/tasks, GET} route
+[2021-07-03 17:21:51] Mapped {/boards/:boardId/tasks/:id, GET} route
+[2021-07-03 17:21:51] Mapped {/boards/:boardId/tasks, POST} route
+[2021-07-03 17:21:51] Mapped {/boards/:boardId/tasks/:id, PUT} route
+[2021-07-03 17:21:51] Mapped {/boards/:boardId/tasks/:id, DELETE} route
+[2021-07-03 17:21:51] Nest application successfully started
+[2021-07-03 17:22:13] Starting Nest application...
+[2021-07-03 17:22:13] AppModule dependencies initialized
+[2021-07-03 17:22:13] MainPageController {}:
+[2021-07-03 17:22:13] Mapped {, GET} route
+[2021-07-03 17:22:13] UsersController {/users}:
+[2021-07-03 17:22:13] Mapped {/users, GET} route
+[2021-07-03 17:22:13] Mapped {/users/:id, GET} route
+[2021-07-03 17:22:13] Mapped {/users, POST} route
+[2021-07-03 17:22:13] Mapped {/users/:id, PUT} route
+[2021-07-03 17:22:13] Mapped {/users/:id, DELETE} route
+[2021-07-03 17:22:13] BoardsController {/boards}:
+[2021-07-03 17:22:13] Mapped {/boards, GET} route
+[2021-07-03 17:22:13] Mapped {/boards/:id, GET} route
+[2021-07-03 17:22:13] Mapped {/boards, POST} route
+[2021-07-03 17:22:13] Mapped {/boards/:id, PUT} route
+[2021-07-03 17:22:13] Mapped {/boards/:id, DELETE} route
+[2021-07-03 17:22:13] TasksController {/boards/:boardId/tasks}:
+[2021-07-03 17:22:13] Mapped {/boards/:boardId/tasks, GET} route
+[2021-07-03 17:22:13] Mapped {/boards/:boardId/tasks, POST} route
+[2021-07-03 17:22:13] Mapped {/boards/:boardId/tasks/:id, GET} route
+[2021-07-03 17:22:13] Mapped {/boards/:boardId/tasks/:id, PUT} route
+[2021-07-03 17:22:13] Mapped {/boards/:boardId/tasks/:id, DELETE} route
+[2021-07-03 17:22:13] Nest application successfully started
+[2021-07-03 17:22:23] Starting Nest application...
+[2021-07-03 17:22:23] AppModule dependencies initialized
+[2021-07-03 17:22:23] MainPageController {}:
+[2021-07-03 17:22:23] Mapped {, GET} route
+[2021-07-03 17:22:23] UsersController {/users}:
+[2021-07-03 17:22:23] Mapped {/users, GET} route
+[2021-07-03 17:22:23] Mapped {/users/:id, GET} route
+[2021-07-03 17:22:23] Mapped {/users, POST} route
+[2021-07-03 17:22:23] Mapped {/users/:id, PUT} route
+[2021-07-03 17:22:23] Mapped {/users/:id, DELETE} route
+[2021-07-03 17:22:23] BoardsController {/boards}:
+[2021-07-03 17:22:23] Mapped {/boards, GET} route
+[2021-07-03 17:22:23] Mapped {/boards/:id, GET} route
+[2021-07-03 17:22:23] Mapped {/boards, POST} route
+[2021-07-03 17:22:23] Mapped {/boards/:id, PUT} route
+[2021-07-03 17:22:23] Mapped {/boards/:id, DELETE} route
+[2021-07-03 17:22:23] TasksController {/boards/:boardId/tasks}:
+[2021-07-03 17:22:23] Mapped {/boards/:boardId/tasks, GET} route
+[2021-07-03 17:22:23] Mapped {/boards/:boardId/tasks, POST} route
+[2021-07-03 17:22:23] Mapped {/boards/:boardId/tasks/:id, GET} route
+[2021-07-03 17:22:23] Mapped {/boards/:boardId/tasks/:id, DELETE} route
+[2021-07-03 17:22:23] Mapped {/boards/:boardId/tasks/:id, PUT} route
+[2021-07-03 17:22:23] Nest application successfully started
+[2021-07-03 17:22:40] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"7a925ccc-d02e-4ddc-a0c4-013d8b649497"},{"title":"Sprint","order":2,"id":"d75bdd14-c010-4178-a319-dbf849202d6f"}]}; Status code: 201
+[2021-07-03 17:22:40] Method: GET; Url: /boards; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:22:40] Method: GET; Url: /boards; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:22:40] Method: GET; Url: /boards/ef8ac28a-1195-4d95-9fa7-9bb64f1548b4; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:22:40] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"0e8be80c-c340-481b-9f65-d49853ae6e0e"},{"title":"Sprint","order":2,"id":"9b3dc889-7781-4c83-80ef-36f4df8483db"}]}; Status code: 201
+[2021-07-03 17:22:40] Method: DELETE; Url: /boards/c0ad7468-042d-4d86-a1da-adda31ff33b0; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:22:40] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"922aba39-ca09-47dd-8d06-4513c73bd862"},{"title":"Sprint","order":2,"id":"cbf00be0-b85e-40b5-b77d-e75bb97ba265"}]}; Status code: 201
+[2021-07-03 17:22:40] Method: PUT; Url: /boards/1f66ecb4-1171-44ec-92ed-d91318b111d6; Query parameters: {}; Body: {"id":"1f66ecb4-1171-44ec-92ed-d91318b111d6","title":"Autotest updated board","columns":[{"title":"Backlog","order":1,"id":"41c1a1aa-8cc0-400c-99e5-0b39feb4bdfc"},{"title":"Sprint","order":2,"id":"039ac964-d69f-41d2-9d7b-907c12b29c97"}]}; Status code: 200
+[2021-07-03 17:22:40] Method: GET; Url: /boards/1f66ecb4-1171-44ec-92ed-d91318b111d6; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:22:40] Method: DELETE; Url: /boards/1f66ecb4-1171-44ec-92ed-d91318b111d6; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:22:40] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"790c2a98-48ac-43cd-a1cf-c6148ddbcc7c"},{"title":"Sprint","order":2,"id":"1663abff-7ac8-4dd5-995f-b37297dc8aa3"}]}; Status code: 201
+[2021-07-03 17:22:40] Method: DELETE; Url: /boards/f438035d-2edf-4a98-8824-f26817c675e2; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:22:40] Method: GET; Url: /boards/f438035d-2edf-4a98-8824-f26817c675e2; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:22:40] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"78d58504-2fb3-4f23-9b67-0f4e8f341a28"},{"title":"Sprint","order":2,"id":"56f21eb0-a638-4bb5-bd3f-ef39bbfbbf24"}]}; Status code: 201
+[2021-07-03 17:22:40] Method: POST; Url: /boards/945ea4d4-9d4c-4cf7-a44e-871362d4e9e1/tasks; Query parameters: {}; Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"945ea4d4-9d4c-4cf7-a44e-871362d4e9e1","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:22:40] Method: POST; Url: /boards/945ea4d4-9d4c-4cf7-a44e-871362d4e9e1/tasks; Query parameters: {}; Body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"945ea4d4-9d4c-4cf7-a44e-871362d4e9e1","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:22:40] Method: POST; Url: /boards/945ea4d4-9d4c-4cf7-a44e-871362d4e9e1/tasks; Query parameters: {}; Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"945ea4d4-9d4c-4cf7-a44e-871362d4e9e1","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:22:40] Method: POST; Url: /boards/945ea4d4-9d4c-4cf7-a44e-871362d4e9e1/tasks; Query parameters: {}; Body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"945ea4d4-9d4c-4cf7-a44e-871362d4e9e1","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:22:40] Method: POST; Url: /boards/945ea4d4-9d4c-4cf7-a44e-871362d4e9e1/tasks; Query parameters: {}; Body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"945ea4d4-9d4c-4cf7-a44e-871362d4e9e1","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:22:40] Method: GET; Url: /boards/945ea4d4-9d4c-4cf7-a44e-871362d4e9e1/tasks/f200bf2e-b4ac-4791-819a-5e68868bba74; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:22:40] Method: GET; Url: /boards/945ea4d4-9d4c-4cf7-a44e-871362d4e9e1/tasks/e83ce7bf-9fa4-44a5-bd66-69541f7387ca; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:22:40] Method: GET; Url: /boards/945ea4d4-9d4c-4cf7-a44e-871362d4e9e1/tasks/9c2a94de-ef1f-4453-b632-7e5a8c3a0ecc; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:22:40] Method: GET; Url: /boards/945ea4d4-9d4c-4cf7-a44e-871362d4e9e1/tasks/9ec6f9c6-8e90-4cdd-9d33-c6b7289c702c; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:22:40] Method: GET; Url: /boards/945ea4d4-9d4c-4cf7-a44e-871362d4e9e1/tasks/a28cf72f-ff79-4826-a729-53f7d04435a1; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:22:40] Method: DELETE; Url: /boards/945ea4d4-9d4c-4cf7-a44e-871362d4e9e1; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:22:40] Method: GET; Url: /boards/945ea4d4-9d4c-4cf7-a44e-871362d4e9e1/tasks/f200bf2e-b4ac-4791-819a-5e68868bba74; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:22:40] Method: GET; Url: /boards/945ea4d4-9d4c-4cf7-a44e-871362d4e9e1/tasks/e83ce7bf-9fa4-44a5-bd66-69541f7387ca; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:22:40] Method: GET; Url: /boards/945ea4d4-9d4c-4cf7-a44e-871362d4e9e1/tasks/a28cf72f-ff79-4826-a729-53f7d04435a1; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:22:40] Method: GET; Url: /boards/945ea4d4-9d4c-4cf7-a44e-871362d4e9e1/tasks/9c2a94de-ef1f-4453-b632-7e5a8c3a0ecc; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:22:40] Method: GET; Url: /boards/945ea4d4-9d4c-4cf7-a44e-871362d4e9e1/tasks/9ec6f9c6-8e90-4cdd-9d33-c6b7289c702c; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:22:40] Method: DELETE; Url: /boards/ef8ac28a-1195-4d95-9fa7-9bb64f1548b4; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:22:40] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"b4f8593e-9013-4b39-87c7-cb5c91a94f71"},{"title":"Sprint","order":2,"id":"14b664e1-fcf3-4863-8bc8-0b11b205ae3f"}]}; Status code: 201
+[2021-07-03 17:22:40] Method: POST; Url: /boards/b40380a8-f3b0-4922-a312-f7e7e0d48019/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:22:40] Method: GET; Url: /boards/b40380a8-f3b0-4922-a312-f7e7e0d48019/tasks; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:22:40] Method: GET; Url: /boards/b40380a8-f3b0-4922-a312-f7e7e0d48019/tasks; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:22:40] Method: POST; Url: /boards/b40380a8-f3b0-4922-a312-f7e7e0d48019/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:22:40] Method: POST; Url: /boards/b40380a8-f3b0-4922-a312-f7e7e0d48019/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:22:40] Method: PUT; Url: /boards/null/tasks/60b1b935-7d3b-4c4f-b0d2-6169545050ca; Query parameters: {}; Body: {"id":"60b1b935-7d3b-4c4f-b0d2-6169545050ca","title":"Autotest updated task","description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null,"order":0}; Status code: 200
+[2021-07-03 17:22:40] Method: GET; Url: /boards/null/tasks/60b1b935-7d3b-4c4f-b0d2-6169545050ca; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:22:40] Method: GET; Url: /boards/b40380a8-f3b0-4922-a312-f7e7e0d48019/tasks/2bbb42ad-b435-4096-a7f3-ab0abff0358f; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:22:40] Method: DELETE; Url: /boards/b40380a8-f3b0-4922-a312-f7e7e0d48019; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:22:41] Method: GET; Url: /users; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:22:41] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:22:41] Method: GET; Url: /users/49fe9785-07f7-4888-9d67-d217ab8bbab4; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:22:41] Method: DELETE; Url: /users/49fe9785-07f7-4888-9d67-d217ab8bbab4; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:22:41] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:22:41] Method: DELETE; Url: /users/73f4c5c0-ab6b-4914-aa35-d434b1d12f82; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:22:41] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:22:41] Method: PUT; Url: /users/10bd6162-fc04-4c59-aea1-7065ea7fe419; Query parameters: {}; Body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"10bd6162-fc04-4c59-aea1-7065ea7fe419"}; Status code: 200
+[2021-07-03 17:22:41] Method: GET; Url: /users/10bd6162-fc04-4c59-aea1-7065ea7fe419; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:22:41] Method: DELETE; Url: /users/10bd6162-fc04-4c59-aea1-7065ea7fe419; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:22:41] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:22:41] Method: DELETE; Url: /users/a956ec76-33d4-44ce-af0d-f30dde59ad1c; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:22:41] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:22:41] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"e59b326d-1612-4127-9185-9366306e9ae5"},{"title":"Sprint","order":2,"id":"06bf7eb1-1e50-4ecf-96aa-536658bdc1a4"}]}; Status code: 201
+[2021-07-03 17:22:41] Method: POST; Url: /boards/5ee68a9c-4f0d-4c8c-8c9a-d70aa8502bd3/tasks; Query parameters: {}; Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"2c075caf-fb6e-47dc-b660-a44a7f39fe4f","boardId":"5ee68a9c-4f0d-4c8c-8c9a-d70aa8502bd3"}; Status code: 201
+[2021-07-03 17:22:41] Method: POST; Url: /boards/5ee68a9c-4f0d-4c8c-8c9a-d70aa8502bd3/tasks; Query parameters: {}; Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"2c075caf-fb6e-47dc-b660-a44a7f39fe4f","boardId":"5ee68a9c-4f0d-4c8c-8c9a-d70aa8502bd3"}; Status code: 201
+[2021-07-03 17:22:41] Method: DELETE; Url: /users/2c075caf-fb6e-47dc-b660-a44a7f39fe4f; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:22:41] Method: GET; Url: /boards/5ee68a9c-4f0d-4c8c-8c9a-d70aa8502bd3/tasks/37ba4bb6-ac97-4f2e-9cbc-cf2e20f96478; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:22:41] Method: GET; Url: /boards/5ee68a9c-4f0d-4c8c-8c9a-d70aa8502bd3/tasks/f5b63490-8051-4f70-9a0d-3349c709a940; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:22:41] Method: DELETE; Url: /boards/5ee68a9c-4f0d-4c8c-8c9a-d70aa8502bd3/tasks/f5b63490-8051-4f70-9a0d-3349c709a940; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:22:41] Method: DELETE; Url: /boards/5ee68a9c-4f0d-4c8c-8c9a-d70aa8502bd3/tasks/37ba4bb6-ac97-4f2e-9cbc-cf2e20f96478; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:22:41] Method: DELETE; Url: /boards/5ee68a9c-4f0d-4c8c-8c9a-d70aa8502bd3; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:23:39] Starting Nest application...
+[2021-07-03 17:23:39] AppModule dependencies initialized
+[2021-07-03 17:23:39] MainPageController {}:
+[2021-07-03 17:23:39] Mapped {, GET} route
+[2021-07-03 17:23:39] UsersController {/users}:
+[2021-07-03 17:23:39] Mapped {/users, GET} route
+[2021-07-03 17:23:39] Mapped {/users/:id, GET} route
+[2021-07-03 17:23:39] Mapped {/users, POST} route
+[2021-07-03 17:23:39] Mapped {/users/:id, PUT} route
+[2021-07-03 17:23:39] Mapped {/users/:id, DELETE} route
+[2021-07-03 17:23:39] BoardsController {/boards}:
+[2021-07-03 17:23:39] Mapped {/boards, GET} route
+[2021-07-03 17:23:39] Mapped {/boards/:id, GET} route
+[2021-07-03 17:23:39] Mapped {/boards, POST} route
+[2021-07-03 17:23:39] Mapped {/boards/:id, PUT} route
+[2021-07-03 17:23:39] Mapped {/boards/:id, DELETE} route
+[2021-07-03 17:23:39] TasksController {/boards/:boardId/tasks}:
+[2021-07-03 17:23:39] Mapped {/boards/:boardId/tasks, GET} route
+[2021-07-03 17:23:39] Mapped {/boards/:boardId/tasks/:id, GET} route
+[2021-07-03 17:23:39] Mapped {/boards/:boardId/tasks, POST} route
+[2021-07-03 17:23:39] Mapped {/boards/:boardId/tasks/:id, PUT} route
+[2021-07-03 17:23:39] Mapped {/boards/:boardId/tasks/:id, DELETE} route
+[2021-07-03 17:23:39] Nest application successfully started
+[2021-07-03 17:23:44] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"7a41bba5-d2fb-40f0-b8c8-0afd8491190e"},{"title":"Sprint","order":2,"id":"9f153ff5-60c4-4e94-a5ef-869d1481080b"}]}; Status code: 201
+[2021-07-03 17:23:44] Method: POST; Url: /boards/8e269b8e-2e78-4bce-a09e-2fb1f337b8cb/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:23:44] Method: GET; Url: /boards/8e269b8e-2e78-4bce-a09e-2fb1f337b8cb/tasks; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:23:44] Method: GET; Url: /boards/8e269b8e-2e78-4bce-a09e-2fb1f337b8cb/tasks; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:23:44] Method: POST; Url: /boards/8e269b8e-2e78-4bce-a09e-2fb1f337b8cb/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:23:44] Method: POST; Url: /boards/8e269b8e-2e78-4bce-a09e-2fb1f337b8cb/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:23:44] Method: PUT; Url: /boards/null/tasks/ba44b34a-9ed4-416f-89fe-e4a8b58b0240; Query parameters: {}; Body: {"id":"ba44b34a-9ed4-416f-89fe-e4a8b58b0240","title":"Autotest updated task","description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null,"order":0}; Status code: 200
+[2021-07-03 17:23:44] Method: GET; Url: /boards/null/tasks/ba44b34a-9ed4-416f-89fe-e4a8b58b0240; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:23:44] Method: GET; Url: /boards/8e269b8e-2e78-4bce-a09e-2fb1f337b8cb/tasks/fa102f7f-7922-41a2-95ac-0519f5827779; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:23:44] Method: DELETE; Url: /boards/8e269b8e-2e78-4bce-a09e-2fb1f337b8cb; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:23:44] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"f7244157-f18f-478e-97e0-9d23d463e639"},{"title":"Sprint","order":2,"id":"9d0b1e4a-2696-44fe-9965-a53c32688f1c"}]}; Status code: 201
+[2021-07-03 17:23:44] Method: GET; Url: /boards; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:23:44] Method: GET; Url: /boards; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:23:44] Method: GET; Url: /boards/9a65a163-2149-4697-a70c-3f22bf12c030; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:23:44] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"077b0b33-2a18-4c68-bf86-4b538bb0c99a"},{"title":"Sprint","order":2,"id":"cf68a71a-178a-4104-8e26-bfd48dc3fde1"}]}; Status code: 201
+[2021-07-03 17:23:44] Method: DELETE; Url: /boards/a65d98e7-c7ed-4c0b-ac5b-fef4fe637fba; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:23:44] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"074cd074-8e3a-47e3-8adf-3f0147f65f82"},{"title":"Sprint","order":2,"id":"50d9c45b-dd3a-4840-924d-18b9fc11bba5"}]}; Status code: 201
+[2021-07-03 17:23:44] Method: PUT; Url: /boards/3fdfd3da-5cb0-4652-b5f8-4815ad848bed; Query parameters: {}; Body: {"id":"3fdfd3da-5cb0-4652-b5f8-4815ad848bed","title":"Autotest updated board","columns":[{"title":"Backlog","order":1,"id":"c5ee6315-fa0a-4e66-91dd-63c790bb4927"},{"title":"Sprint","order":2,"id":"02426186-e51d-4798-b957-2fe909f49ffc"}]}; Status code: 200
+[2021-07-03 17:23:44] Method: GET; Url: /boards/3fdfd3da-5cb0-4652-b5f8-4815ad848bed; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:23:44] Method: DELETE; Url: /boards/3fdfd3da-5cb0-4652-b5f8-4815ad848bed; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:23:44] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"e4129036-51b4-42a3-966a-972656ab2c48"},{"title":"Sprint","order":2,"id":"a2d43da7-06ff-4739-bdb6-a90ea21b775c"}]}; Status code: 201
+[2021-07-03 17:23:44] Method: DELETE; Url: /boards/4804efa3-a63b-43be-af20-08a5c475f2a5; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:23:44] Method: GET; Url: /boards/4804efa3-a63b-43be-af20-08a5c475f2a5; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:23:44] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"f46943ef-a695-4d7e-b348-b3290e16acc7"},{"title":"Sprint","order":2,"id":"652a8e85-633c-4fee-9247-4484aeea5632"}]}; Status code: 201
+[2021-07-03 17:23:44] Method: POST; Url: /boards/3aebd68a-4a54-46ab-814c-729385e343e8/tasks; Query parameters: {}; Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"3aebd68a-4a54-46ab-814c-729385e343e8","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:23:44] Method: POST; Url: /boards/3aebd68a-4a54-46ab-814c-729385e343e8/tasks; Query parameters: {}; Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"3aebd68a-4a54-46ab-814c-729385e343e8","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:23:44] Method: POST; Url: /boards/3aebd68a-4a54-46ab-814c-729385e343e8/tasks; Query parameters: {}; Body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"3aebd68a-4a54-46ab-814c-729385e343e8","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:23:44] Method: POST; Url: /boards/3aebd68a-4a54-46ab-814c-729385e343e8/tasks; Query parameters: {}; Body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"3aebd68a-4a54-46ab-814c-729385e343e8","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:23:44] Method: POST; Url: /boards/3aebd68a-4a54-46ab-814c-729385e343e8/tasks; Query parameters: {}; Body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"3aebd68a-4a54-46ab-814c-729385e343e8","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:23:44] Method: GET; Url: /boards/3aebd68a-4a54-46ab-814c-729385e343e8/tasks/ef6d1d6c-1727-4fdb-8011-9f306651303d; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:23:44] Method: GET; Url: /boards/3aebd68a-4a54-46ab-814c-729385e343e8/tasks/05c81e30-4285-4bc4-a243-cf43e65e31dc; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:23:44] Method: GET; Url: /boards/3aebd68a-4a54-46ab-814c-729385e343e8/tasks/c341fb0e-dc34-4d47-a91b-6e1edae9effd; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:23:44] Method: GET; Url: /boards/3aebd68a-4a54-46ab-814c-729385e343e8/tasks/2860d20d-cf74-4f1e-9695-d5608eeb9091; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:23:44] Method: GET; Url: /boards/3aebd68a-4a54-46ab-814c-729385e343e8/tasks/f7e869c8-3dd4-4a26-b207-d1616acce6bf; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:23:44] Method: DELETE; Url: /boards/3aebd68a-4a54-46ab-814c-729385e343e8; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:23:44] Method: GET; Url: /boards/3aebd68a-4a54-46ab-814c-729385e343e8/tasks/ef6d1d6c-1727-4fdb-8011-9f306651303d; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:23:44] Method: GET; Url: /boards/3aebd68a-4a54-46ab-814c-729385e343e8/tasks/f7e869c8-3dd4-4a26-b207-d1616acce6bf; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:23:44] Method: GET; Url: /boards/3aebd68a-4a54-46ab-814c-729385e343e8/tasks/05c81e30-4285-4bc4-a243-cf43e65e31dc; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:23:44] Method: GET; Url: /boards/3aebd68a-4a54-46ab-814c-729385e343e8/tasks/2860d20d-cf74-4f1e-9695-d5608eeb9091; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:23:44] Method: GET; Url: /boards/3aebd68a-4a54-46ab-814c-729385e343e8/tasks/c341fb0e-dc34-4d47-a91b-6e1edae9effd; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:23:44] Method: DELETE; Url: /boards/9a65a163-2149-4697-a70c-3f22bf12c030; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:23:45] Method: GET; Url: /users; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:23:45] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:23:45] Method: GET; Url: /users/69cde92f-9236-4f1d-a564-c18b16341e10; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:23:45] Method: DELETE; Url: /users/69cde92f-9236-4f1d-a564-c18b16341e10; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:23:45] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:23:45] Method: DELETE; Url: /users/42556747-96d2-4fa6-9e9a-f5b4460105ab; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:23:45] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:23:45] Method: PUT; Url: /users/6492aa9c-6711-4eb2-9268-d34d4c5c1eb0; Query parameters: {}; Body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"6492aa9c-6711-4eb2-9268-d34d4c5c1eb0"}; Status code: 200
+[2021-07-03 17:23:45] Method: GET; Url: /users/6492aa9c-6711-4eb2-9268-d34d4c5c1eb0; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:23:45] Method: DELETE; Url: /users/6492aa9c-6711-4eb2-9268-d34d4c5c1eb0; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:23:45] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:23:45] Method: DELETE; Url: /users/b8f056c1-8ce6-4aec-a268-b3c1ed83700d; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:23:45] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:23:45] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"a229ae68-0e91-4b89-8a5f-700129e244b6"},{"title":"Sprint","order":2,"id":"53d0fc50-6206-436b-9ab8-2db1e4500cdf"}]}; Status code: 201
+[2021-07-03 17:23:45] Method: POST; Url: /boards/5e2e6eaa-2786-4e42-8ae2-fb03cbb8b34a/tasks; Query parameters: {}; Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"9edf23c5-4813-4608-b3b5-2f171a5e867b","boardId":"5e2e6eaa-2786-4e42-8ae2-fb03cbb8b34a"}; Status code: 201
+[2021-07-03 17:23:45] Method: POST; Url: /boards/5e2e6eaa-2786-4e42-8ae2-fb03cbb8b34a/tasks; Query parameters: {}; Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"9edf23c5-4813-4608-b3b5-2f171a5e867b","boardId":"5e2e6eaa-2786-4e42-8ae2-fb03cbb8b34a"}; Status code: 201
+[2021-07-03 17:23:45] Method: DELETE; Url: /users/9edf23c5-4813-4608-b3b5-2f171a5e867b; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:23:45] Method: GET; Url: /boards/5e2e6eaa-2786-4e42-8ae2-fb03cbb8b34a/tasks/a5566f65-fa2d-4417-8677-73e56b68274f; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:23:45] Method: GET; Url: /boards/5e2e6eaa-2786-4e42-8ae2-fb03cbb8b34a/tasks/df5005c9-6f5b-427a-a559-41762d3c33a8; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:23:45] Method: DELETE; Url: /boards/5e2e6eaa-2786-4e42-8ae2-fb03cbb8b34a/tasks/a5566f65-fa2d-4417-8677-73e56b68274f; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:23:45] Method: DELETE; Url: /boards/5e2e6eaa-2786-4e42-8ae2-fb03cbb8b34a/tasks/df5005c9-6f5b-427a-a559-41762d3c33a8; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:23:45] Method: DELETE; Url: /boards/5e2e6eaa-2786-4e42-8ae2-fb03cbb8b34a; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:24:27] Starting Nest application...
+[2021-07-03 17:24:27] AppModule dependencies initialized
+[2021-07-03 17:24:27] MainPageController {}:
+[2021-07-03 17:24:27] Mapped {, GET} route
+[2021-07-03 17:24:27] UsersController {/users}:
+[2021-07-03 17:24:27] Mapped {/users, GET} route
+[2021-07-03 17:24:27] Mapped {/users/:id, GET} route
+[2021-07-03 17:24:27] Mapped {/users, POST} route
+[2021-07-03 17:24:27] Mapped {/users/:id, PUT} route
+[2021-07-03 17:24:27] Mapped {/users/:id, DELETE} route
+[2021-07-03 17:24:27] BoardsController {/boards}:
+[2021-07-03 17:24:27] Mapped {/boards, GET} route
+[2021-07-03 17:24:27] Mapped {/boards/:id, GET} route
+[2021-07-03 17:24:27] Mapped {/boards, POST} route
+[2021-07-03 17:24:27] Mapped {/boards/:id, PUT} route
+[2021-07-03 17:24:27] Mapped {/boards/:id, DELETE} route
+[2021-07-03 17:24:27] TasksController {/boards/:boardId/tasks}:
+[2021-07-03 17:24:27] Mapped {/boards/:boardId/tasks, GET} route
+[2021-07-03 17:24:27] Mapped {/boards/:boardId/tasks/:id, GET} route
+[2021-07-03 17:24:27] Mapped {/boards/:boardId/tasks, POST} route
+[2021-07-03 17:24:27] Mapped {/boards/:boardId/tasks/:id, PUT} route
+[2021-07-03 17:24:27] Mapped {/boards/:boardId/tasks/:id, DELETE} route
+[2021-07-03 17:24:27] Nest application successfully started
+[2021-07-03 17:24:31] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"f43bfb44-b2dd-4506-a423-c42ae55a2505"},{"title":"Sprint","order":2,"id":"57895395-8c28-4cfb-bb23-e7a6ae106d54"}]}; Status code: 201
+[2021-07-03 17:24:32] Method: POST; Url: /boards/2a781075-81b6-4762-aea7-4fb2c2f95eef/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:24:32] Method: GET; Url: /boards/2a781075-81b6-4762-aea7-4fb2c2f95eef/tasks; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:24:32] Method: GET; Url: /boards/2a781075-81b6-4762-aea7-4fb2c2f95eef/tasks; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:24:32] Method: POST; Url: /boards/2a781075-81b6-4762-aea7-4fb2c2f95eef/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:24:32] Method: POST; Url: /boards/2a781075-81b6-4762-aea7-4fb2c2f95eef/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:24:32] Method: PUT; Url: /boards/null/tasks/3e4d43e1-f801-4cb9-a523-1deba1e00f2a; Query parameters: {}; Body: {"id":"3e4d43e1-f801-4cb9-a523-1deba1e00f2a","title":"Autotest updated task","description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null,"order":0}; Status code: 200
+[2021-07-03 17:24:32] Method: GET; Url: /boards/null/tasks/3e4d43e1-f801-4cb9-a523-1deba1e00f2a; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:24:32] Method: GET; Url: /boards/2a781075-81b6-4762-aea7-4fb2c2f95eef/tasks/b7953016-99ac-438c-8749-a6fd32a3b61d; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:24:32] Method: DELETE; Url: /boards/2a781075-81b6-4762-aea7-4fb2c2f95eef; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:24:32] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"f9f79189-e37b-436d-bda9-16425006b021"},{"title":"Sprint","order":2,"id":"fa9620f6-cfb6-4687-bf38-3ebea9b3cf1e"}]}; Status code: 201
+[2021-07-03 17:24:32] Method: GET; Url: /boards; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:24:32] Method: GET; Url: /boards; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:24:32] Method: GET; Url: /boards/189dc3a1-b5a6-4b8d-9fe9-1a4f3f6b1f5b; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:24:32] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"37b4c734-b663-43ff-80ee-013b732de176"},{"title":"Sprint","order":2,"id":"6b8478b9-ee50-40d9-a125-514d949a199a"}]}; Status code: 201
+[2021-07-03 17:24:32] Method: DELETE; Url: /boards/cef4de62-1b72-43a2-927d-e3cc6de071e4; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:24:32] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"ed41dbfd-753b-4616-9cef-d7d28c4cbbf7"},{"title":"Sprint","order":2,"id":"35d03b33-d530-41e0-a242-d42f57878ad8"}]}; Status code: 201
+[2021-07-03 17:24:32] Method: PUT; Url: /boards/d0b0519a-1760-45ea-a0f8-f3c736b09b8f; Query parameters: {}; Body: {"id":"d0b0519a-1760-45ea-a0f8-f3c736b09b8f","title":"Autotest updated board","columns":[{"title":"Backlog","order":1,"id":"9b1deccb-3e61-45ef-a09f-3efbdba4631e"},{"title":"Sprint","order":2,"id":"a305aae9-00e8-48d4-8968-54048255e740"}]}; Status code: 200
+[2021-07-03 17:24:32] Method: GET; Url: /boards/d0b0519a-1760-45ea-a0f8-f3c736b09b8f; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:24:32] Method: DELETE; Url: /boards/d0b0519a-1760-45ea-a0f8-f3c736b09b8f; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:24:32] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"0f749e37-c4ad-4f2e-a845-3c86ae03f3be"},{"title":"Sprint","order":2,"id":"ec321faf-1b3a-4bc2-a0dd-a36f94d701d3"}]}; Status code: 201
+[2021-07-03 17:24:32] Method: DELETE; Url: /boards/bd21f5e1-c3c4-4e23-8e7b-6ce009606ec2; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:24:32] Method: GET; Url: /boards/bd21f5e1-c3c4-4e23-8e7b-6ce009606ec2; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:24:32] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"f83ae25b-8cd7-4121-ae3f-586799c0b9eb"},{"title":"Sprint","order":2,"id":"f6c34020-a29e-4562-b4bb-ffa5888cbac2"}]}; Status code: 201
+[2021-07-03 17:24:32] Method: POST; Url: /boards/0f507592-fe64-41c7-86bf-80c548a13ed2/tasks; Query parameters: {}; Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"0f507592-fe64-41c7-86bf-80c548a13ed2","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:24:32] Method: POST; Url: /boards/0f507592-fe64-41c7-86bf-80c548a13ed2/tasks; Query parameters: {}; Body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"0f507592-fe64-41c7-86bf-80c548a13ed2","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:24:32] Method: POST; Url: /boards/0f507592-fe64-41c7-86bf-80c548a13ed2/tasks; Query parameters: {}; Body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"0f507592-fe64-41c7-86bf-80c548a13ed2","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:24:32] Method: POST; Url: /boards/0f507592-fe64-41c7-86bf-80c548a13ed2/tasks; Query parameters: {}; Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"0f507592-fe64-41c7-86bf-80c548a13ed2","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:24:32] Method: POST; Url: /boards/0f507592-fe64-41c7-86bf-80c548a13ed2/tasks; Query parameters: {}; Body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"0f507592-fe64-41c7-86bf-80c548a13ed2","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:24:32] Method: GET; Url: /boards/0f507592-fe64-41c7-86bf-80c548a13ed2/tasks/1f408b58-e8a1-4296-91de-e8a11de3dedc; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:24:32] Method: GET; Url: /boards/0f507592-fe64-41c7-86bf-80c548a13ed2/tasks/0a66a633-98c7-4799-a390-f6dcd61d8b69; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:24:32] Method: GET; Url: /boards/0f507592-fe64-41c7-86bf-80c548a13ed2/tasks/1113ad2a-8fad-432f-9e92-4a683dd13237; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:24:32] Method: GET; Url: /boards/0f507592-fe64-41c7-86bf-80c548a13ed2/tasks/c804af11-f24e-4836-af64-b22c77355f4f; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:24:32] Method: GET; Url: /boards/0f507592-fe64-41c7-86bf-80c548a13ed2/tasks/75dcf93f-d0f3-486d-a7f5-a26727e46faa; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:24:32] Method: DELETE; Url: /boards/0f507592-fe64-41c7-86bf-80c548a13ed2; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:24:32] Method: GET; Url: /boards/0f507592-fe64-41c7-86bf-80c548a13ed2/tasks/1f408b58-e8a1-4296-91de-e8a11de3dedc; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:24:32] Method: GET; Url: /boards/0f507592-fe64-41c7-86bf-80c548a13ed2/tasks/0a66a633-98c7-4799-a390-f6dcd61d8b69; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:24:32] Method: GET; Url: /boards/0f507592-fe64-41c7-86bf-80c548a13ed2/tasks/1113ad2a-8fad-432f-9e92-4a683dd13237; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:24:32] Method: GET; Url: /boards/0f507592-fe64-41c7-86bf-80c548a13ed2/tasks/c804af11-f24e-4836-af64-b22c77355f4f; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:24:32] Method: GET; Url: /boards/0f507592-fe64-41c7-86bf-80c548a13ed2/tasks/75dcf93f-d0f3-486d-a7f5-a26727e46faa; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:24:32] Method: DELETE; Url: /boards/189dc3a1-b5a6-4b8d-9fe9-1a4f3f6b1f5b; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:24:32] Method: GET; Url: /users; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:24:32] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:24:32] Method: GET; Url: /users/99f2501c-4c6f-4472-bd61-0aa4ecfd3bfe; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:24:32] Method: DELETE; Url: /users/99f2501c-4c6f-4472-bd61-0aa4ecfd3bfe; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:24:32] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:24:32] Method: DELETE; Url: /users/f31ef85e-7b20-474e-a4d4-75024aff4163; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:24:32] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:24:32] Method: PUT; Url: /users/5e17c88e-2b5d-4918-b391-40b3c00e4b33; Query parameters: {}; Body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"5e17c88e-2b5d-4918-b391-40b3c00e4b33"}; Status code: 200
+[2021-07-03 17:24:32] Method: GET; Url: /users/5e17c88e-2b5d-4918-b391-40b3c00e4b33; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:24:32] Method: DELETE; Url: /users/5e17c88e-2b5d-4918-b391-40b3c00e4b33; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:24:32] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:24:32] Method: DELETE; Url: /users/b99ffd29-ef95-493a-92dd-81b3d9c7ed91; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:24:32] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:24:32] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"041387e4-1419-4785-80fc-b4f57110e3cc"},{"title":"Sprint","order":2,"id":"f185a1e1-c07b-4902-80ea-d062dfc07ea6"}]}; Status code: 201
+[2021-07-03 17:24:32] Method: POST; Url: /boards/931f4ee5-a45e-452c-8bc2-ab0f4bac0fd9/tasks; Query parameters: {}; Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"74d6751b-7e39-4ba9-b17a-df41db03efd6","boardId":"931f4ee5-a45e-452c-8bc2-ab0f4bac0fd9"}; Status code: 201
+[2021-07-03 17:24:32] Method: POST; Url: /boards/931f4ee5-a45e-452c-8bc2-ab0f4bac0fd9/tasks; Query parameters: {}; Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"74d6751b-7e39-4ba9-b17a-df41db03efd6","boardId":"931f4ee5-a45e-452c-8bc2-ab0f4bac0fd9"}; Status code: 201
+[2021-07-03 17:24:32] Method: DELETE; Url: /users/74d6751b-7e39-4ba9-b17a-df41db03efd6; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:24:32] Method: GET; Url: /boards/931f4ee5-a45e-452c-8bc2-ab0f4bac0fd9/tasks/e44900ec-d739-4390-813c-711a7e1ea634; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:24:32] Method: GET; Url: /boards/931f4ee5-a45e-452c-8bc2-ab0f4bac0fd9/tasks/1a933b7d-b9f5-4855-855a-b79c36da85d0; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:24:32] Method: DELETE; Url: /boards/931f4ee5-a45e-452c-8bc2-ab0f4bac0fd9/tasks/1a933b7d-b9f5-4855-855a-b79c36da85d0; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:24:32] Method: DELETE; Url: /boards/931f4ee5-a45e-452c-8bc2-ab0f4bac0fd9/tasks/e44900ec-d739-4390-813c-711a7e1ea634; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:24:32] Method: DELETE; Url: /boards/931f4ee5-a45e-452c-8bc2-ab0f4bac0fd9; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:25:18] Starting Nest application...
+[2021-07-03 17:25:18] AppModule dependencies initialized
+[2021-07-03 17:25:18] MainPageController {}:
+[2021-07-03 17:25:18] Mapped {, GET} route
+[2021-07-03 17:25:18] UsersController {/users}:
+[2021-07-03 17:25:18] Mapped {/users, GET} route
+[2021-07-03 17:25:18] Mapped {/users/:id, GET} route
+[2021-07-03 17:25:18] Mapped {/users, POST} route
+[2021-07-03 17:25:18] Mapped {/users/:id, PUT} route
+[2021-07-03 17:25:18] Mapped {/users/:id, DELETE} route
+[2021-07-03 17:25:18] BoardsController {/boards}:
+[2021-07-03 17:25:18] Mapped {/boards, GET} route
+[2021-07-03 17:25:18] Mapped {/boards/:id, GET} route
+[2021-07-03 17:25:18] Mapped {/boards, POST} route
+[2021-07-03 17:25:18] Mapped {/boards/:id, PUT} route
+[2021-07-03 17:25:18] Mapped {/boards/:id, DELETE} route
+[2021-07-03 17:25:18] TasksController {/boards/:boardId/tasks}:
+[2021-07-03 17:25:18] Mapped {/boards/:boardId/tasks, GET} route
+[2021-07-03 17:25:18] Mapped {/boards/:boardId/tasks/:id, GET} route
+[2021-07-03 17:25:18] Mapped {/boards/:boardId/tasks, POST} route
+[2021-07-03 17:25:18] Mapped {/boards/:boardId/tasks/:id, PUT} route
+[2021-07-03 17:25:18] Mapped {/boards/:boardId/tasks/:id, DELETE} route
+[2021-07-03 17:25:18] Nest application successfully started
+[2021-07-03 17:25:21] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"d2cbf347-c01b-4ef4-909c-bdedfc47a984"},{"title":"Sprint","order":2,"id":"00556f8f-c100-49e4-98aa-41924b3d5c97"}]}; Status code: 201
+[2021-07-03 17:25:21] Method: POST; Url: /boards/fa6897d8-7320-4b66-a7ac-d9331718ebf5/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:25:21] Method: GET; Url: /boards/fa6897d8-7320-4b66-a7ac-d9331718ebf5/tasks; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:25:21] Method: GET; Url: /boards/fa6897d8-7320-4b66-a7ac-d9331718ebf5/tasks; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:25:21] Method: POST; Url: /boards/fa6897d8-7320-4b66-a7ac-d9331718ebf5/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:25:21] Method: POST; Url: /boards/fa6897d8-7320-4b66-a7ac-d9331718ebf5/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:25:21] Method: PUT; Url: /boards/null/tasks/42507d0a-93d1-4a2b-a104-3cc3ad6a8fb4; Query parameters: {}; Body: {"id":"42507d0a-93d1-4a2b-a104-3cc3ad6a8fb4","title":"Autotest updated task","description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null,"order":0}; Status code: 200
+[2021-07-03 17:25:21] Method: GET; Url: /boards/null/tasks/42507d0a-93d1-4a2b-a104-3cc3ad6a8fb4; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:25:21] Method: GET; Url: /boards/fa6897d8-7320-4b66-a7ac-d9331718ebf5/tasks/83ce6751-ddd4-4510-9f28-4db453c4fc09; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:25:21] Method: DELETE; Url: /boards/fa6897d8-7320-4b66-a7ac-d9331718ebf5; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:25:21] Method: GET; Url: /users; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:25:21] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:25:21] Method: GET; Url: /users/b43d1634-e074-4b72-be28-3dd9d8b26594; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:25:21] Method: DELETE; Url: /users/b43d1634-e074-4b72-be28-3dd9d8b26594; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:25:21] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:25:21] Method: DELETE; Url: /users/7277d729-ba35-4f32-87f9-be4cd1635841; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:25:21] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:25:21] Method: PUT; Url: /users/36645852-c41b-458e-9e7a-afe9a624fe17; Query parameters: {}; Body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"36645852-c41b-458e-9e7a-afe9a624fe17"}; Status code: 200
+[2021-07-03 17:25:21] Method: GET; Url: /users/36645852-c41b-458e-9e7a-afe9a624fe17; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:25:21] Method: DELETE; Url: /users/36645852-c41b-458e-9e7a-afe9a624fe17; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:25:21] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:25:21] Method: DELETE; Url: /users/9ea4569e-166d-41f2-8d5e-a4795cc52a29; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:25:21] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:25:21] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"aa28da77-11ec-4949-bd7d-6ac3ced4ef96"},{"title":"Sprint","order":2,"id":"4c89de7f-749c-4808-b37b-3ccf35ff7e65"}]}; Status code: 201
+[2021-07-03 17:25:21] Method: POST; Url: /boards/a8177c26-a021-45ee-8a5a-f3eb25915ed4/tasks; Query parameters: {}; Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"4163a0c0-b040-4f4a-aa88-f004ff38ba73","boardId":"a8177c26-a021-45ee-8a5a-f3eb25915ed4"}; Status code: 201
+[2021-07-03 17:25:21] Method: POST; Url: /boards/a8177c26-a021-45ee-8a5a-f3eb25915ed4/tasks; Query parameters: {}; Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"4163a0c0-b040-4f4a-aa88-f004ff38ba73","boardId":"a8177c26-a021-45ee-8a5a-f3eb25915ed4"}; Status code: 201
+[2021-07-03 17:25:21] Method: DELETE; Url: /users/4163a0c0-b040-4f4a-aa88-f004ff38ba73; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:25:21] Method: GET; Url: /boards/a8177c26-a021-45ee-8a5a-f3eb25915ed4/tasks/4b3ef7d4-b383-4015-9e31-e4e7bdeeb26c; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:25:21] Method: GET; Url: /boards/a8177c26-a021-45ee-8a5a-f3eb25915ed4/tasks/26eefe37-5910-4f1d-ac87-9e1c337fea19; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:25:21] Method: DELETE; Url: /boards/a8177c26-a021-45ee-8a5a-f3eb25915ed4/tasks/26eefe37-5910-4f1d-ac87-9e1c337fea19; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:25:21] Method: DELETE; Url: /boards/a8177c26-a021-45ee-8a5a-f3eb25915ed4/tasks/4b3ef7d4-b383-4015-9e31-e4e7bdeeb26c; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:25:21] Method: DELETE; Url: /boards/a8177c26-a021-45ee-8a5a-f3eb25915ed4; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:25:22] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"af4ac885-ac86-467c-9562-45c383ba23fe"},{"title":"Sprint","order":2,"id":"0a0217b4-38aa-4fb0-b0cf-2fdf2c5a402d"}]}; Status code: 201
+[2021-07-03 17:25:22] Method: GET; Url: /boards; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:25:22] Method: GET; Url: /boards; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:25:22] Method: GET; Url: /boards/320346e5-8314-41f2-8bf9-90b55bc30999; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:25:22] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"20211b7d-d39d-4b9f-a80b-c9efcd623d80"},{"title":"Sprint","order":2,"id":"86957503-6849-4822-b56d-56a00a7ce6b8"}]}; Status code: 201
+[2021-07-03 17:25:22] Method: DELETE; Url: /boards/83e36c58-6c56-4166-87ec-5705ff9b08ad; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:25:22] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"a0476908-4dd4-49e7-8db7-eb28ce491d34"},{"title":"Sprint","order":2,"id":"5e0939d4-36cb-4566-b875-4c0d92c2dda1"}]}; Status code: 201
+[2021-07-03 17:25:22] Method: PUT; Url: /boards/35c98935-891f-4aa6-8515-c1a19d34d4a5; Query parameters: {}; Body: {"id":"35c98935-891f-4aa6-8515-c1a19d34d4a5","title":"Autotest updated board","columns":[{"title":"Backlog","order":1,"id":"c0b2ec15-c2f0-4218-9f14-0e89cbbaf5a3"},{"title":"Sprint","order":2,"id":"42caee14-c96f-4366-88be-7f8265838d85"}]}; Status code: 200
+[2021-07-03 17:25:22] Method: GET; Url: /boards/35c98935-891f-4aa6-8515-c1a19d34d4a5; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:25:22] Method: DELETE; Url: /boards/35c98935-891f-4aa6-8515-c1a19d34d4a5; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:25:22] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"b8530f99-b6ce-4417-88c5-79c8547fb692"},{"title":"Sprint","order":2,"id":"73fbd626-8769-4348-b0cf-6cf2b388ce98"}]}; Status code: 201
+[2021-07-03 17:25:22] Method: DELETE; Url: /boards/f1edfd86-12e8-43ac-934b-4e180ac84158; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:25:22] Method: GET; Url: /boards/f1edfd86-12e8-43ac-934b-4e180ac84158; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:25:22] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"77ecb5ba-cfdd-4970-a193-8c0f6f4bd900"},{"title":"Sprint","order":2,"id":"62a12671-0728-4e97-81f8-d64e3c10b9eb"}]}; Status code: 201
+[2021-07-03 17:25:22] Method: POST; Url: /boards/a22c0910-6f63-44d3-939e-d5f1e63e945a/tasks; Query parameters: {}; Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"a22c0910-6f63-44d3-939e-d5f1e63e945a","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:25:22] Method: POST; Url: /boards/a22c0910-6f63-44d3-939e-d5f1e63e945a/tasks; Query parameters: {}; Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"a22c0910-6f63-44d3-939e-d5f1e63e945a","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:25:22] Method: POST; Url: /boards/a22c0910-6f63-44d3-939e-d5f1e63e945a/tasks; Query parameters: {}; Body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"a22c0910-6f63-44d3-939e-d5f1e63e945a","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:25:22] Method: POST; Url: /boards/a22c0910-6f63-44d3-939e-d5f1e63e945a/tasks; Query parameters: {}; Body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"a22c0910-6f63-44d3-939e-d5f1e63e945a","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:25:22] Method: POST; Url: /boards/a22c0910-6f63-44d3-939e-d5f1e63e945a/tasks; Query parameters: {}; Body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"a22c0910-6f63-44d3-939e-d5f1e63e945a","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:25:22] Method: GET; Url: /boards/a22c0910-6f63-44d3-939e-d5f1e63e945a/tasks/f5b05b85-51a4-4deb-a1f4-87d38ef9ec50; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:25:22] Method: GET; Url: /boards/a22c0910-6f63-44d3-939e-d5f1e63e945a/tasks/8c6c2c86-0144-4c4c-b8b2-4ee38f3a1e1e; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:25:22] Method: GET; Url: /boards/a22c0910-6f63-44d3-939e-d5f1e63e945a/tasks/04251b34-859d-43b3-a9f7-d1a5e454bd19; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:25:22] Method: GET; Url: /boards/a22c0910-6f63-44d3-939e-d5f1e63e945a/tasks/1cbaf9b2-5b12-49ee-89fd-e428f06827de; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:25:22] Method: GET; Url: /boards/a22c0910-6f63-44d3-939e-d5f1e63e945a/tasks/ed8a8fbe-5911-4964-a16f-068ab35fcd45; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:25:22] Method: DELETE; Url: /boards/a22c0910-6f63-44d3-939e-d5f1e63e945a; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:25:22] Method: GET; Url: /boards/a22c0910-6f63-44d3-939e-d5f1e63e945a/tasks/f5b05b85-51a4-4deb-a1f4-87d38ef9ec50; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:25:22] Method: GET; Url: /boards/a22c0910-6f63-44d3-939e-d5f1e63e945a/tasks/8c6c2c86-0144-4c4c-b8b2-4ee38f3a1e1e; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:25:22] Method: GET; Url: /boards/a22c0910-6f63-44d3-939e-d5f1e63e945a/tasks/04251b34-859d-43b3-a9f7-d1a5e454bd19; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:25:22] Method: GET; Url: /boards/a22c0910-6f63-44d3-939e-d5f1e63e945a/tasks/1cbaf9b2-5b12-49ee-89fd-e428f06827de; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:25:22] Method: GET; Url: /boards/a22c0910-6f63-44d3-939e-d5f1e63e945a/tasks/ed8a8fbe-5911-4964-a16f-068ab35fcd45; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:25:22] Method: DELETE; Url: /boards/320346e5-8314-41f2-8bf9-90b55bc30999; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:26:46] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"72ab7993-e6ab-409f-b937-21ab190b5e2b"},{"title":"Sprint","order":2,"id":"2d6a218e-e101-432e-a904-ad23a452dc26"}]}; Status code: 201
+[2021-07-03 17:26:50] Method: POST; Url: /boards/be7f81ab-2ac4-4be3-a9c5-04bd6de054c6/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:26:50] Method: GET; Url: /boards/be7f81ab-2ac4-4be3-a9c5-04bd6de054c6/tasks; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:26:50] Method: GET; Url: /boards/be7f81ab-2ac4-4be3-a9c5-04bd6de054c6/tasks; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:26:50] Method: POST; Url: /boards/be7f81ab-2ac4-4be3-a9c5-04bd6de054c6/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:26:50] Method: POST; Url: /boards/be7f81ab-2ac4-4be3-a9c5-04bd6de054c6/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:26:50] Method: PUT; Url: /boards/null/tasks/2a46270e-c6aa-460b-8f0b-b4f3a59e0cd1; Query parameters: {}; Body: {"id":"2a46270e-c6aa-460b-8f0b-b4f3a59e0cd1","title":"Autotest updated task","description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null,"order":0}; Status code: 200
+[2021-07-03 17:26:50] Method: GET; Url: /boards/null/tasks/2a46270e-c6aa-460b-8f0b-b4f3a59e0cd1; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:26:50] Method: GET; Url: /boards/be7f81ab-2ac4-4be3-a9c5-04bd6de054c6/tasks/1da42b8b-8aaf-4d08-bec2-e3612305e8e7; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:26:50] Method: DELETE; Url: /boards/be7f81ab-2ac4-4be3-a9c5-04bd6de054c6; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:26:51] Starting Nest application...
+[2021-07-03 17:26:51] AppModule dependencies initialized
+[2021-07-03 17:26:51] MainPageController {}:
+[2021-07-03 17:26:51] Mapped {, GET} route
+[2021-07-03 17:26:51] UsersController {/users}:
+[2021-07-03 17:26:51] Mapped {/users, GET} route
+[2021-07-03 17:26:51] Mapped {/users/:id, GET} route
+[2021-07-03 17:26:51] Mapped {/users, POST} route
+[2021-07-03 17:26:51] Mapped {/users/:id, PUT} route
+[2021-07-03 17:26:51] Mapped {/users/:id, DELETE} route
+[2021-07-03 17:26:51] BoardsController {/boards}:
+[2021-07-03 17:26:51] Mapped {/boards, GET} route
+[2021-07-03 17:26:51] Mapped {/boards/:id, GET} route
+[2021-07-03 17:26:51] Mapped {/boards, POST} route
+[2021-07-03 17:26:51] Mapped {/boards/:id, PUT} route
+[2021-07-03 17:26:51] Mapped {/boards/:id, DELETE} route
+[2021-07-03 17:26:51] TasksController {/boards/:boardId/tasks}:
+[2021-07-03 17:26:51] Mapped {/boards/:boardId/tasks, GET} route
+[2021-07-03 17:26:51] Mapped {/boards/:boardId/tasks/:id, GET} route
+[2021-07-03 17:26:51] Mapped {/boards/:boardId/tasks, POST} route
+[2021-07-03 17:26:51] Mapped {/boards/:boardId/tasks/:id, PUT} route
+[2021-07-03 17:26:51] Mapped {/boards/:boardId/tasks/:id, DELETE} route
+[2021-07-03 17:26:51] Nest application successfully started
+[2021-07-03 17:26:58] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"5be2e983-ecfa-466a-a103-bc35101b58d1"},{"title":"Sprint","order":2,"id":"51b5c38f-60ca-4f79-9bad-7c8570bbb46a"}]}; Status code: 201
+[2021-07-03 17:26:58] Method: POST; Url: /boards/d6e3b230-8728-4a27-9ef9-8856b04e03fc/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:26:58] Method: GET; Url: /boards/d6e3b230-8728-4a27-9ef9-8856b04e03fc/tasks; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:26:58] Method: GET; Url: /boards/d6e3b230-8728-4a27-9ef9-8856b04e03fc/tasks; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:26:58] Method: POST; Url: /boards/d6e3b230-8728-4a27-9ef9-8856b04e03fc/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:26:58] Method: POST; Url: /boards/d6e3b230-8728-4a27-9ef9-8856b04e03fc/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:26:58] Method: PUT; Url: /boards/null/tasks/52e324d7-b7c6-4f95-aa08-5e9d716da12a; Query parameters: {}; Body: {"id":"52e324d7-b7c6-4f95-aa08-5e9d716da12a","title":"Autotest updated task","description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null,"order":0}; Status code: 200
+[2021-07-03 17:26:58] Method: GET; Url: /boards/null/tasks/52e324d7-b7c6-4f95-aa08-5e9d716da12a; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:26:58] Method: GET; Url: /boards/d6e3b230-8728-4a27-9ef9-8856b04e03fc/tasks/79666c0e-d219-446a-a308-32978b16e486; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:26:58] Method: DELETE; Url: /boards/d6e3b230-8728-4a27-9ef9-8856b04e03fc; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:26:58] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"2e83f884-7ceb-4d5b-8c19-01100b227ee9"},{"title":"Sprint","order":2,"id":"2b7086a3-ae52-45e9-876c-6ef3786697c9"}]}; Status code: 201
+[2021-07-03 17:26:58] Method: GET; Url: /boards; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:26:58] Method: GET; Url: /boards; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:26:58] Method: GET; Url: /boards/0f6ee71b-a892-41ed-a7d4-428179a161b5; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:26:58] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"a8c4fb7d-2f95-4eec-9efb-f45c1ee02877"},{"title":"Sprint","order":2,"id":"eb15ebf6-cc8a-4873-a3d7-af58330a42c4"}]}; Status code: 201
+[2021-07-03 17:26:58] Method: DELETE; Url: /boards/f667a44b-8174-408b-a6ed-a67ee8ed98ba; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:26:58] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"b621a693-36bf-4958-af99-fbfdca0ad8bb"},{"title":"Sprint","order":2,"id":"371b8bca-6a1b-4b14-ba39-d661a97a57a6"}]}; Status code: 201
+[2021-07-03 17:26:58] Method: PUT; Url: /boards/352a7914-3e04-4e17-9a4c-2e3947c2e32d; Query parameters: {}; Body: {"id":"352a7914-3e04-4e17-9a4c-2e3947c2e32d","title":"Autotest updated board","columns":[{"title":"Backlog","order":1,"id":"0ee9257d-8cb6-4aa3-9cdd-7ba92f07ea18"},{"title":"Sprint","order":2,"id":"19b53bb4-fac6-4852-b0c8-5120f4a5405b"}]}; Status code: 200
+[2021-07-03 17:26:58] Method: GET; Url: /boards/352a7914-3e04-4e17-9a4c-2e3947c2e32d; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:26:58] Method: DELETE; Url: /boards/352a7914-3e04-4e17-9a4c-2e3947c2e32d; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:26:58] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"09d8a6e9-a31f-449f-9dda-f0ade3ae8ff8"},{"title":"Sprint","order":2,"id":"d551b5af-704a-4938-b59c-c7563f732174"}]}; Status code: 201
+[2021-07-03 17:26:58] Method: DELETE; Url: /boards/82a27ead-2e9d-4268-a1b2-5ccdce19120b; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:26:58] Method: GET; Url: /boards/82a27ead-2e9d-4268-a1b2-5ccdce19120b; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:26:58] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"4304b61d-fa0e-4248-bf6c-a5042cc2f7c8"},{"title":"Sprint","order":2,"id":"60910c5d-2bb8-4937-88be-1ce3ff3bf2cd"}]}; Status code: 201
+[2021-07-03 17:26:58] Method: POST; Url: /boards/95e090dc-ce34-4610-846f-9651fd2e3b84/tasks; Query parameters: {}; Body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"95e090dc-ce34-4610-846f-9651fd2e3b84","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:26:58] Method: POST; Url: /boards/95e090dc-ce34-4610-846f-9651fd2e3b84/tasks; Query parameters: {}; Body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"95e090dc-ce34-4610-846f-9651fd2e3b84","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:26:58] Method: POST; Url: /boards/95e090dc-ce34-4610-846f-9651fd2e3b84/tasks; Query parameters: {}; Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"95e090dc-ce34-4610-846f-9651fd2e3b84","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:26:58] Method: POST; Url: /boards/95e090dc-ce34-4610-846f-9651fd2e3b84/tasks; Query parameters: {}; Body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"95e090dc-ce34-4610-846f-9651fd2e3b84","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:26:58] Method: POST; Url: /boards/95e090dc-ce34-4610-846f-9651fd2e3b84/tasks; Query parameters: {}; Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"95e090dc-ce34-4610-846f-9651fd2e3b84","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:26:58] Method: GET; Url: /boards/95e090dc-ce34-4610-846f-9651fd2e3b84/tasks/25662d16-9478-47de-bff5-73abab8113e4; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:26:58] Method: GET; Url: /boards/95e090dc-ce34-4610-846f-9651fd2e3b84/tasks/01d28cab-4fbd-4299-8574-f8a8baeec24b; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:26:58] Method: GET; Url: /boards/95e090dc-ce34-4610-846f-9651fd2e3b84/tasks/8da00176-dc5c-4ce3-8351-f956a0829ff2; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:26:58] Method: GET; Url: /boards/95e090dc-ce34-4610-846f-9651fd2e3b84/tasks/adfd9b32-b5e8-4c4c-976d-44e21abbb9e5; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:26:58] Method: GET; Url: /boards/95e090dc-ce34-4610-846f-9651fd2e3b84/tasks/78377b70-57c5-4cb8-8f47-94aaaa85555a; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:26:58] Method: DELETE; Url: /boards/95e090dc-ce34-4610-846f-9651fd2e3b84; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:26:58] Method: GET; Url: /boards/95e090dc-ce34-4610-846f-9651fd2e3b84/tasks/25662d16-9478-47de-bff5-73abab8113e4; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:26:58] Method: GET; Url: /boards/95e090dc-ce34-4610-846f-9651fd2e3b84/tasks/01d28cab-4fbd-4299-8574-f8a8baeec24b; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:26:58] Method: GET; Url: /boards/95e090dc-ce34-4610-846f-9651fd2e3b84/tasks/8da00176-dc5c-4ce3-8351-f956a0829ff2; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:26:58] Method: GET; Url: /boards/95e090dc-ce34-4610-846f-9651fd2e3b84/tasks/adfd9b32-b5e8-4c4c-976d-44e21abbb9e5; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:26:58] Method: GET; Url: /boards/95e090dc-ce34-4610-846f-9651fd2e3b84/tasks/78377b70-57c5-4cb8-8f47-94aaaa85555a; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:26:58] Method: DELETE; Url: /boards/0f6ee71b-a892-41ed-a7d4-428179a161b5; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:26:58] Method: GET; Url: /users; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:26:58] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:26:58] Method: GET; Url: /users/18c4d2fb-f9a3-4c5a-957a-ca0eef809a22; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:26:58] Method: DELETE; Url: /users/18c4d2fb-f9a3-4c5a-957a-ca0eef809a22; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:26:58] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:26:58] Method: DELETE; Url: /users/046ca0d7-6c10-4a8c-9746-c16f9ad48068; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:26:58] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:26:58] Method: PUT; Url: /users/a857e603-ca08-4f90-8e9c-aa18105512a2; Query parameters: {}; Body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"a857e603-ca08-4f90-8e9c-aa18105512a2"}; Status code: 200
+[2021-07-03 17:26:58] Method: GET; Url: /users/a857e603-ca08-4f90-8e9c-aa18105512a2; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:26:58] Method: DELETE; Url: /users/a857e603-ca08-4f90-8e9c-aa18105512a2; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:26:58] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:26:58] Method: DELETE; Url: /users/101c09ca-b4bb-455d-99f8-300841b8441a; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:26:58] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:26:58] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"a4b2dc94-5482-4eea-b0b2-705b9fa0c785"},{"title":"Sprint","order":2,"id":"99ed6fce-c1cc-4685-9e67-dc57988462ae"}]}; Status code: 201
+[2021-07-03 17:26:58] Method: POST; Url: /boards/0784acfa-2af1-461f-b9b6-05776b801c81/tasks; Query parameters: {}; Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"e48990ce-83b0-4fff-a96c-69363c9ae8d3","boardId":"0784acfa-2af1-461f-b9b6-05776b801c81"}; Status code: 201
+[2021-07-03 17:26:58] Method: POST; Url: /boards/0784acfa-2af1-461f-b9b6-05776b801c81/tasks; Query parameters: {}; Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"e48990ce-83b0-4fff-a96c-69363c9ae8d3","boardId":"0784acfa-2af1-461f-b9b6-05776b801c81"}; Status code: 201
+[2021-07-03 17:26:58] Method: DELETE; Url: /users/e48990ce-83b0-4fff-a96c-69363c9ae8d3; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:26:58] Method: GET; Url: /boards/0784acfa-2af1-461f-b9b6-05776b801c81/tasks/53991d87-ad62-4cc8-a8ac-2990d7e4ab72; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:26:58] Method: GET; Url: /boards/0784acfa-2af1-461f-b9b6-05776b801c81/tasks/3c47808a-6f6c-4d30-ad63-9dab5be4bc3a; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:26:58] Method: DELETE; Url: /boards/0784acfa-2af1-461f-b9b6-05776b801c81/tasks/53991d87-ad62-4cc8-a8ac-2990d7e4ab72; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:26:58] Method: DELETE; Url: /boards/0784acfa-2af1-461f-b9b6-05776b801c81/tasks/3c47808a-6f6c-4d30-ad63-9dab5be4bc3a; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:26:58] Method: DELETE; Url: /boards/0784acfa-2af1-461f-b9b6-05776b801c81; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:30:58] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"97c40027-95ed-4560-bfb0-47b03b02f0d0"},{"title":"Sprint","order":2,"id":"3810aea5-a047-4562-b095-2e44416fac6e"}]}; Status code: 201
+[2021-07-03 17:30:58] Method: POST; Url: /boards/a972b43d-8ce3-4a67-9822-37bcafcdd644/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:30:58] Method: GET; Url: /boards/a972b43d-8ce3-4a67-9822-37bcafcdd644/tasks; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:30:58] Method: GET; Url: /boards/a972b43d-8ce3-4a67-9822-37bcafcdd644/tasks; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:30:58] Method: POST; Url: /boards/a972b43d-8ce3-4a67-9822-37bcafcdd644/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:30:58] Method: POST; Url: /boards/a972b43d-8ce3-4a67-9822-37bcafcdd644/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:30:58] Method: PUT; Url: /boards/null/tasks/0be2cb46-d5b7-46e9-9db8-1dabc2e13a16; Query parameters: {}; Body: {"id":"0be2cb46-d5b7-46e9-9db8-1dabc2e13a16","title":"Autotest updated task","description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null,"order":0}; Status code: 200
+[2021-07-03 17:30:58] Method: GET; Url: /boards/null/tasks/0be2cb46-d5b7-46e9-9db8-1dabc2e13a16; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:30:58] Method: GET; Url: /boards/a972b43d-8ce3-4a67-9822-37bcafcdd644/tasks/5198cf20-4a7e-41ec-8cd5-8f13913fefea; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:30:58] Method: DELETE; Url: /boards/a972b43d-8ce3-4a67-9822-37bcafcdd644; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:30:58] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"ecc1abfe-fd4b-48af-8da6-ba9c8ef2f433"},{"title":"Sprint","order":2,"id":"91dfff05-4e18-414a-866c-925cea593779"}]}; Status code: 201
+[2021-07-03 17:30:58] Method: GET; Url: /boards; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:30:58] Method: GET; Url: /boards; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:30:58] Method: GET; Url: /boards/f5597a9e-ae5a-4b98-8ddb-8954b36aba9c; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:30:58] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"accf87a4-f86a-4f03-bb24-b58f212cb0bf"},{"title":"Sprint","order":2,"id":"b4099eca-194a-40c6-b8c0-f0074ef7925d"}]}; Status code: 201
+[2021-07-03 17:30:58] Method: DELETE; Url: /boards/39219557-f652-4802-adbc-9e3f17254c1c; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:30:58] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"f8745dc0-379c-4466-89ff-f1afac3979e9"},{"title":"Sprint","order":2,"id":"e80b7db3-afb9-4152-9243-41001490e557"}]}; Status code: 201
+[2021-07-03 17:30:58] Method: PUT; Url: /boards/357c2709-435f-44e7-81d2-b5d291f3de0a; Query parameters: {}; Body: {"id":"357c2709-435f-44e7-81d2-b5d291f3de0a","title":"Autotest updated board","columns":[{"title":"Backlog","order":1,"id":"15357bf2-cfa8-4cca-a7d9-ed373f108380"},{"title":"Sprint","order":2,"id":"d33a80e3-5cd0-45bd-9b62-38e1a5029b1c"}]}; Status code: 200
+[2021-07-03 17:30:59] Method: GET; Url: /boards/357c2709-435f-44e7-81d2-b5d291f3de0a; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:30:59] Method: DELETE; Url: /boards/357c2709-435f-44e7-81d2-b5d291f3de0a; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:30:59] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"8d7e6fdf-c411-467a-a2e9-d36434868662"},{"title":"Sprint","order":2,"id":"728fe5c7-a81b-4391-8ccc-143657f27788"}]}; Status code: 201
+[2021-07-03 17:30:59] Method: DELETE; Url: /boards/d83d31bf-c629-4248-ae05-96e51f320092; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:30:59] Method: GET; Url: /boards/d83d31bf-c629-4248-ae05-96e51f320092; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:30:59] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"7468888b-bef4-4823-9537-f971167fe250"},{"title":"Sprint","order":2,"id":"f84ca478-dd12-41d8-a7c1-b8ec4801cbc8"}]}; Status code: 201
+[2021-07-03 17:30:59] Method: POST; Url: /boards/613915bb-00db-4a2b-b661-77e9801456f6/tasks; Query parameters: {}; Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"613915bb-00db-4a2b-b661-77e9801456f6","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:30:59] Method: POST; Url: /boards/613915bb-00db-4a2b-b661-77e9801456f6/tasks; Query parameters: {}; Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"613915bb-00db-4a2b-b661-77e9801456f6","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:30:59] Method: POST; Url: /boards/613915bb-00db-4a2b-b661-77e9801456f6/tasks; Query parameters: {}; Body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"613915bb-00db-4a2b-b661-77e9801456f6","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:30:59] Method: POST; Url: /boards/613915bb-00db-4a2b-b661-77e9801456f6/tasks; Query parameters: {}; Body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"613915bb-00db-4a2b-b661-77e9801456f6","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:30:59] Method: POST; Url: /boards/613915bb-00db-4a2b-b661-77e9801456f6/tasks; Query parameters: {}; Body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"613915bb-00db-4a2b-b661-77e9801456f6","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:30:59] Method: GET; Url: /boards/613915bb-00db-4a2b-b661-77e9801456f6/tasks/9a40bc14-c023-4b28-a3e5-491eb69a55c6; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:30:59] Method: GET; Url: /boards/613915bb-00db-4a2b-b661-77e9801456f6/tasks/05c84510-dff2-473d-9fef-bacbbc660bf7; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:30:59] Method: GET; Url: /boards/613915bb-00db-4a2b-b661-77e9801456f6/tasks/23b14694-f6ed-481c-ae11-d8518c2a706a; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:30:59] Method: GET; Url: /boards/613915bb-00db-4a2b-b661-77e9801456f6/tasks/ddc1b157-c5ea-4c85-81ec-498513a79516; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:30:59] Method: GET; Url: /boards/613915bb-00db-4a2b-b661-77e9801456f6/tasks/7befddb6-eaaf-414f-8e37-1f227d33b75f; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:30:59] Method: DELETE; Url: /boards/613915bb-00db-4a2b-b661-77e9801456f6; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:30:59] Method: GET; Url: /boards/613915bb-00db-4a2b-b661-77e9801456f6/tasks/23b14694-f6ed-481c-ae11-d8518c2a706a; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:30:59] Method: GET; Url: /boards/613915bb-00db-4a2b-b661-77e9801456f6/tasks/05c84510-dff2-473d-9fef-bacbbc660bf7; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:30:59] Method: GET; Url: /boards/613915bb-00db-4a2b-b661-77e9801456f6/tasks/9a40bc14-c023-4b28-a3e5-491eb69a55c6; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:30:59] Method: GET; Url: /boards/613915bb-00db-4a2b-b661-77e9801456f6/tasks/ddc1b157-c5ea-4c85-81ec-498513a79516; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:30:59] Method: GET; Url: /boards/613915bb-00db-4a2b-b661-77e9801456f6/tasks/7befddb6-eaaf-414f-8e37-1f227d33b75f; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:30:59] Method: DELETE; Url: /boards/f5597a9e-ae5a-4b98-8ddb-8954b36aba9c; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:30:59] Method: GET; Url: /users; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:30:59] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:30:59] Method: GET; Url: /users/3add9f2d-0afd-4242-967b-ff6bea3032bb; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:30:59] Method: DELETE; Url: /users/3add9f2d-0afd-4242-967b-ff6bea3032bb; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:30:59] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:30:59] Method: DELETE; Url: /users/b29b8321-e5c0-4fd2-a52c-f108724f02ff; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:30:59] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:30:59] Method: PUT; Url: /users/78157aca-9e99-4473-9d4b-aa462b4258e9; Query parameters: {}; Body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"78157aca-9e99-4473-9d4b-aa462b4258e9"}; Status code: 200
+[2021-07-03 17:30:59] Method: GET; Url: /users/78157aca-9e99-4473-9d4b-aa462b4258e9; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:30:59] Method: DELETE; Url: /users/78157aca-9e99-4473-9d4b-aa462b4258e9; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:30:59] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:30:59] Method: DELETE; Url: /users/0abb2e96-57e7-42b1-991f-1561063abf63; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:30:59] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:30:59] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"b9ab150a-3caa-40d8-ab15-39ac2d41dd9b"},{"title":"Sprint","order":2,"id":"a0d628db-7654-407a-9c84-c38b6c7f125d"}]}; Status code: 201
+[2021-07-03 17:30:59] Method: POST; Url: /boards/d32e5700-7ea2-4abf-ad6e-9c450b242acf/tasks; Query parameters: {}; Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"d604d1f6-edc2-4444-8e21-8019fd5e72e0","boardId":"d32e5700-7ea2-4abf-ad6e-9c450b242acf"}; Status code: 201
+[2021-07-03 17:30:59] Method: POST; Url: /boards/d32e5700-7ea2-4abf-ad6e-9c450b242acf/tasks; Query parameters: {}; Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"d604d1f6-edc2-4444-8e21-8019fd5e72e0","boardId":"d32e5700-7ea2-4abf-ad6e-9c450b242acf"}; Status code: 201
+[2021-07-03 17:30:59] Method: DELETE; Url: /users/d604d1f6-edc2-4444-8e21-8019fd5e72e0; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:30:59] Method: GET; Url: /boards/d32e5700-7ea2-4abf-ad6e-9c450b242acf/tasks/4d9b1d36-f4c3-4ad5-b544-72eace6c84bb; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:30:59] Method: GET; Url: /boards/d32e5700-7ea2-4abf-ad6e-9c450b242acf/tasks/fa0c9929-a803-43ca-b9ab-9671dcf5df60; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:30:59] Method: DELETE; Url: /boards/d32e5700-7ea2-4abf-ad6e-9c450b242acf/tasks/4d9b1d36-f4c3-4ad5-b544-72eace6c84bb; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:30:59] Method: DELETE; Url: /boards/d32e5700-7ea2-4abf-ad6e-9c450b242acf/tasks/fa0c9929-a803-43ca-b9ab-9671dcf5df60; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:30:59] Method: DELETE; Url: /boards/d32e5700-7ea2-4abf-ad6e-9c450b242acf; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:35:19] Starting Nest application...
+[2021-07-03 17:35:19] MainPageController {}:
+[2021-07-03 17:35:19] AppModule dependencies initialized
+[2021-07-03 17:35:19] Mapped {, GET} route
+[2021-07-03 17:35:19] UsersController {/users}:
+[2021-07-03 17:35:19] Mapped {/users, GET} route
+[2021-07-03 17:35:19] Mapped {/users/:id, GET} route
+[2021-07-03 17:35:19] Mapped {/users, POST} route
+[2021-07-03 17:35:19] Mapped {/users/:id, PUT} route
+[2021-07-03 17:35:19] Mapped {/users/:id, DELETE} route
+[2021-07-03 17:35:19] BoardsController {/boards}:
+[2021-07-03 17:35:19] Mapped {/boards, GET} route
+[2021-07-03 17:35:19] Mapped {/boards/:id, GET} route
+[2021-07-03 17:35:19] Mapped {/boards, POST} route
+[2021-07-03 17:35:19] Mapped {/boards/:id, PUT} route
+[2021-07-03 17:35:19] Mapped {/boards/:id, DELETE} route
+[2021-07-03 17:35:19] TasksController {/boards/:boardId/tasks}:
+[2021-07-03 17:35:19] Mapped {/boards/:boardId/tasks, GET} route
+[2021-07-03 17:35:19] Mapped {/boards/:boardId/tasks/:id, GET} route
+[2021-07-03 17:35:19] Mapped {/boards/:boardId/tasks, POST} route
+[2021-07-03 17:35:19] Mapped {/boards/:boardId/tasks/:id, PUT} route
+[2021-07-03 17:35:19] Mapped {/boards/:boardId/tasks/:id, DELETE} route
+[2021-07-03 17:35:19] Nest application successfully started
+[2021-07-03 17:35:26] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"96417a83-60ed-430f-8066-243b09dfd1cf"},{"title":"Sprint","order":2,"id":"56ef58f8-45ef-477a-94b3-6c528af11693"}]}; Status code: 201
+[2021-07-03 17:35:26] Method: POST; Url: /boards/b467dc1a-a33e-4f15-9049-b0de02bdfb3c/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"b467dc1a-a33e-4f15-9049-b0de02bdfb3c","columnId":null}; Status code: 201
+[2021-07-03 17:35:26] Method: GET; Url: /boards/b467dc1a-a33e-4f15-9049-b0de02bdfb3c/tasks; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:35:26] Method: GET; Url: /boards/b467dc1a-a33e-4f15-9049-b0de02bdfb3c/tasks; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:35:26] Method: GET; Url: /boards/b467dc1a-a33e-4f15-9049-b0de02bdfb3c/tasks/de132f69-1ad5-45a1-83ce-47085ca2f8d6; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:35:26] Method: POST; Url: /boards/b467dc1a-a33e-4f15-9049-b0de02bdfb3c/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"b467dc1a-a33e-4f15-9049-b0de02bdfb3c","columnId":null}; Status code: 201
+[2021-07-03 17:35:26] Method: DELETE; Url: /boards/b467dc1a-a33e-4f15-9049-b0de02bdfb3c/tasks/fd38a153-fa4a-41a8-94f3-b70582a43d05; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:35:26] Method: POST; Url: /boards/b467dc1a-a33e-4f15-9049-b0de02bdfb3c/tasks; Query parameters: {}; Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"b467dc1a-a33e-4f15-9049-b0de02bdfb3c","columnId":null}; Status code: 201
+[2021-07-03 17:35:26] Method: PUT; Url: /boards/b467dc1a-a33e-4f15-9049-b0de02bdfb3c/tasks/a0acd46a-758b-4d69-a59c-d7d74dfb102f; Query parameters: {}; Body: {"id":"a0acd46a-758b-4d69-a59c-d7d74dfb102f","title":"Autotest updated task","description":"Lorem ipsum","userId":null,"boardId":"b467dc1a-a33e-4f15-9049-b0de02bdfb3c","columnId":null,"order":0}; Status code: 200
+[2021-07-03 17:35:26] Method: GET; Url: /boards/b467dc1a-a33e-4f15-9049-b0de02bdfb3c/tasks/a0acd46a-758b-4d69-a59c-d7d74dfb102f; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:35:26] Method: GET; Url: /boards/b467dc1a-a33e-4f15-9049-b0de02bdfb3c/tasks/de132f69-1ad5-45a1-83ce-47085ca2f8d6; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:35:26] Method: DELETE; Url: /boards/b467dc1a-a33e-4f15-9049-b0de02bdfb3c/tasks/de132f69-1ad5-45a1-83ce-47085ca2f8d6; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:35:26] Method: GET; Url: /boards/b467dc1a-a33e-4f15-9049-b0de02bdfb3c/tasks/de132f69-1ad5-45a1-83ce-47085ca2f8d6; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:35:26] Method: DELETE; Url: /boards/b467dc1a-a33e-4f15-9049-b0de02bdfb3c; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:35:26] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"110b588c-ad54-4f30-928e-ec9fd15553c2"},{"title":"Sprint","order":2,"id":"87b1d39c-be57-4170-b7ec-9bd21513ed6a"}]}; Status code: 201
+[2021-07-03 17:35:26] Method: GET; Url: /boards; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:35:26] Method: GET; Url: /boards; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:35:26] Method: GET; Url: /boards/f4eb94a2-a9ad-48bc-bec3-e10b4c9a4345; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:35:26] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"b04e623a-c3e6-4e33-a6a7-87139726e2a1"},{"title":"Sprint","order":2,"id":"4347a396-d054-47dc-8eff-a6ed66a960ba"}]}; Status code: 201
+[2021-07-03 17:35:27] Method: DELETE; Url: /boards/29d4ccad-b7ba-46b1-acb9-0c29479a0bc4; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:35:27] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"343f5eaa-1b5e-4573-86ca-f48e0a2c8ab7"},{"title":"Sprint","order":2,"id":"d1cc6ae8-ba1c-476f-ae91-f41dd3d88cf0"}]}; Status code: 201
+[2021-07-03 17:35:27] Method: PUT; Url: /boards/00754df4-f285-4553-ba0e-0b24a080be20; Query parameters: {}; Body: {"id":"00754df4-f285-4553-ba0e-0b24a080be20","title":"Autotest updated board","columns":[{"title":"Backlog","order":1,"id":"1875c31d-07c3-437c-ab50-fe50248037b5"},{"title":"Sprint","order":2,"id":"1b78d635-b8a8-4f9f-a14a-39415ebab7bd"}]}; Status code: 200
+[2021-07-03 17:35:27] Method: GET; Url: /boards/00754df4-f285-4553-ba0e-0b24a080be20; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:35:27] Method: DELETE; Url: /boards/00754df4-f285-4553-ba0e-0b24a080be20; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:35:27] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"75cdd1e2-d747-4f29-9d5c-25d161304574"},{"title":"Sprint","order":2,"id":"16504208-e2fc-46c7-b629-68211d1ba63e"}]}; Status code: 201
+[2021-07-03 17:35:27] Method: DELETE; Url: /boards/4781aa23-b009-4f2a-8184-8fee0eb901f7; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:35:27] Method: GET; Url: /boards/4781aa23-b009-4f2a-8184-8fee0eb901f7; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:35:27] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"4ccbf10f-c96f-41bd-ab60-fd44df448edf"},{"title":"Sprint","order":2,"id":"d9c263f4-5172-4923-86ef-d03d0c81a0bd"}]}; Status code: 201
+[2021-07-03 17:35:27] Method: POST; Url: /boards/16013b84-8518-484e-b1e3-af6a4f69bfac/tasks; Query parameters: {}; Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"16013b84-8518-484e-b1e3-af6a4f69bfac","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:35:27] Method: POST; Url: /boards/16013b84-8518-484e-b1e3-af6a4f69bfac/tasks; Query parameters: {}; Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"16013b84-8518-484e-b1e3-af6a4f69bfac","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:35:27] Method: POST; Url: /boards/16013b84-8518-484e-b1e3-af6a4f69bfac/tasks; Query parameters: {}; Body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"16013b84-8518-484e-b1e3-af6a4f69bfac","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:35:27] Method: POST; Url: /boards/16013b84-8518-484e-b1e3-af6a4f69bfac/tasks; Query parameters: {}; Body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"16013b84-8518-484e-b1e3-af6a4f69bfac","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:35:27] Method: POST; Url: /boards/16013b84-8518-484e-b1e3-af6a4f69bfac/tasks; Query parameters: {}; Body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"16013b84-8518-484e-b1e3-af6a4f69bfac","userId":null,"columnId":null}; Status code: 201
+[2021-07-03 17:35:27] Method: GET; Url: /boards/16013b84-8518-484e-b1e3-af6a4f69bfac/tasks/82e98308-cd2d-4d50-9056-a19a6dba182d; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:35:27] Method: GET; Url: /boards/16013b84-8518-484e-b1e3-af6a4f69bfac/tasks/2f77bb5a-a8b3-4b1b-a310-8dec6cc81511; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:35:27] Method: GET; Url: /boards/16013b84-8518-484e-b1e3-af6a4f69bfac/tasks/6b997681-8a4b-453f-bdf8-1909ec159e13; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:35:27] Method: GET; Url: /boards/16013b84-8518-484e-b1e3-af6a4f69bfac/tasks/02526e8b-cccb-40bd-a559-96b5fef94e88; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:35:27] Method: GET; Url: /boards/16013b84-8518-484e-b1e3-af6a4f69bfac/tasks/428c897b-3676-4f97-bc24-d2e94af86294; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:35:27] Method: DELETE; Url: /boards/16013b84-8518-484e-b1e3-af6a4f69bfac; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:35:27] Method: GET; Url: /boards/16013b84-8518-484e-b1e3-af6a4f69bfac/tasks/82e98308-cd2d-4d50-9056-a19a6dba182d; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:35:27] Method: GET; Url: /boards/16013b84-8518-484e-b1e3-af6a4f69bfac/tasks/2f77bb5a-a8b3-4b1b-a310-8dec6cc81511; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:35:27] Method: GET; Url: /boards/16013b84-8518-484e-b1e3-af6a4f69bfac/tasks/6b997681-8a4b-453f-bdf8-1909ec159e13; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:35:27] Method: GET; Url: /boards/16013b84-8518-484e-b1e3-af6a4f69bfac/tasks/02526e8b-cccb-40bd-a559-96b5fef94e88; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:35:27] Method: GET; Url: /boards/16013b84-8518-484e-b1e3-af6a4f69bfac/tasks/428c897b-3676-4f97-bc24-d2e94af86294; Query parameters: {}; Body: {}; Status code: 404
+[2021-07-03 17:35:27] Method: DELETE; Url: /boards/f4eb94a2-a9ad-48bc-bec3-e10b4c9a4345; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:35:27] Method: GET; Url: /users; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:35:27] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:35:27] Method: GET; Url: /users/3a530981-3397-4bdb-9cd4-b7b1a211401d; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:35:27] Method: DELETE; Url: /users/3a530981-3397-4bdb-9cd4-b7b1a211401d; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:35:27] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:35:27] Method: DELETE; Url: /users/bae1cc45-8ab6-4f2e-86e3-fac3cb06cfcf; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:35:27] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:35:27] Method: PUT; Url: /users/d1e893c5-ab00-4b95-a930-21ff16da37c1; Query parameters: {}; Body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"d1e893c5-ab00-4b95-a930-21ff16da37c1"}; Status code: 200
+[2021-07-03 17:35:27] Method: GET; Url: /users/d1e893c5-ab00-4b95-a930-21ff16da37c1; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:35:27] Method: DELETE; Url: /users/d1e893c5-ab00-4b95-a930-21ff16da37c1; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:35:27] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:35:27] Method: DELETE; Url: /users/3e253c45-945a-448a-8710-2f217b515b05; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:35:27] Method: POST; Url: /users; Query parameters: {}; Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}; Status code: 201
+[2021-07-03 17:35:27] Method: POST; Url: /boards; Query parameters: {}; Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1,"id":"e32125d8-c4e8-47db-a766-9826e2a46d25"},{"title":"Sprint","order":2,"id":"71459eae-9cab-43a7-aa32-8d0e2d2d530a"}]}; Status code: 201
+[2021-07-03 17:35:27] Method: POST; Url: /boards/9a9ae8a7-3151-4dd1-91ca-e765dc4a6985/tasks; Query parameters: {}; Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"8af781df-843e-487c-98e8-0c8dede0a000","boardId":"9a9ae8a7-3151-4dd1-91ca-e765dc4a6985"}; Status code: 201
+[2021-07-03 17:35:27] Method: POST; Url: /boards/9a9ae8a7-3151-4dd1-91ca-e765dc4a6985/tasks; Query parameters: {}; Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"8af781df-843e-487c-98e8-0c8dede0a000","boardId":"9a9ae8a7-3151-4dd1-91ca-e765dc4a6985"}; Status code: 201
+[2021-07-03 17:35:27] Method: DELETE; Url: /users/8af781df-843e-487c-98e8-0c8dede0a000; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:35:27] Method: GET; Url: /boards/9a9ae8a7-3151-4dd1-91ca-e765dc4a6985/tasks/948d93d4-424a-4082-b8dd-4aff78f522e3; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:35:27] Method: GET; Url: /boards/9a9ae8a7-3151-4dd1-91ca-e765dc4a6985/tasks/561c7265-ef3d-4342-814b-ba12071ba81b; Query parameters: {}; Body: {}; Status code: 200
+[2021-07-03 17:35:27] Method: DELETE; Url: /boards/9a9ae8a7-3151-4dd1-91ca-e765dc4a6985/tasks/948d93d4-424a-4082-b8dd-4aff78f522e3; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:35:27] Method: DELETE; Url: /boards/9a9ae8a7-3151-4dd1-91ca-e765dc4a6985/tasks/561c7265-ef3d-4342-814b-ba12071ba81b; Query parameters: {}; Body: {}; Status code: 204
+[2021-07-03 17:35:27] Method: DELETE; Url: /boards/9a9ae8a7-3151-4dd1-91ca-e765dc4a6985; Query parameters: {}; Body: {}; Status code: 204

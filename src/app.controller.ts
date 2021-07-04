@@ -1,6 +1,8 @@
 import { Controller, Get } from '@nestjs/common';
 import { AppService } from './app.service';
 import { UsersController } from './resources/users/user.controller';
+import { BoardsController } from './resources/boards/board.controller';
+import { TasksController } from './resources/tasks/task.controller';
 
 @Controller()
 class MainPageController {
@@ -12,4 +14,4 @@ class MainPageController {
     };
 };
 
-export { MainPageController, UsersController }
+export { MainPageController, UsersController, BoardsController, TasksController }

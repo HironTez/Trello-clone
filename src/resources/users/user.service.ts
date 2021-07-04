@@ -24,14 +24,14 @@ export const addUser: AddUserT = async (user) => Boolean(db['users'].push(user))
 /**
  * Updates the data of the user with the specified ID
  * @param {string} id ID user
- * @param {UserT} data Data to update
- * @returns {boolean} User updated successfully
+ * @param {UserT} newUser Data to update
+ * @returns {Promise<boolean>} User updated successfully
  */
 export const updateUser: UpdateUserT = async (id, newUser) => Boolean(Object.assign((await getById(id)) || {}, newUser));
 
 /**
  * Deletes the user with the specified ID
  * @param {string} id ID user to delete
- * @returns {boolean} User deleted successfully
+ * @returns {Promise<boolean>} User deleted successfully
  */
 export const deleteUser: DeleteUserT = async (id) => Boolean(db['users'].splice(db['users'].indexOf((await getById(id))!), 1));

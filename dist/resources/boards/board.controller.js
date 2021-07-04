@@ -16,34 +16,34 @@ exports.BoardsController = void 0;
 const common_1 = require("@nestjs/common");
 const board_data_dto_1 = require("./dto/board-data.dto");
 const board_service_1 = require("./board.service");
+const task_service_1 = require("../tasks/task.service");
 const board_model_1 = require("./board.model");
 let BoardsController = class BoardsController {
     async getAllBoards(res) {
         const boards = await board_service_1.getAllBoards();
-        return res.status(common_1.HttpStatus.OK).json(boards);
+        return res.status(common_1.HttpStatus.OK).send(boards);
     }
     ;
     async getBoardById(res, id) {
         const board = await board_service_1.getById(id);
-        return board ? res.status(common_1.HttpStatus.OK).send(board_model_1.Board.toResponse(board)) : res.status(common_1.HttpStatus.NOT_FOUND).send();
+        return board ? res.status(common_1.HttpStatus.OK).send(board) : res.status(common_1.HttpStatus.NOT_FOUND).send();
     }
     ;
     async createBoard(res, body) {
         const newBoard = new board_model_1.Board(body);
         const boardCreated = await board_service_1.addBoard(newBoard);
-        return boardCreated ? res.status(common_1.HttpStatus.CREATED).send(board_model_1.Board.toResponse(newBoard)) : res.status(common_1.HttpStatus.BAD_REQUEST).send();
+        return boardCreated ? res.status(common_1.HttpStatus.CREATED).send(newBoard) : res.status(common_1.HttpStatus.BAD_REQUEST).send();
     }
     ;
     async updateBoardById(res, id, body) {
         const newBoard = new board_model_1.Board(body);
         const boardUpdated = await board_service_1.updateBoard(id, newBoard);
-        return boardUpdated ? res.status(common_1.HttpStatus.OK).send(boardUpdated) : res.status(common_1.HttpStatus.BAD_REQUEST).send();
+        return boardUpdated ? res.status(common_1.HttpStatus.OK).send(newBoard) : res.status(common_1.HttpStatus.BAD_REQUEST).send();
     }
     ;
     async deleteBoardById(res, id) {
-        console.log(id);
         const boardDeleted = await board_service_1.deleteBoard(id);
-        console.log(boardDeleted);
+        task_service_1.deleteTasksByBoardId(id);
         return boardDeleted ? res.status(common_1.HttpStatus.NO_CONTENT).send() : res.status(common_1.HttpStatus.NOT_FOUND).send();
     }
     ;
