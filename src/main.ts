@@ -1,7 +1,7 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import PORT from './common/config';
-import { MyLogger } from './modules/logger.middleware';
+import { MyLogger } from './modules/logger.module';
 
 async function bootstrap() {
     const app = await NestFactory.create(AppModule, {

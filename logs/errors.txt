@@ -1,0 +1,150 @@
+[2021-07-03 14:15:56] The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+[2021-07-03 14:15:56] The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+[2021-07-03 14:15:56] The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+[2021-07-03 14:15:56] The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+[2021-07-03 14:15:56] The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+[2021-07-03 14:15:57] The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+[2021-07-03 14:15:57] The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+[2021-07-03 14:16:12] The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+[2021-07-03 14:16:12] The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+[2021-07-03 14:16:12] The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+[2021-07-03 14:16:12] The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+[2021-07-03 14:16:12] The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+[2021-07-03 14:16:12] The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+[2021-07-03 14:16:12] The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+[2021-07-03 14:17:20] The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+[2021-07-03 14:17:20] The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+[2021-07-03 14:17:20] The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+[2021-07-03 14:17:20] The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+[2021-07-03 14:17:20] The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+[2021-07-03 14:17:20] The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+[2021-07-03 14:17:20] The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+[2021-07-03 14:18:26] The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+[2021-07-03 14:18:26] The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+[2021-07-03 14:18:26] The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+[2021-07-03 14:18:26] The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+[2021-07-03 14:18:26] The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+[2021-07-03 14:18:26] The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+[2021-07-03 14:18:26] The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+[2021-07-03 14:19:35] The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+[2021-07-03 14:19:35] The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+[2021-07-03 14:19:35] The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+[2021-07-03 14:19:35] The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+[2021-07-03 14:19:36] The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+[2021-07-03 14:19:36] The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+[2021-07-03 14:19:37] The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+[2021-07-03 14:20:21] TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+    at Function.from (buffer.js:330:9)
+    at ServerResponse.send (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\response.js:189:22)
+    at BoardsController.createBoard (D:\Programing\Node js\RS school\nestjs\dist\resources\boards\board.controller.js:35:71)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[2021-07-03 14:20:21] TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+    at Function.from (buffer.js:330:9)
+    at ServerResponse.send (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\response.js:189:22)
+    at BoardsController.createBoard (D:\Programing\Node js\RS school\nestjs\dist\resources\boards\board.controller.js:35:71)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[2021-07-03 14:20:21] TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+    at Function.from (buffer.js:330:9)
+    at ServerResponse.send (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\response.js:189:22)
+    at BoardsController.createBoard (D:\Programing\Node js\RS school\nestjs\dist\resources\boards\board.controller.js:35:71)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[2021-07-03 14:20:21] TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+    at Function.from (buffer.js:330:9)
+    at ServerResponse.send (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\response.js:189:22)
+    at BoardsController.createBoard (D:\Programing\Node js\RS school\nestjs\dist\resources\boards\board.controller.js:35:71)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[2021-07-03 14:20:21] TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+    at Function.from (buffer.js:330:9)
+    at ServerResponse.send (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\response.js:189:22)
+    at BoardsController.createBoard (D:\Programing\Node js\RS school\nestjs\dist\resources\boards\board.controller.js:35:71)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[2021-07-03 14:20:22] TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+    at Function.from (buffer.js:330:9)
+    at ServerResponse.send (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\response.js:189:22)
+    at BoardsController.createBoard (D:\Programing\Node js\RS school\nestjs\dist\resources\boards\board.controller.js:35:71)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[2021-07-03 14:20:22] TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+    at Function.from (buffer.js:330:9)
+    at ServerResponse.send (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\response.js:189:22)
+    at BoardsController.createBoard (D:\Programing\Node js\RS school\nestjs\dist\resources\boards\board.controller.js:35:71)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[2021-07-03 14:21:14] Error: TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+    at Function.from (buffer.js:330:9)
+    at ServerResponse.send (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\response.js:189:22)
+    at BoardsController.createBoard (D:\Programing\Node js\RS school\nestjs\dist\resources\boards\board.controller.js:35:71)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[2021-07-03 14:21:14] Error: TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+    at Function.from (buffer.js:330:9)
+    at ServerResponse.send (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\response.js:189:22)
+    at BoardsController.createBoard (D:\Programing\Node js\RS school\nestjs\dist\resources\boards\board.controller.js:35:71)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[2021-07-03 14:21:14] Error: TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+    at Function.from (buffer.js:330:9)
+    at ServerResponse.send (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\response.js:189:22)
+    at BoardsController.createBoard (D:\Programing\Node js\RS school\nestjs\dist\resources\boards\board.controller.js:35:71)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[2021-07-03 14:21:14] Error: TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+    at Function.from (buffer.js:330:9)
+    at ServerResponse.send (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\response.js:189:22)
+    at BoardsController.createBoard (D:\Programing\Node js\RS school\nestjs\dist\resources\boards\board.controller.js:35:71)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[2021-07-03 14:21:14] Error: TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+    at Function.from (buffer.js:330:9)
+    at ServerResponse.send (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\response.js:189:22)
+    at BoardsController.createBoard (D:\Programing\Node js\RS school\nestjs\dist\resources\boards\board.controller.js:35:71)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[2021-07-03 14:21:14] Error: TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+    at Function.from (buffer.js:330:9)
+    at ServerResponse.send (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\response.js:189:22)
+    at BoardsController.createBoard (D:\Programing\Node js\RS school\nestjs\dist\resources\boards\board.controller.js:35:71)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[2021-07-03 14:21:15] Error: TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+    at Function.from (buffer.js:330:9)
+    at ServerResponse.send (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\response.js:189:22)
+    at BoardsController.createBoard (D:\Programing\Node js\RS school\nestjs\dist\resources\boards\board.controller.js:35:71)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[2021-07-03 14:21:48] TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+    at Function.from (buffer.js:330:9)
+    at ServerResponse.send (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\response.js:189:22)
+    at BoardsController.createBoard (D:\Programing\Node js\RS school\nestjs\dist\resources\boards\board.controller.js:35:71)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[2021-07-03 14:21:48] TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+    at Function.from (buffer.js:330:9)
+    at ServerResponse.send (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\response.js:189:22)
+    at BoardsController.createBoard (D:\Programing\Node js\RS school\nestjs\dist\resources\boards\board.controller.js:35:71)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[2021-07-03 14:21:48] TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+    at Function.from (buffer.js:330:9)
+    at ServerResponse.send (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\response.js:189:22)
+    at BoardsController.createBoard (D:\Programing\Node js\RS school\nestjs\dist\resources\boards\board.controller.js:35:71)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[2021-07-03 14:21:48] TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+    at Function.from (buffer.js:330:9)
+    at ServerResponse.send (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\response.js:189:22)
+    at BoardsController.createBoard (D:\Programing\Node js\RS school\nestjs\dist\resources\boards\board.controller.js:35:71)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[2021-07-03 14:21:48] TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+    at Function.from (buffer.js:330:9)
+    at ServerResponse.send (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\response.js:189:22)
+    at BoardsController.createBoard (D:\Programing\Node js\RS school\nestjs\dist\resources\boards\board.controller.js:35:71)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[2021-07-03 14:21:48] TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+    at Function.from (buffer.js:330:9)
+    at ServerResponse.send (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\response.js:189:22)
+    at BoardsController.createBoard (D:\Programing\Node js\RS school\nestjs\dist\resources\boards\board.controller.js:35:71)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[2021-07-03 14:21:49] TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+    at Function.from (buffer.js:330:9)
+    at ServerResponse.send (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\response.js:189:22)
+    at BoardsController.createBoard (D:\Programing\Node js\RS school\nestjs\dist\resources\boards\board.controller.js:35:71)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[2021-07-03 14:23:26] TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+    at Function.from (buffer.js:330:9)
+    at ServerResponse.send (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\response.js:189:22)
+    at BoardsController.getBoardById (D:\Programing\Node js\RS school\nestjs\dist\resources\boards\board.controller.js:29:59)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[2021-07-03 14:23:26] TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function Board
+    at Function.from (buffer.js:330:9)
+    at ServerResponse.send (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\response.js:189:22)
+    at BoardsController.getBoardById (D:\Programing\Node js\RS school\nestjs\dist\resources\boards\board.controller.js:29:59)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)

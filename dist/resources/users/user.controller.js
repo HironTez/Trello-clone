@@ -16,11 +16,12 @@ exports.UsersController = void 0;
 const common_1 = require("@nestjs/common");
 const user_data_dto_1 = require("./dto/user-data.dto");
 const user_service_1 = require("./user.service");
+const task_service_1 = require("../tasks/task.service");
 const user_model_1 = require("./user.model");
 let UsersController = class UsersController {
     async getAllUsers(res) {
         const users = await user_service_1.getAllUsers();
-        return res.status(common_1.HttpStatus.OK).json(users.map(user_model_1.User.toResponse));
+        return res.status(common_1.HttpStatus.OK).send(users.map(user_model_1.User.toResponse));
     }
     ;
     async getUserById(res, id) {
@@ -41,9 +42,8 @@ let UsersController = class UsersController {
     }
     ;
     async deleteUserById(res, id) {
-        console.log(id);
         const userDeleted = await user_service_1.deleteUser(id);
-        console.log(userDeleted);
+        task_service_1.removeTaskByUserId(id);
         return userDeleted ? res.status(common_1.HttpStatus.NO_CONTENT).send() : res.status(common_1.HttpStatus.NOT_FOUND).send();
     }
     ;

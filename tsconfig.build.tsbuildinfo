@@ -1512,8 +1512,8 @@
         "affectsGlobalScope": false
       },
       "./src/types.ts": {
-        "version": "043cbe4ea7e4946991a097ade9d6ece5feab47cf35a5276d8cad387a0a0bf4b7",
-        "signature": "7d4dc8d1422c78c6f83d0ac533ac03598400a48714b6965c7a51d6cb61d6162e",
+        "version": "ebdcdc7639995c0e11a55a61919c2657b6f0b9e6ee98ac9c7ab640f77c58e702",
+        "signature": "8dc01cb9242412680850199566162cc788bbef52c71f884a5d5c23927c2c89b5",
         "affectsGlobalScope": false
       },
       "./src/db.ts": {
@@ -1527,8 +1527,18 @@
         "affectsGlobalScope": false
       },
       "./src/resources/users/user.service.ts": {
-        "version": "c6935a26366c8bcd7eba5c97014e40cd11fa1a672a748ca5ea6a6d2f0dbd82d1",
+        "version": "d3b06b7242fae9e5414af223c7948bbc5f59a8cfb76d0d1f5b357f7f130bf66b",
         "signature": "a32bc2361a349ec32c9af12d1c285c4cc9195d4af02bb7dc200055d204b810bc",
+        "affectsGlobalScope": false
+      },
+      "./src/resources/tasks/task.types.ts": {
+        "version": "ec9174ac1462ce5b78f208ff8904211c31b9c8a8b634de76ca56bd80d99e0fe2",
+        "signature": "ae14e6c82c3378f32f618efeb372360063e11729b4382480420de48a9eb9c4c7",
+        "affectsGlobalScope": false
+      },
+      "./src/resources/tasks/task.service.ts": {
+        "version": "bb633d8d022f0eae700c945b5a9bae9aa681da5f7dbe312e371fa37a124e2951",
+        "signature": "e199e23eebc4e94f25c7a26e4534e8495d4baa906c31e0cb5f981e8fb3ba4510",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/uuid/index.d.ts": {
@@ -1542,13 +1552,53 @@
         "affectsGlobalScope": false
       },
       "./src/resources/users/user.controller.ts": {
-        "version": "d0c0c41a3383a5922ba0a694054c642ddf69d32b57e33167f6dd647cba14175d",
+        "version": "6294a389743a3fa6e55306afa4122c65640f34331c18bc2fd8b344e1880c6a76",
         "signature": "fd05a8980f4dc6d516e292887d11fbc994d1b64776a2e98caae2825e1c2e0d35",
         "affectsGlobalScope": false
       },
+      "./src/resources/boards/dto/board-data.dto.ts": {
+        "version": "32710971eba7e10dd0ffb254ffbdc99fd6051643fab5214053c57d7ccf7acc7d",
+        "signature": "646b0d7627335e678869e49d111d926917a8684a854c78532c5f8ea54996c91d",
+        "affectsGlobalScope": false
+      },
+      "./src/resources/boards/board.types.ts": {
+        "version": "18dc7c895a9cdad5b940ba003a309a67ea96923610fa71106e52762a35a62dad",
+        "signature": "fcdd9118bfa0f9d6d977040d4de3cb41afed1dc1bbf1352503e5cfa9834f7b08",
+        "affectsGlobalScope": false
+      },
+      "./src/resources/boards/board.service.ts": {
+        "version": "ed53194151138d41312663626448142a02d29295c87d42db40bdb46fc79f564a",
+        "signature": "3ad5dde1de726094aa86bd41eff56d49e0bfa711ebfc8afadfea6c61b48dac6a",
+        "affectsGlobalScope": false
+      },
+      "./src/resources/boards/board.model.ts": {
+        "version": "adf53eee29db25053d0d6995be4a4daa65d5a1c11cf8ca7f50ba8ebb192d57f9",
+        "signature": "b35ae092e0911d6659b35cb368542bbbe62cacda1ef1cbe5f2f178219f4242f0",
+        "affectsGlobalScope": false
+      },
+      "./src/resources/boards/board.controller.ts": {
+        "version": "fb58084ecb88d368363bbcc3db1fe4fe6a197fedd618df52edc14edf644c5355",
+        "signature": "38661696d6fe1058980472084c73665d865b2ca36bcb1404c72c991a197041f5",
+        "affectsGlobalScope": false
+      },
+      "./src/resources/tasks/dto/task-data.dto.ts": {
+        "version": "483af887b66ceb65357674c01a27451f8e9582d29922d53d6c7df74efc0b00d6",
+        "signature": "3ed79d5ac0d53ce8822be76d69deedbaace63e9ebf69df629c99131bab5b31e5",
+        "affectsGlobalScope": false
+      },
+      "./src/resources/tasks/task.model.ts": {
+        "version": "05658ae77f1d4bf845a411d49983f2edeb293caa3c3e1da1d9b35a040a39a0f0",
+        "signature": "47b2f6258b5608b0f5d91dd1df2248f41ffbb45eee57f515e3bef2d9138fe32e",
+        "affectsGlobalScope": false
+      },
+      "./src/resources/tasks/task.controller.ts": {
+        "version": "f21318471729239185ab4bb3bd784397ee8fc817705401fc00d8df3e936f5898",
+        "signature": "4b8cdec407d9dc18d8c55db4c25246aac8d76d90efb8b1620a67153613d7c6c9",
+        "affectsGlobalScope": false
+      },
       "./src/app.controller.ts": {
-        "version": "f671a25338e62594e5e9efbac3865f919b8abfa248f364dc4c32466e07bd8722",
-        "signature": "82b90c204f0da1c77ccdce0a6f319f58ef58d8a931858402631037ffbed222f8",
+        "version": "2a00b2d7b0c4f67c1de99bdf07ecbf477fb7c314d2a72de17578a537735ebc9a",
+        "signature": "0f98171774ab342300f44169e9163ad4fcac7229fed0a18d6fdfb4867551d6d4",
         "affectsGlobalScope": false
       },
       "./src/middleware/json.headers.middleware.ts": {
@@ -1572,7 +1622,7 @@
         "affectsGlobalScope": false
       },
       "./src/app.module.ts": {
-        "version": "dfebcd239d7250b81ec4c0a475c148162e8c625b998ecd8587fe7fd05e5f1c8e",
+        "version": "02bb84eff78b8aa822c3b8f638a860f32cb92df36b4e741a49eb296f3302a3be",
         "signature": "843f051400e86a3e4de923e5b7271bfa660bd889abf5fee0dce89d6ded83b42c",
         "affectsGlobalScope": false
       },
@@ -1766,39 +1816,14 @@
         "signature": "2ddb432d26ef60c5c33afd19dc2332f483c24228c9cabd5fe129d84503a2a534",
         "affectsGlobalScope": false
       },
-      "./src/modules/logger.middleware.ts": {
-        "version": "a146aa98c932353e6eac0d4d152854d65aca996270003ea99585cb8f8d9c9e57",
-        "signature": "4ee5b32ea27342454a4829e85fa98010b3bccf3763bed517b889f43df806a0a5",
+      "./src/modules/logger.module.ts": {
+        "version": "23b7c82d48910b9d1ee22f77337c12d3d72145f10009142246bc098ef7b008d2",
+        "signature": "487755197f3557684b90173d88228f5c9dd35e279ed18dca06a8449c6d91cca5",
         "affectsGlobalScope": false
       },
       "./src/main.ts": {
-        "version": "7831d9145158df6b317ed371faaadc4654064da8622c9c67775eb61454d910b6",
+        "version": "75085b084a0f4af9470a37f3021514a5c167c926dd523cdcc19eb241ea8f3ad5",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
-        "affectsGlobalScope": false
-      },
-      "./src/resources/boards/dto/board-data.dto.ts": {
-        "version": "c341b501aeb7cdb052ecf3d0f16700c35e636fac112a5d198a754bb41a6c4755",
-        "signature": "b349799a579f9f0874a0d94f0f60c3e66e9a15cfa707ed1ba57aa8617c2a4a9e",
-        "affectsGlobalScope": false
-      },
-      "./src/resources/boards/board.types.ts": {
-        "version": "18dc7c895a9cdad5b940ba003a309a67ea96923610fa71106e52762a35a62dad",
-        "signature": "fcdd9118bfa0f9d6d977040d4de3cb41afed1dc1bbf1352503e5cfa9834f7b08",
-        "affectsGlobalScope": false
-      },
-      "./src/resources/boards/board.service.ts": {
-        "version": "8403fecd434a3a4219c69d6a2b347eaa91b23fb29083136954cfdda062dda189",
-        "signature": "3ad5dde1de726094aa86bd41eff56d49e0bfa711ebfc8afadfea6c61b48dac6a",
-        "affectsGlobalScope": false
-      },
-      "./src/resources/boards/board.model.ts": {
-        "version": "69adbb84c953f97f856cab21cdb2917ddcfc50f9e9aa588ad8a29deedb6938a2",
-        "signature": "b35ae092e0911d6659b35cb368542bbbe62cacda1ef1cbe5f2f178219f4242f0",
-        "affectsGlobalScope": false
-      },
-      "./src/resources/boards/board.controller.ts": {
-        "version": "738c1cc72d28840b5064bf5e4263d152d0592775fa29ecdb7a8b1143c95e72fe",
-        "signature": "38661696d6fe1058980472084c73665d865b2ca36bcb1404c72c991a197041f5",
         "affectsGlobalScope": false
       },
       "./node_modules/@babel/types/lib/index.d.ts": {
@@ -3188,6 +3213,8 @@
       "./src/app.controller.ts": [
         "./node_modules/@nestjs/common/index.d.ts",
         "./src/app.service.ts",
+        "./src/resources/boards/board.controller.ts",
+        "./src/resources/tasks/task.controller.ts",
         "./src/resources/users/user.controller.ts"
       ],
       "./src/app.module.ts": [
@@ -3211,7 +3238,7 @@
         "./node_modules/@nestjs/core/index.d.ts",
         "./src/app.module.ts",
         "./src/common/config.ts",
-        "./src/modules/logger.middleware.ts"
+        "./src/modules/logger.module.ts"
       ],
       "./src/middleware/json.headers.middleware.ts": [
         "./node_modules/@nestjs/common/index.d.ts",
@@ -3223,7 +3250,7 @@
         "./src/services/current.time.ts",
         "./src/services/logger.ts"
       ],
-      "./src/modules/logger.middleware.ts": [
+      "./src/modules/logger.module.ts": [
         "./node_modules/@nestjs/common/index.d.ts",
         "./src/services/current.time.ts",
         "./src/services/logger.ts"
@@ -3233,7 +3260,8 @@
         "./node_modules/@types/express/index.d.ts",
         "./src/resources/boards/board.model.ts",
         "./src/resources/boards/board.service.ts",
-        "./src/resources/boards/dto/board-data.dto.ts"
+        "./src/resources/boards/dto/board-data.dto.ts",
+        "./src/resources/tasks/task.service.ts"
       ],
       "./src/resources/boards/board.model.ts": [
         "./node_modules/@types/uuid/index.d.ts",
@@ -3247,12 +3275,29 @@
       "./src/resources/boards/board.types.ts": [
         "./src/types.ts"
       ],
-      "./src/resources/boards/dto/board-data.dto.ts": [
+      "./src/resources/tasks/task.controller.ts": [
+        "./node_modules/@nestjs/common/index.d.ts",
+        "./node_modules/@types/express/index.d.ts",
+        "./src/resources/tasks/dto/task-data.dto.ts",
+        "./src/resources/tasks/task.model.ts",
+        "./src/resources/tasks/task.service.ts"
+      ],
+      "./src/resources/tasks/task.model.ts": [
+        "./node_modules/@types/uuid/index.d.ts",
+        "./src/types.ts"
+      ],
+      "./src/resources/tasks/task.service.ts": [
+        "./src/db.ts",
+        "./src/resources/tasks/task.types.ts",
+        "./src/types.ts"
+      ],
+      "./src/resources/tasks/task.types.ts": [
         "./src/types.ts"
       ],
       "./src/resources/users/user.controller.ts": [
         "./node_modules/@nestjs/common/index.d.ts",
         "./node_modules/@types/express/index.d.ts",
+        "./src/resources/tasks/task.service.ts",
         "./src/resources/users/dto/user-data.dto.ts",
         "./src/resources/users/user.model.ts",
         "./src/resources/users/user.service.ts"
@@ -4460,6 +4505,8 @@
       ],
       "./src/app.controller.ts": [
         "./src/app.service.ts",
+        "./src/resources/boards/board.controller.ts",
+        "./src/resources/tasks/task.controller.ts",
         "./src/resources/users/user.controller.ts"
       ],
       "./src/app.module.ts": [
@@ -4476,11 +4523,12 @@
         "./node_modules/@nestjs/common/index.d.ts",
         "./node_modules/@types/express/index.d.ts"
       ],
-      "./src/modules/logger.middleware.ts": [
+      "./src/modules/logger.module.ts": [
         "./node_modules/@nestjs/common/index.d.ts"
       ],
       "./src/resources/boards/board.controller.ts": [
-        "./node_modules/@types/express/index.d.ts"
+        "./node_modules/@types/express/index.d.ts",
+        "./src/resources/boards/dto/board-data.dto.ts"
       ],
       "./src/resources/boards/board.model.ts": [
         "./src/types.ts"
@@ -4491,7 +4539,17 @@
       "./src/resources/boards/board.types.ts": [
         "./src/types.ts"
       ],
-      "./src/resources/boards/dto/board-data.dto.ts": [
+      "./src/resources/tasks/task.controller.ts": [
+        "./node_modules/@types/express/index.d.ts",
+        "./src/resources/tasks/dto/task-data.dto.ts"
+      ],
+      "./src/resources/tasks/task.model.ts": [
+        "./src/types.ts"
+      ],
+      "./src/resources/tasks/task.service.ts": [
+        "./src/resources/tasks/task.types.ts"
+      ],
+      "./src/resources/tasks/task.types.ts": [
         "./src/types.ts"
       ],
       "./src/resources/users/user.controller.ts": [
@@ -4889,73 +4947,17 @@
       "./src/main.ts",
       "./src/middleware/json.headers.middleware.ts",
       "./src/middleware/req.log.middleware.ts",
-      "./src/modules/logger.middleware.ts",
-      [
-        "./src/resources/boards/board.controller.ts",
-        [
-          {
-            "file": "./src/resources/boards/board.controller.ts",
-            "start": 749,
-            "length": 10,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'toResponse' does not exist on type 'typeof Board'."
-          },
-          {
-            "file": "./src/resources/boards/board.controller.ts",
-            "start": 945,
-            "length": 4,
-            "code": 2345,
-            "category": 1,
-            "messageText": {
-              "messageText": "Argument of type 'BoardDataDto' is not assignable to parameter of type '{ id?: string | undefined; title?: string | undefined; columns?: never[] | undefined; }'.",
-              "category": 1,
-              "code": 2345,
-              "next": [
-                {
-                  "messageText": "Types of property 'columns' are incompatible.",
-                  "category": 1,
-                  "code": 2326,
-                  "next": [
-                    {
-                      "messageText": "Type 'ColumnT[]' is not assignable to type 'never[]'.",
-                      "category": 1,
-                      "code": 2322,
-                      "next": [
-                        {
-                          "messageText": "Type 'ColumnT' is not assignable to type 'never'.",
-                          "category": 1,
-                          "code": 2322
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          },
-          {
-            "file": "./src/resources/boards/board.controller.ts",
-            "start": 1081,
-            "length": 10,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'toResponse' does not exist on type 'typeof Board'."
-          },
-          {
-            "file": "./src/resources/boards/board.controller.ts",
-            "start": 1315,
-            "length": 4,
-            "code": 2345,
-            "category": 1,
-            "messageText": "Argument of type 'BoardDataDto' is not assignable to parameter of type '{ id?: string | undefined; title?: string | undefined; columns?: never[] | undefined; }'."
-          }
-        ]
-      ],
+      "./src/modules/logger.module.ts",
+      "./src/resources/boards/board.controller.ts",
       "./src/resources/boards/board.model.ts",
       "./src/resources/boards/board.service.ts",
       "./src/resources/boards/board.types.ts",
       "./src/resources/boards/dto/board-data.dto.ts",
+      "./src/resources/tasks/dto/task-data.dto.ts",
+      "./src/resources/tasks/task.controller.ts",
+      "./src/resources/tasks/task.model.ts",
+      "./src/resources/tasks/task.service.ts",
+      "./src/resources/tasks/task.types.ts",
       "./src/resources/users/dto/user-data.dto.ts",
       "./src/resources/users/user.controller.ts",
       "./src/resources/users/user.model.ts",

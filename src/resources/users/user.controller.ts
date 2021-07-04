@@ -2,6 +2,7 @@ import { Controller, Res, Get, Post, Put, Delete, Param, Body, HttpStatus } from
 import { Response } from 'express';
 import { UserDataDto } from './dto/user-data.dto';
 import { getAllUsers, getById, addUser, updateUser, deleteUser } from './user.service';
+import { removeTaskByUserId } from '../tasks/task.service';
 import { User } from './user.model';
 
 @Controller('users')
@@ -10,7 +11,7 @@ export class UsersController {
     @Get()
     async getAllUsers(@Res() res: Response) {
         const users = await getAllUsers();
-        return res.status(HttpStatus.OK).json(users.map(User.toResponse));
+        return res.status(HttpStatus.OK).send(users.map(User.toResponse));
     };
 
     @Get(':id')
@@ -35,9 +36,8 @@ export class UsersController {
 
     @Delete(':id')
     async deleteUserById(@Res() res: Response, @Param('id') id: string) {
-        console.log(id);
-        const userDeleted = await deleteUser(id);
-        console.log(userDeleted);
+        const userDeleted = await deleteUser(id); // Delete user
+        removeTaskByUserId(id); // Remove this user ID from all tasks
         return userDeleted ? res.status(HttpStatus.NO_CONTENT).send() : res.status(HttpStatus.NOT_FOUND).send();
     };
 

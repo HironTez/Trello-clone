@@ -8,7 +8,14 @@ const getById = async (id) => db_1.db['boards'].find((board) => board.id == id);
 exports.getById = getById;
 const addBoard = async (board) => Boolean(db_1.db['boards'].push(board));
 exports.addBoard = addBoard;
-const updateBoard = async (id, newBoard) => Boolean(Object.assign((await exports.getById(id)) || {}, newBoard));
+const updateBoard = async (id, newBoard) => {
+    const board = await exports.getById(id);
+    if (!board)
+        return false;
+    board.id = newBoard.id;
+    board.title = newBoard.title;
+    return true;
+};
 exports.updateBoard = updateBoard;
 const deleteBoard = async (id) => Boolean(db_1.db['boards'].splice(db_1.db['boards'].indexOf((await exports.getById(id))), 1));
 exports.deleteBoard = deleteBoard;
