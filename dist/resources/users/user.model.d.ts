@@ -1,5 +1,6 @@
 import { UserT } from '../../types';
-export declare class User {
+import { BaseEntity } from "typeorm";
+export declare class User extends BaseEntity {
     id: string;
     name: string;
     login: string;

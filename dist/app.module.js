@@ -12,6 +12,11 @@ const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
 const json_headers_middleware_1 = require("./middleware/json.headers.middleware");
 const req_log_middleware_1 = require("./middleware/req.log.middleware");
+const typeorm_1 = require("@nestjs/typeorm");
+const ormconfig_1 = require("./ormconfig");
+const user_module_1 = require("./resources/users/user.module");
+const board_module_1 = require("./resources/boards/board.module");
+const task_module_1 = require("./resources/tasks/task.module");
 let AppModule = class AppModule {
     configure(consumer) {
         consumer
@@ -24,8 +29,8 @@ let AppModule = class AppModule {
 };
 AppModule = __decorate([
     common_1.Module({
-        imports: [],
-        controllers: [app_controller_1.MainPageController, app_controller_1.UsersController, app_controller_1.BoardsController, app_controller_1.TasksController],
+        imports: [typeorm_1.TypeOrmModule.forRoot(ormconfig_1.connectionOptions), user_module_1.UserModule, board_module_1.BoardModule, task_module_1.TaskModule],
+        controllers: [app_controller_1.MainPageController],
         providers: [app_service_1.AppService],
     })
 ], AppModule);

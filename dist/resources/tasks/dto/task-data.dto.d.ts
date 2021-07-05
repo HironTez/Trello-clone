@@ -1,5 +1,5 @@
 export declare class TaskDataDto {
-    readonly id: string;
+    id: string;
     readonly title: string;
     readonly description: string;
     readonly userId: string | undefined;

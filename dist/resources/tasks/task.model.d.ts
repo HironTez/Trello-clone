@@ -1,11 +1,16 @@
 import { TaskT } from '../../types';
-declare class Task {
+import { BaseEntity } from "typeorm";
+import { User } from '../users/user.model';
+import { Board } from '../boards/board.model';
+export declare class Task extends BaseEntity {
     id: string;
     title: string;
     description: string;
-    userId: string;
+    user: User;
+    userId: string | null;
+    board: Board;
     boardId: string;
-    columnId: string;
+    columnId: string | null;
     order: number;
     constructor({ id, title, description, userId, boardId, columnId, order }?: {
         id?: string | undefined;
@@ -22,8 +27,7 @@ declare class Task {
         description: string;
         userId: string | null;
         boardId: string;
-        columnId: string;
+        columnId: string | null;
         order: number;
     };
 }
-export = Task;
