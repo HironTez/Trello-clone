@@ -16,35 +16,39 @@ exports.UsersController = void 0;
 const common_1 = require("@nestjs/common");
 const user_data_dto_1 = require("./dto/user-data.dto");
 const user_service_1 = require("./user.service");
-const task_service_1 = require("../tasks/task.service");
 const user_model_1 = require("./user.model");
 let UsersController = class UsersController {
+    constructor(usersService) {
+        this.usersService = usersService;
+    }
+    ;
     async getAllUsers(res) {
-        const users = await user_service_1.getAllUsers();
+        const users = await this.usersService.getAllUsers();
         return res.status(common_1.HttpStatus.OK).send(users.map(user_model_1.User.toResponse));
     }
     ;
     async getUserById(res, id) {
-        const user = await user_service_1.getById(id);
+        const user = await this.usersService.getById(id);
         return user ? res.status(common_1.HttpStatus.OK).send(user_model_1.User.toResponse(user)) : res.status(common_1.HttpStatus.NOT_FOUND).send();
     }
     ;
     async createUser(res, body) {
         const newUser = new user_model_1.User(body);
-        const userCreated = await user_service_1.addUser(newUser);
+        const userCreated = await this.usersService.addUser(newUser);
         return userCreated ? res.status(common_1.HttpStatus.CREATED).send(user_model_1.User.toResponse(newUser)) : res.status(common_1.HttpStatus.BAD_REQUEST).send();
     }
     ;
     async updateUserById(res, id, body) {
         const newUser = new user_model_1.User(body);
-        const userUpdated = await user_service_1.updateUser(id, newUser);
+        const userUpdated = await this.usersService.updateUser(id, newUser);
         return userUpdated ? res.status(common_1.HttpStatus.OK).send(userUpdated) : res.status(common_1.HttpStatus.BAD_REQUEST).send();
     }
     ;
     async deleteUserById(res, id) {
-        const userDeleted = await user_service_1.deleteUser(id);
-        task_service_1.removeTaskByUserId(id);
-        return userDeleted ? res.status(common_1.HttpStatus.NO_CONTENT).send() : res.status(common_1.HttpStatus.NOT_FOUND).send();
+        const userExists = Boolean(await this.usersService.getById(id));
+        if (userExists)
+            this.usersService.deleteUser(id);
+        return userExists ? res.status(common_1.HttpStatus.NO_CONTENT).send() : res.status(common_1.HttpStatus.NOT_FOUND).send();
     }
     ;
 };
@@ -84,7 +88,8 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], UsersController.prototype, "deleteUserById", null);
 UsersController = __decorate([
-    common_1.Controller('users')
+    common_1.Controller('users'),
+    __metadata("design:paramtypes", [user_service_1.UsersService])
 ], UsersController);
 exports.UsersController = UsersController;
 ;

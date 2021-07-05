@@ -6,7 +6,7 @@ interface UserT {
 }
 
 interface ColumnT {
-    id: string | undefined;
+    id: string;
     title: string;
     order: number;
 }
@@ -14,23 +14,17 @@ interface ColumnT {
 interface BoardT {
     id: string;
     title: string;
-    columns: Array<ColumnT>;
+    columns?: Array<ColumnT>;
 }
 
 interface TaskT {
     id: string;
     title: string;
-    order: number;
     description: string;
     userId: string | null;
     boardId: string;
-    columnId: string;
+    columnId: string | null;
+    order: number;
 }
 
-interface DBT {
-    users: Array<UserT>;
-    boards: Array<BoardT>;
-    tasks: Array<TaskT>;
-}
-
-export { DBT, UserT, BoardT, TaskT, ColumnT };
+export { UserT, BoardT, TaskT, ColumnT };

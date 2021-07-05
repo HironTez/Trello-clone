@@ -11,42 +11,46 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TasksController = void 0;
 const common_1 = require("@nestjs/common");
 const task_data_dto_1 = require("./dto/task-data.dto");
 const task_service_1 = require("./task.service");
-const task_model_1 = __importDefault(require("./task.model"));
+const task_model_1 = require("./task.model");
 let TasksController = class TasksController {
+    constructor(tasksService) {
+        this.tasksService = tasksService;
+    }
+    ;
     async getTasksByBoardId(res, boardId) {
-        const tasks = await task_service_1.getAllTasksByBoardId(boardId);
-        return res.status(common_1.HttpStatus.OK).send(tasks.map(task_model_1.default.toResponse));
+        const tasks = await this.tasksService.getAllTasksByBoardId(boardId);
+        return res.status(common_1.HttpStatus.OK).send(tasks.map(task_model_1.Task.toResponse));
     }
     ;
     async getTaskById(res, id, boardId) {
-        const task = await task_service_1.getByIdAndBoardId(id, boardId);
-        return task ? res.status(common_1.HttpStatus.OK).send(task_model_1.default.toResponse(task)) : res.status(common_1.HttpStatus.NOT_FOUND).send();
+        const task = await this.tasksService.getByIdAndBoardId(id, boardId);
+        return task ? res.status(common_1.HttpStatus.OK).send(task_model_1.Task.toResponse(task)) : res.status(common_1.HttpStatus.NOT_FOUND).send();
     }
     ;
     async createTask(res, boardId, body) {
         body.boardId = boardId;
-        const newTask = new task_model_1.default(body);
-        const taskCreated = await task_service_1.addTask(newTask);
-        return taskCreated ? res.status(common_1.HttpStatus.CREATED).send(task_model_1.default.toResponse(newTask)) : res.status(common_1.HttpStatus.BAD_REQUEST).send();
+        const newTask = new task_model_1.Task(body);
+        const taskCreated = await this.tasksService.addTask(newTask);
+        return taskCreated ? res.status(common_1.HttpStatus.CREATED).send(task_model_1.Task.toResponse(newTask)) : res.status(common_1.HttpStatus.BAD_REQUEST).send();
     }
     ;
     async updateTaskById(res, id, boardId, body) {
-        const newTask = new task_model_1.default(body);
-        const taskUpdated = await task_service_1.updateTask(id, boardId, newTask);
+        body.id = id;
+        const newTask = new task_model_1.Task(body);
+        const taskUpdated = await this.tasksService.updateTask(id, boardId, newTask);
         return taskUpdated ? res.status(common_1.HttpStatus.OK).send(taskUpdated) : res.status(common_1.HttpStatus.BAD_REQUEST).send();
     }
     ;
     async deleteTaskById(res, id, boardId) {
-        const taskDeleted = await task_service_1.deleteTask(id, boardId);
-        return taskDeleted ? res.status(common_1.HttpStatus.NO_CONTENT).send() : res.status(common_1.HttpStatus.NOT_FOUND).send();
+        const taskExists = Boolean(await this.tasksService.getByIdAndBoardId(id, boardId));
+        if (taskExists)
+            this.tasksService.deleteTask(id, boardId);
+        return taskExists ? res.status(common_1.HttpStatus.NO_CONTENT).send() : res.status(common_1.HttpStatus.NOT_FOUND).send();
     }
     ;
 };
@@ -86,7 +90,8 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], TasksController.prototype, "deleteTaskById", null);
 TasksController = __decorate([
-    common_1.Controller('boards/:boardId/tasks')
+    common_1.Controller('boards/:boardId/tasks'),
+    __metadata("design:paramtypes", [task_service_1.TasksService])
 ], TasksController);
 exports.TasksController = TasksController;
 ;

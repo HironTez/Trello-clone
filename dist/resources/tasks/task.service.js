@@ -1,19 +1,38 @@
 "use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.deleteTasksByBoardId = exports.removeTaskByUserId = exports.deleteTask = exports.updateTask = exports.addTask = exports.getByIdAndBoardId = exports.getAllTasksByBoardId = void 0;
-const db_1 = require("../../db");
-const getAllTasksByBoardId = async (boardId) => db_1.db['tasks'].filter((task) => task.boardId == boardId);
-exports.getAllTasksByBoardId = getAllTasksByBoardId;
-const getByIdAndBoardId = async (id, boardId) => db_1.db['tasks'].find((task) => task.id == id && task.boardId == boardId);
-exports.getByIdAndBoardId = getByIdAndBoardId;
-const addTask = async (task) => Boolean(db_1.db['tasks'].push(task));
-exports.addTask = addTask;
-const updateTask = async (id, boardId, newTask) => Boolean(Object.assign((await exports.getByIdAndBoardId(id, boardId)) || {}, newTask));
-exports.updateTask = updateTask;
-const deleteTask = async (id, boardId) => Boolean(db_1.db['tasks'].splice(db_1.db['tasks'].indexOf((await exports.getByIdAndBoardId(id, boardId))), 1));
-exports.deleteTask = deleteTask;
-const removeTaskByUserId = async (userId) => db_1.db['tasks'].filter((task) => task.userId == userId).map((task) => { task.userId = null; });
-exports.removeTaskByUserId = removeTaskByUserId;
-const deleteTasksByBoardId = async (boardId) => db_1.db['tasks'].filter((task) => task.boardId == boardId).forEach((task) => db_1.db['tasks'].splice(db_1.db['tasks'].indexOf(task), 1));
-exports.deleteTasksByBoardId = deleteTasksByBoardId;
+exports.TasksService = void 0;
+const task_model_1 = require("./task.model");
+const common_1 = require("@nestjs/common");
+const typeorm_1 = require("@nestjs/typeorm");
+const typeorm_2 = require("typeorm");
+let TasksService = class TasksService {
+    constructor(tasksRepository) {
+        this.tasksRepository = tasksRepository;
+        this.getAllTasksByBoardId = async (boardId) => await this.tasksRepository.find({ boardId: boardId });
+        this.getByIdAndBoardId = async (id, boardId) => await this.tasksRepository.findOne({ id: id, boardId: boardId });
+        this.addTask = async (task) => Boolean(await this.tasksRepository.save(task));
+        this.updateTask = async (id, boardId, newTask) => Boolean(this.tasksRepository.save({ ...(await this.getByIdAndBoardId(id, boardId)), ...newTask }));
+        this.deleteTask = (id, boardId) => this.tasksRepository.delete({ id: id, boardId: boardId });
+    }
+    ;
+};
+TasksService = __decorate([
+    common_1.Injectable(),
+    __param(0, typeorm_1.InjectRepository(task_model_1.Task)),
+    __metadata("design:paramtypes", [typeorm_2.Repository])
+], TasksService);
+exports.TasksService = TasksService;
+;
 //# sourceMappingURL=task.service.js.map

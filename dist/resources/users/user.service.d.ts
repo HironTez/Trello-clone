@@ -1,6 +1,12 @@
 import { GetAllT, GetByIdT, AddUserT, UpdateUserT, DeleteUserT } from './user.types';
-export declare const getAllUsers: GetAllT;
-export declare const getById: GetByIdT;
-export declare const addUser: AddUserT;
-export declare const updateUser: UpdateUserT;
-export declare const deleteUser: DeleteUserT;
+import { UserT } from '../../types';
+import { Repository } from 'typeorm';
+export declare class UsersService {
+    private usersRepository;
+    constructor(usersRepository: Repository<UserT>);
+    getAllUsers: GetAllT;
+    getById: GetByIdT;
+    addUser: AddUserT;
+    updateUser: UpdateUserT;
+    deleteUser: DeleteUserT;
+}

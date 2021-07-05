@@ -4,4 +4,5 @@ exports.TaskDataDto = void 0;
 class TaskDataDto {
 }
 exports.TaskDataDto = TaskDataDto;
+;
 //# sourceMappingURL=task-data.dto.js.map

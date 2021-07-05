@@ -1,8 +1,9 @@
 import { ColumnT } from '../../types';
-export declare class Board {
+import { BaseEntity } from "typeorm";
+export declare class Board extends BaseEntity {
     id: string;
     title: string;
-    columns: Array<ColumnT>;
+    columns?: Array<ColumnT>;
     constructor({ id, title, columns }?: {
         id?: string | undefined;
         title?: string | undefined;
