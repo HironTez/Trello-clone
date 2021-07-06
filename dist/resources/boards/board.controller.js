@@ -17,6 +17,7 @@ const common_1 = require("@nestjs/common");
 const board_data_dto_1 = require("./dto/board-data.dto");
 const board_service_1 = require("./board.service");
 const board_model_1 = require("./board.model");
+const jwt_auth_guard_1 = require("../../auth/jwt-auth.guard");
 let BoardsController = class BoardsController {
     constructor(boardsService) {
         this.boardsService = boardsService;
@@ -90,6 +91,7 @@ __decorate([
 ], BoardsController.prototype, "deleteBoardById", null);
 BoardsController = __decorate([
     common_1.Controller('boards'),
+    common_1.UseGuards(jwt_auth_guard_1.JwtAuthGuard),
     __metadata("design:paramtypes", [board_service_1.BoardsService])
 ], BoardsController);
 exports.BoardsController = BoardsController;

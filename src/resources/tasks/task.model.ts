@@ -25,8 +25,8 @@ export class Task extends BaseEntity {
     @ManyToOne(() => Board, { onDelete: 'CASCADE' })
     board!: Board;
 
-    @Column()
-    boardId: string;
+    @Column({ nullable: true })
+    boardId: string | null;
 
     @Column('varchar', { nullable: true })
     columnId: string | null;
@@ -53,7 +53,7 @@ export class Task extends BaseEntity {
         this.order = order;
     };
 
-    static toResponse(task: TaskT): { id: string, title: string, description: string, userId: string | null, boardId: string, columnId: string | null, order: number } {
+    static toResponse(task: TaskT): { id: string, title: string, description: string, userId: string | null, boardId: string | null, columnId: string | null, order: number } {
         const { id, title, description, userId, boardId, columnId, order } = task;
         return { id, title, description, userId, boardId, columnId, order };
     };

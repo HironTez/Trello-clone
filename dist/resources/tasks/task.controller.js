@@ -17,6 +17,7 @@ const common_1 = require("@nestjs/common");
 const task_data_dto_1 = require("./dto/task-data.dto");
 const task_service_1 = require("./task.service");
 const task_model_1 = require("./task.model");
+const jwt_auth_guard_1 = require("../../auth/jwt-auth.guard");
 let TasksController = class TasksController {
     constructor(tasksService) {
         this.tasksService = tasksService;
@@ -91,6 +92,7 @@ __decorate([
 ], TasksController.prototype, "deleteTaskById", null);
 TasksController = __decorate([
     common_1.Controller('boards/:boardId/tasks'),
+    common_1.UseGuards(jwt_auth_guard_1.JwtAuthGuard),
     __metadata("design:paramtypes", [task_service_1.TasksService])
 ], TasksController);
 exports.TasksController = TasksController;

@@ -9,7 +9,7 @@ export declare class Task extends BaseEntity {
     user: User;
     userId: string | null;
     board: Board;
-    boardId: string;
+    boardId: string | null;
     columnId: string | null;
     order: number;
     constructor({ id, title, description, userId, boardId, columnId, order }?: {
@@ -26,7 +26,7 @@ export declare class Task extends BaseEntity {
         title: string;
         description: string;
         userId: string | null;
-        boardId: string;
+        boardId: string | null;
         columnId: string | null;
         order: number;
     };

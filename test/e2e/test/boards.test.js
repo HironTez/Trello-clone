@@ -151,7 +151,7 @@ describe('Boards suite', () => {
       // Test
       await request
         .delete(routes.boards.delete(boardId))
-        .then(res => {console.log(res.status); expect(res.status).oneOf([200, 204])});
+        .then(res => expect(res.status).oneOf([200, 204]));
 
       await request.get(routes.boards.getById(boardId)).expect(404);
     });

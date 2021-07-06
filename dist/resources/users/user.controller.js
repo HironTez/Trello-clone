@@ -17,9 +17,12 @@ const common_1 = require("@nestjs/common");
 const user_data_dto_1 = require("./dto/user-data.dto");
 const user_service_1 = require("./user.service");
 const user_model_1 = require("./user.model");
+const jwt_auth_guard_1 = require("../../auth/jwt-auth.guard");
 let UsersController = class UsersController {
     constructor(usersService) {
         this.usersService = usersService;
+        const admin = new user_model_1.User({ login: 'admin', password: 'admin' });
+        this.usersService.addUser(admin);
     }
     ;
     async getAllUsers(res) {
@@ -89,6 +92,7 @@ __decorate([
 ], UsersController.prototype, "deleteUserById", null);
 UsersController = __decorate([
     common_1.Controller('users'),
+    common_1.UseGuards(jwt_auth_guard_1.JwtAuthGuard),
     __metadata("design:paramtypes", [user_service_1.UsersService])
 ], UsersController);
 exports.UsersController = UsersController;
