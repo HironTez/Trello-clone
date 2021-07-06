@@ -57,8 +57,8 @@ __decorate([
     __metadata("design:type", board_model_1.Board)
 ], Task.prototype, "board", void 0);
 __decorate([
-    typeorm_1.Column(),
-    __metadata("design:type", String)
+    typeorm_1.Column({ nullable: true }),
+    __metadata("design:type", Object)
 ], Task.prototype, "boardId", void 0);
 __decorate([
     typeorm_1.Column('varchar', { nullable: true }),

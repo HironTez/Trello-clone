@@ -17,6 +17,7 @@ const ormconfig_1 = require("./ormconfig");
 const user_module_1 = require("./resources/users/user.module");
 const board_module_1 = require("./resources/boards/board.module");
 const task_module_1 = require("./resources/tasks/task.module");
+const auth_module_1 = require("./auth/auth.module");
 let AppModule = class AppModule {
     configure(consumer) {
         consumer
@@ -29,8 +30,8 @@ let AppModule = class AppModule {
 };
 AppModule = __decorate([
     common_1.Module({
-        imports: [typeorm_1.TypeOrmModule.forRoot(ormconfig_1.connectionOptions), user_module_1.UserModule, board_module_1.BoardModule, task_module_1.TaskModule],
-        controllers: [app_controller_1.MainPageController],
+        imports: [typeorm_1.TypeOrmModule.forRoot(ormconfig_1.connectionOptions), user_module_1.UserModule, board_module_1.BoardModule, task_module_1.TaskModule, auth_module_1.AuthModule],
+        controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],
     })
 ], AppModule);

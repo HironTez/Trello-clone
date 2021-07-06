@@ -1,15 +1,20 @@
-import { Controller, Res, Get, Post, Put, Delete, Param, Body, HttpStatus } from '@nestjs/common';
+import { Controller, Res, Get, Post, Put, Delete, Param, Body, HttpStatus, UseGuards } from '@nestjs/common';
 import { Response } from 'express';
 import { UserDataDto } from './dto/user-data.dto';
 import { UsersService } from './user.service';
 import { User } from './user.model';
+import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
 
 
 @Controller('users')
+@UseGuards(JwtAuthGuard)
 export class UsersController {
     constructor(
         private readonly usersService: UsersService
-    ) { };
+    ) {
+        const admin = new User({login: 'admin', password: 'admin'});
+        this.usersService.addUser(admin);
+    };
 
     @Get()
     async getAllUsers(@Res() res: Response) {

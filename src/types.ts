@@ -22,7 +22,7 @@ interface TaskT {
     title: string;
     description: string;
     userId: string | null;
-    boardId: string;
+    boardId: string | null;
     columnId: string | null;
     order: number;
 }
