@@ -2,7 +2,6 @@ import { Controller, Res, Get, Post, Put, Delete, Param, Body, HttpStatus, UseGu
 import { Response } from 'express';
 import { BoardDataDto } from './dto/board-data.dto';
 import { BoardsService } from './board.service';
-import { Board } from './board.model';
 import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
 
 
@@ -27,24 +26,21 @@ export class BoardsController {
 
     @Post()
     async createBoard(@Res() res: Response, @Body() body: BoardDataDto) {
-        const newBoard = new Board(body);
-        const boardCreated = await this.boardsService.addBoard(newBoard);
-        return boardCreated ? res.status(HttpStatus.CREATED).send(newBoard) : res.status(HttpStatus.BAD_REQUEST).send();
+        const createdBoard = await this.boardsService.addBoard(body);
+        return createdBoard ? res.status(HttpStatus.CREATED).send(body) : res.status(HttpStatus.BAD_REQUEST).send();
     };
 
     @Put(':id')
     async updateBoardById(@Res() res: Response, @Param('id') id: string, @Body() body: BoardDataDto) {
-        const newBoard = new Board(body);
-        delete newBoard.columns;
-        const boardUpdated = await this.boardsService.updateBoard(id, newBoard);
-        return boardUpdated ? res.status(HttpStatus.OK).send(newBoard) : res.status(HttpStatus.BAD_REQUEST).send();
+        const updatedBoard = await this.boardsService.updateBoard(id, body.title);
+        return updatedBoard ? res.status(HttpStatus.OK).send(body) : res.status(HttpStatus.BAD_REQUEST).send();
     };
 
     @Delete(':id')
     async deleteBoardById(@Res() res: Response, @Param('id') id: string) {
-        const boardExists = Boolean(await this.boardsService.getById(id));
-        if (boardExists) this.boardsService.deleteBoard(id); // Delete board
-        return boardExists ? res.status(HttpStatus.NO_CONTENT).send() : res.status(HttpStatus.NOT_FOUND).send();
+        const board = await this.boardsService.getById(id);
+        if (board) this.boardsService.deleteBoard(id); // Delete board
+        return board ? res.status(HttpStatus.NO_CONTENT).send() : res.status(HttpStatus.NOT_FOUND).send();
     };
 
 };

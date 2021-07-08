@@ -9,25 +9,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Board = void 0;
+exports.ColumnModel = void 0;
 const typeorm_1 = require("typeorm");
-let Board = class Board extends typeorm_1.BaseEntity {
+let ColumnModel = class ColumnModel extends typeorm_1.BaseEntity {
 };
 __decorate([
-    typeorm_1.PrimaryGeneratedColumn('uuid'),
+    typeorm_1.PrimaryGeneratedColumn(),
     __metadata("design:type", String)
-], Board.prototype, "id", void 0);
+], ColumnModel.prototype, "id", void 0);
 __decorate([
     typeorm_1.Column(),
     __metadata("design:type", String)
-], Board.prototype, "title", void 0);
+], ColumnModel.prototype, "title", void 0);
 __decorate([
-    typeorm_1.Column('json'),
-    __metadata("design:type", Array)
-], Board.prototype, "columns", void 0);
-Board = __decorate([
-    typeorm_1.Entity('Board')
-], Board);
-exports.Board = Board;
+    typeorm_1.Column(),
+    __metadata("design:type", Number)
+], ColumnModel.prototype, "order", void 0);
+ColumnModel = __decorate([
+    typeorm_1.Entity('Column')
+], ColumnModel);
+exports.ColumnModel = ColumnModel;
 ;
-//# sourceMappingURL=board.model.js.map
+//# sourceMappingURL=column.model.js.map

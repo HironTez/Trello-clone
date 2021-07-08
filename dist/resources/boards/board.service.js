@@ -22,12 +22,12 @@ let BoardsService = class BoardsService {
         this.boardsRepository = boardsRepository;
         this.getAllBoards = async () => this.boardsRepository.find();
         this.getById = async (id) => this.boardsRepository.findOne(id);
-        this.addBoard = async (board) => Boolean(this.boardsRepository.save(board));
-        this.updateBoard = async (id, newBoard) => {
+        this.addBoard = async (board) => this.boardsRepository.save(board);
+        this.updateBoard = async (id, title) => {
             const board = await this.getById(id);
             if (!board)
                 return false;
-            return Boolean(await this.boardsRepository.save({ ...board, ...newBoard }));
+            return this.boardsRepository.save({ ...board, ...{ id, title } });
         };
         this.deleteBoard = (id) => this.boardsRepository.delete(id);
     }

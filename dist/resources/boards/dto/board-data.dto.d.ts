@@ -1,4 +1,5 @@
 export declare class BoardDataDto {
+    id?: string;
     readonly title: string;
-    readonly columns: Array<never>;
+    columns?: Array<never>;
 }

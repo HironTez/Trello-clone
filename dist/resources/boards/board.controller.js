@@ -16,7 +16,6 @@ exports.BoardsController = void 0;
 const common_1 = require("@nestjs/common");
 const board_data_dto_1 = require("./dto/board-data.dto");
 const board_service_1 = require("./board.service");
-const board_model_1 = require("./board.model");
 const jwt_auth_guard_1 = require("../../auth/jwt-auth.guard");
 let BoardsController = class BoardsController {
     constructor(boardsService) {
@@ -34,23 +33,20 @@ let BoardsController = class BoardsController {
     }
     ;
     async createBoard(res, body) {
-        const newBoard = new board_model_1.Board(body);
-        const boardCreated = await this.boardsService.addBoard(newBoard);
-        return boardCreated ? res.status(common_1.HttpStatus.CREATED).send(newBoard) : res.status(common_1.HttpStatus.BAD_REQUEST).send();
+        const createdBoard = await this.boardsService.addBoard(body);
+        return createdBoard ? res.status(common_1.HttpStatus.CREATED).send(body) : res.status(common_1.HttpStatus.BAD_REQUEST).send();
     }
     ;
     async updateBoardById(res, id, body) {
-        const newBoard = new board_model_1.Board(body);
-        delete newBoard.columns;
-        const boardUpdated = await this.boardsService.updateBoard(id, newBoard);
-        return boardUpdated ? res.status(common_1.HttpStatus.OK).send(newBoard) : res.status(common_1.HttpStatus.BAD_REQUEST).send();
+        const updatedBoard = await this.boardsService.updateBoard(id, body.title);
+        return updatedBoard ? res.status(common_1.HttpStatus.OK).send(body) : res.status(common_1.HttpStatus.BAD_REQUEST).send();
     }
     ;
     async deleteBoardById(res, id) {
-        const boardExists = Boolean(await this.boardsService.getById(id));
-        if (boardExists)
+        const board = await this.boardsService.getById(id);
+        if (board)
             this.boardsService.deleteBoard(id);
-        return boardExists ? res.status(common_1.HttpStatus.NO_CONTENT).send() : res.status(common_1.HttpStatus.NOT_FOUND).send();
+        return board ? res.status(common_1.HttpStatus.NO_CONTENT).send() : res.status(common_1.HttpStatus.NOT_FOUND).send();
     }
     ;
 };

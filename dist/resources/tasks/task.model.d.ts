@@ -1,4 +1,3 @@
-import { TaskT } from '../../types';
 import { BaseEntity } from "typeorm";
 import { User } from '../users/user.model';
 import { Board } from '../boards/board.model';
@@ -12,16 +11,7 @@ export declare class Task extends BaseEntity {
     boardId: string | null;
     columnId: string | null;
     order: number;
-    constructor({ id, title, description, userId, boardId, columnId, order }?: {
-        id?: string | undefined;
-        title?: string | undefined;
-        description?: string | undefined;
-        userId?: string | undefined;
-        boardId?: string | undefined;
-        columnId?: string | undefined;
-        order?: number | undefined;
-    });
-    static toResponse(task: TaskT): {
+    static toResponse(task: Task): {
         id: string;
         title: string;
         description: string;

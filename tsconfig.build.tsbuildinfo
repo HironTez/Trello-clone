@@ -1231,6 +1231,16 @@
         "signature": "95b5a3078fdc51508d5d9cde59a1dd9525b53fd42dc12265a55261fd415d3274",
         "affectsGlobalScope": false
       },
+      "./src/app.service.ts": {
+        "version": "25291cb2eca792a02164f656f4fa628c92038d0794c9f1932318a703396de0ab",
+        "signature": "3b2976aeeeecee5294b9f6f4b1d455123343137bd8b9896c59928d677aae90ff",
+        "affectsGlobalScope": false
+      },
+      "./src/app.controller.ts": {
+        "version": "69bb646eff06df0f882d70fc8742b153f39e150bf0747d617b554d4433db6a40",
+        "signature": "c4c1dad8cd74c2d2179eba8bb11240c50bd5b47b913e054a33748ce2237ef776",
+        "affectsGlobalScope": false
+      },
       "./node_modules/@types/node/globals.d.ts": {
         "version": "25b4a0c4fab47c373ee49df4c239826ee3430019fc0c1b5e59edc3e398b7468d",
         "signature": "25b4a0c4fab47c373ee49df4c239826ee3430019fc0c1b5e59edc3e398b7468d",
@@ -1501,44 +1511,24 @@
         "signature": "3b05c396564e51753e921e1cc4aae1cf7cd9be53c891cf2e81fa29f11c0bd373",
         "affectsGlobalScope": false
       },
-      "./src/app.service.ts": {
-        "version": "25291cb2eca792a02164f656f4fa628c92038d0794c9f1932318a703396de0ab",
-        "signature": "3b2976aeeeecee5294b9f6f4b1d455123343137bd8b9896c59928d677aae90ff",
+      "./src/middleware/json.headers.middleware.ts": {
+        "version": "7b55b90b185586a92605515f1ab49dde51b005aec628df0471148fabdcf83623",
+        "signature": "d23120a01557818ff561a6985b3f737c1d1c9318679a9d19ffe499bf1c2acabd",
         "affectsGlobalScope": false
       },
-      "./node_modules/@nestjs/jwt/node_modules/@types/jsonwebtoken/index.d.ts": {
-        "version": "f67c920eba6ab8e4558cb9ab661d900188f101c5657e19b1e15829a1d491d46e",
-        "signature": "f67c920eba6ab8e4558cb9ab661d900188f101c5657e19b1e15829a1d491d46e",
+      "./src/services/logger.ts": {
+        "version": "414534badbafdc8ad9ae1af6ee871646de08a5884015b02440c875ef7b8fc81e",
+        "signature": "69143091e7e882cd744476bc3adc159133cd025cc58b8d57b4a27c3300b832f1",
         "affectsGlobalScope": false
       },
-      "./node_modules/@nestjs/jwt/dist/interfaces/jwt-module-options.interface.d.ts": {
-        "version": "fc0140cf41d169b3b77e09831c9d2eed1cdb131aa34f4fa27e4c01896ec97ad6",
-        "signature": "fc0140cf41d169b3b77e09831c9d2eed1cdb131aa34f4fa27e4c01896ec97ad6",
+      "./src/services/current.time.ts": {
+        "version": "c1d98f3fe09957d58707aa67f5d7efd68593350dfe1c63496c794bd62e895160",
+        "signature": "e53f446d8c73ac73a389b3a7fe5b891d10b79c42a5bbc939b62cf186f48b462c",
         "affectsGlobalScope": false
       },
-      "./node_modules/@nestjs/jwt/dist/interfaces/index.d.ts": {
-        "version": "7c14e702387296711c1a829bc95052ff02f533d4aa27d53cc0186c795094a3a9",
-        "signature": "7c14e702387296711c1a829bc95052ff02f533d4aa27d53cc0186c795094a3a9",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@nestjs/jwt/dist/jwt.module.d.ts": {
-        "version": "579f8828da42ae02db6915a0223d23b0da07157ff484fecdbf8a96fffa0fa4df",
-        "signature": "579f8828da42ae02db6915a0223d23b0da07157ff484fecdbf8a96fffa0fa4df",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@nestjs/jwt/dist/jwt.service.d.ts": {
-        "version": "d1e16a1778a336ae49607ca0becd8688e74a020bea949047dcfcbb1bd2dc0f5a",
-        "signature": "d1e16a1778a336ae49607ca0becd8688e74a020bea949047dcfcbb1bd2dc0f5a",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@nestjs/jwt/dist/index.d.ts": {
-        "version": "a13aac535101a942283e3d00bce50f483bfa9bed6e1f8dfda33a3bb072498776",
-        "signature": "a13aac535101a942283e3d00bce50f483bfa9bed6e1f8dfda33a3bb072498776",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@nestjs/jwt/index.d.ts": {
-        "version": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
-        "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
+      "./src/middleware/req.log.middleware.ts": {
+        "version": "a906d95bb06d4d606a8fef300af79a5b190c371106fccd6debebcd73531656d3",
+        "signature": "c328df64329a83f2ace9eca5f25544507dab02f9ce485cb5830b7b8097ef56ad",
         "affectsGlobalScope": false
       },
       "./node_modules/typeorm/schema-builder/options/tablecolumnoptions.d.ts": {
@@ -3196,51 +3186,6 @@
         "signature": "1f956ff5e76bced84fffad27c121cfe12ecca23de8081c9ab9377ead7167a57d",
         "affectsGlobalScope": false
       },
-      "./node_modules/@types/uuid/index.d.ts": {
-        "version": "96b49a9de749afcf92b5bce1d8cc42cfae6816cdf5ea36584fd9256b8b2e5292",
-        "signature": "96b49a9de749afcf92b5bce1d8cc42cfae6816cdf5ea36584fd9256b8b2e5292",
-        "affectsGlobalScope": false
-      },
-      "./src/types.ts": {
-        "version": "414c2b010a1aa30670cece779ec4c11b0e26b755d1561e4460a8d1f0d09968f8",
-        "signature": "b55a4398dc1cb9b9ac0d03f82665043d188ef5417f95669efbebaba53c614061",
-        "affectsGlobalScope": false
-      },
-      "./src/resources/users/user.model.ts": {
-        "version": "3720aa61d8ef73978440890825b8795e7f28b47a265b4bc4c695b88668b35539",
-        "signature": "dc5f7baad629368eccc91eabeba95fb34cb9c6530fcd0de6e4f12e66bd03298a",
-        "affectsGlobalScope": false
-      },
-      "./src/auth/auth.service.ts": {
-        "version": "9fe2a487511791c4553a6447e47448283cee8e34d9d5765508b9b66aa00699b9",
-        "signature": "d9072a4144ab008c1813740042744b371e695e43b862e974f31265591d890adb",
-        "affectsGlobalScope": false
-      },
-      "./src/app.controller.ts": {
-        "version": "a7932d7b5cdd68d5be147bdc9d958541fbfedecc6a407a6e76881175566db77d",
-        "signature": "deb83775ace8fcd9a3261c764c98c1db067060469ecac03fc4de06c75f93fb8a",
-        "affectsGlobalScope": false
-      },
-      "./src/middleware/json.headers.middleware.ts": {
-        "version": "7b55b90b185586a92605515f1ab49dde51b005aec628df0471148fabdcf83623",
-        "signature": "d23120a01557818ff561a6985b3f737c1d1c9318679a9d19ffe499bf1c2acabd",
-        "affectsGlobalScope": false
-      },
-      "./src/services/logger.ts": {
-        "version": "414534badbafdc8ad9ae1af6ee871646de08a5884015b02440c875ef7b8fc81e",
-        "signature": "69143091e7e882cd744476bc3adc159133cd025cc58b8d57b4a27c3300b832f1",
-        "affectsGlobalScope": false
-      },
-      "./src/services/current.time.ts": {
-        "version": "c1d98f3fe09957d58707aa67f5d7efd68593350dfe1c63496c794bd62e895160",
-        "signature": "e53f446d8c73ac73a389b3a7fe5b891d10b79c42a5bbc939b62cf186f48b462c",
-        "affectsGlobalScope": false
-      },
-      "./src/middleware/req.log.middleware.ts": {
-        "version": "a906d95bb06d4d606a8fef300af79a5b190c371106fccd6debebcd73531656d3",
-        "signature": "c328df64329a83f2ace9eca5f25544507dab02f9ce485cb5830b7b8097ef56ad",
-        "affectsGlobalScope": false
-      },
       "./node_modules/@nestjs/typeorm/dist/interfaces/entity-class-or-schema.type.d.ts": {
         "version": "e15db0d01139d39213a40639352debd92786f311e0421c21ac97c2ca4003a299",
         "signature": "e15db0d01139d39213a40639352debd92786f311e0421c21ac97c2ca4003a299",
@@ -3296,14 +3241,29 @@
         "signature": "44006c6c840d28c7166f66c4f306cd136c08a6e5b849015d8c357cc82bd09fa9",
         "affectsGlobalScope": false
       },
+      "./node_modules/@types/uuid/index.d.ts": {
+        "version": "96b49a9de749afcf92b5bce1d8cc42cfae6816cdf5ea36584fd9256b8b2e5292",
+        "signature": "96b49a9de749afcf92b5bce1d8cc42cfae6816cdf5ea36584fd9256b8b2e5292",
+        "affectsGlobalScope": false
+      },
+      "./src/resources/users/user.model.ts": {
+        "version": "d49a511dd92a6b2defc46af75ffc7b0a0177e3877650ada77530c6e994da4630",
+        "signature": "8ff4a6f32248df3a75e35715eada1162a8aafe800c539ca56928176d3a1cd9bb",
+        "affectsGlobalScope": false
+      },
+      "./src/resources/boards/column.model.ts": {
+        "version": "b7bb33ba0f7a38433899b910f812ebc8df046e50e8dd5aeb561cbb901ef06c62",
+        "signature": "d05919367b437c49148ea13f7ef7f3c4c3684d81a8a68a9d50b86d1cb755ce99",
+        "affectsGlobalScope": false
+      },
       "./src/resources/boards/board.model.ts": {
-        "version": "184c05edb1cbeaf72d106a3dc683e1af62ec3ae909d1791b24ab33119cc64b90",
-        "signature": "c3e374127d958cd99bacdb4a1375499d5f5c0fa00e2facefddd5f09fa4be87e7",
+        "version": "a61a2d58a3e37cf4ef06d5e946f3c6220adcbf8a958ae1837ea8a1895e403ad0",
+        "signature": "afe64015ae108d4b2fc21357672653b533aa7c521e803fc5e9e7c948c23cd58c",
         "affectsGlobalScope": false
       },
       "./src/resources/tasks/task.model.ts": {
-        "version": "fdc36588f69fe66b4d3ee1570fb4496e8b8a40d4e0a598a8fa8e379d83a6aa39",
-        "signature": "ffc5427bd050b01417fcc2714101f742afe0b2e98e21aeb54affb728e4adff13",
+        "version": "f80d29fb31d48614e0ab32a196ad8f20aaf46cdd5f5655990d51df4ec141e37d",
+        "signature": "ae6128da9bc772cb27ba4870e0b32a76680d2a2e7a4b054e0ce82c42b99da414",
         "affectsGlobalScope": false
       },
       "./src/ormconfig.ts": {
@@ -3312,8 +3272,8 @@
         "affectsGlobalScope": false
       },
       "./src/resources/users/user.types.ts": {
-        "version": "42e4a54e49b2c5e2ad2b6d9fb18d7ec79d09fa2423ae7eda90e06cb58c35ebf5",
-        "signature": "77380c6e0d7cf16fbecf0f7f5c918564b4fe5f9e42162e977f47ccae23f9dc19",
+        "version": "bd4a3280fc904cec5ca7249b2c2fd1c16eef2b5927af50f5dad0fe530405cee4",
+        "signature": "4282d2d474fcbc9887db46a7d296c5fb9e4a8403ff7a6037734eca8597a5428e",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/bcryptjs/index.d.ts": {
@@ -3322,8 +3282,8 @@
         "affectsGlobalScope": false
       },
       "./src/resources/users/user.service.ts": {
-        "version": "2577a397905587c2886a72a743479aff833ce8c5ffc8a860dbf1f4c10e4bcf73",
-        "signature": "ced50e864850673adbd1a4727d450c5b746c88abe6e13fa7f35d5c6aee303b50",
+        "version": "86ef937627044f6186eb2e91a432d242d0e05fd43e3699809f28bc749b64c02d",
+        "signature": "0ded17651bbad3446fb023748d70212f74f3517fcb10b54cb0a0994ecb7660bd",
         "affectsGlobalScope": false
       },
       "./src/resources/users/dto/user-data.dto.ts": {
@@ -3401,23 +3361,23 @@
         "signature": "9e36626cb39f17790cf2403e2e54d8a74542da63e2a49aba7061133a1af26dcd",
         "affectsGlobalScope": false
       },
+      "./src/resources/boards/dto/board-data.dto.ts": {
+        "version": "7dfa5a2316832405aec6c17168ad3dfcd85e3a3342461cd617f0af8e9cdaa6f8",
+        "signature": "b5011ed939b7824783a8225467655730527334ec4a85780ff848e8c8cf2d8a76",
+        "affectsGlobalScope": false
+      },
       "./src/resources/boards/board.types.ts": {
-        "version": "eb177c515e7e39db87d6ace5dfb19c0003c307ce01e72130247f5259f2877982",
-        "signature": "16c025c4783a46770fee661b3b93f69ccf41558ee7b4a06683e86109eda04f2a",
+        "version": "7e5d4c06db71fe48c0c301b1a3f4a1d569d5f1499e239d7600ff73d53c072f40",
+        "signature": "2c74098ec1b111be752e5c54c4521a08c49c63025caf1185b7e56961b5d52346",
         "affectsGlobalScope": false
       },
       "./src/resources/boards/board.service.ts": {
-        "version": "b84c5d6b48ad450ec7724833870fe121fb88eaa5f22737a91df46dd9fe76be9d",
-        "signature": "75106c1b7f0855a2da4e9d91986e76e049f4aefed7caf5d089358671ed3fcfa5",
-        "affectsGlobalScope": false
-      },
-      "./src/resources/boards/dto/board-data.dto.ts": {
-        "version": "471d6b8bf6070db3a0fc6f0d41aeb3e8d4659d20206832a83584022be7c0223a",
-        "signature": "646b0d7627335e678869e49d111d926917a8684a854c78532c5f8ea54996c91d",
+        "version": "22abc55390c2273f33c29f7b1d9f6881d818183460fa4c1402f9a9258f3b6415",
+        "signature": "723f1fb7b6836be9a48d668d6a70e14a635553a822d23a123f5960d4bc2cf575",
         "affectsGlobalScope": false
       },
       "./src/resources/boards/board.controller.ts": {
-        "version": "8b12db5959b89b6dca256391e5657ef473496e125ddd9796a43e0915ad687ddf",
+        "version": "845d3e39d52a9f3e50ef254ea458c58ddfd29797102d427438f5f52857722ebc",
         "signature": "b3908ecbed01234d217522f491536dd65353cb6eee850cca7e814d9ca4b21137",
         "affectsGlobalScope": false
       },
@@ -3426,29 +3386,69 @@
         "signature": "522faf85a7bbefc06b17b1c6ffca3e3fe7a06a2447f6d897153af5bb4efef324",
         "affectsGlobalScope": false
       },
+      "./src/resources/tasks/dto/task-data.dto.ts": {
+        "version": "3ad8194c2d0d9b6449868cf4b7dcd5bf3f761e197610bfcc4e097b94e8240849",
+        "signature": "8e694f11810fb31252688c3fa8589e84c0b890a66adc2d0f7740a40cc06c3fb6",
+        "affectsGlobalScope": false
+      },
       "./src/resources/tasks/task.types.ts": {
-        "version": "d889774676c210a495996b75713bed872f180e6b55ed7aa0eab89f3a0f56a52d",
-        "signature": "77ef488fbde90e2c58083ea0d47901f7e0c1f5fbeac791794305894644063c76",
+        "version": "ccc7be2131bc6ac2bb8bec9bde04c138b6498e8f565b685ee31f08da90331a55",
+        "signature": "2529b8a8e3e17691dab4016af70ac90470e91316b0a2b211234503555d29dd90",
         "affectsGlobalScope": false
       },
       "./src/resources/tasks/task.service.ts": {
-        "version": "a238b4c625e9ed680ad85d965f70eb8fe7d840b93cc87e70d2b20b7d62c3ce5a",
-        "signature": "fa3fcc6fe1712f38e60d966dcd0f008662f5fa726f9c3501ee1314f84a2c184f",
-        "affectsGlobalScope": false
-      },
-      "./src/resources/tasks/dto/task-data.dto.ts": {
-        "version": "15b4118391118fa492476ee716b0431dbec133bd00904bf32387939f96dabe2f",
-        "signature": "fffa9d1b6064e5890671bb1991e67fae23c364dabbd4ea1c21b84d7f41d360dc",
+        "version": "46c5007eb4675f507f107d334b444967704ce94ca16737c5a758fcc927e0a972",
+        "signature": "10a66fc01f810ba370bdfd7eaef37ca9da4b97fa0a82e87d49fe0e749d7b43da",
         "affectsGlobalScope": false
       },
       "./src/resources/tasks/task.controller.ts": {
-        "version": "7c4edfbbfe5c78ff5f60047a645c205e171565e3f5052d564b195f5485e5e274",
+        "version": "ebffe677ae5bb6a6f0bc6ba5f63f6f97d485c6272fce71721bcc557fe7bc923c",
         "signature": "50e0ebaffb113ba2ec0f9e6d239cc93f68979c5e32df62d3dfe7345f8a6b0fca",
         "affectsGlobalScope": false
       },
       "./src/resources/tasks/task.module.ts": {
         "version": "e431ed4b5e93689a413a609b5ae7b1c66f89d9ec9318cfb72afebe85956b1678",
         "signature": "6690f9e9463c2679241271de8aec56405f835394eee7ce2c16af539080330242",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@nestjs/jwt/node_modules/@types/jsonwebtoken/index.d.ts": {
+        "version": "f67c920eba6ab8e4558cb9ab661d900188f101c5657e19b1e15829a1d491d46e",
+        "signature": "f67c920eba6ab8e4558cb9ab661d900188f101c5657e19b1e15829a1d491d46e",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@nestjs/jwt/dist/interfaces/jwt-module-options.interface.d.ts": {
+        "version": "fc0140cf41d169b3b77e09831c9d2eed1cdb131aa34f4fa27e4c01896ec97ad6",
+        "signature": "fc0140cf41d169b3b77e09831c9d2eed1cdb131aa34f4fa27e4c01896ec97ad6",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@nestjs/jwt/dist/interfaces/index.d.ts": {
+        "version": "7c14e702387296711c1a829bc95052ff02f533d4aa27d53cc0186c795094a3a9",
+        "signature": "7c14e702387296711c1a829bc95052ff02f533d4aa27d53cc0186c795094a3a9",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@nestjs/jwt/dist/jwt.module.d.ts": {
+        "version": "579f8828da42ae02db6915a0223d23b0da07157ff484fecdbf8a96fffa0fa4df",
+        "signature": "579f8828da42ae02db6915a0223d23b0da07157ff484fecdbf8a96fffa0fa4df",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@nestjs/jwt/dist/jwt.service.d.ts": {
+        "version": "d1e16a1778a336ae49607ca0becd8688e74a020bea949047dcfcbb1bd2dc0f5a",
+        "signature": "d1e16a1778a336ae49607ca0becd8688e74a020bea949047dcfcbb1bd2dc0f5a",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@nestjs/jwt/dist/index.d.ts": {
+        "version": "a13aac535101a942283e3d00bce50f483bfa9bed6e1f8dfda33a3bb072498776",
+        "signature": "a13aac535101a942283e3d00bce50f483bfa9bed6e1f8dfda33a3bb072498776",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@nestjs/jwt/index.d.ts": {
+        "version": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
+        "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
+        "affectsGlobalScope": false
+      },
+      "./src/auth/auth.service.ts": {
+        "version": "9fe2a487511791c4553a6447e47448283cee8e34d9d5765508b9b66aa00699b9",
+        "signature": "d9072a4144ab008c1813740042744b371e695e43b862e974f31265591d890adb",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/passport-strategy/index.d.ts": {
@@ -3471,8 +3471,13 @@
         "signature": "056039d196bfd8a686b09d51785a638f89b8c048757e4bd020230353a78c82af",
         "affectsGlobalScope": false
       },
+      "./src/resources/login/login.controller.ts": {
+        "version": "6dc7269892ec383cbac4b4da16aea1d2c620e391043a5cea0fa8a585e17ca9de",
+        "signature": "85c38fa599e5dbbcd08fbc1783d849cdd968587712c7f35004e1070802b1cc92",
+        "affectsGlobalScope": false
+      },
       "./src/auth/auth.module.ts": {
-        "version": "6d18190316b9f1c3fb8e673e22a6f65218b74ba8419bd589aa83b8929225b2ee",
+        "version": "44900744b7178ec105ab1880a6a115b458d6e11c004aeb0d4bdefd606414a695",
         "signature": "2e5d258cf85349b02b015c3f1b8873c152d182c3819a7ccc3aff16fc3037a5fc",
         "affectsGlobalScope": false
       },
@@ -3917,13 +3922,13 @@
         "affectsGlobalScope": false
       },
       "./node_modules/@types/eslint/index.d.ts": {
-        "version": "e3dd9a5ce3e396a63d378146a2bce9f52ea86419ef787cd55d2e8bb2a4cd716f",
-        "signature": "e3dd9a5ce3e396a63d378146a2bce9f52ea86419ef787cd55d2e8bb2a4cd716f",
+        "version": "3372eed4eff275b4f61515d1fc9cc4d8e04a8d4665313a66a98f37ed8f2528bb",
+        "signature": "3372eed4eff275b4f61515d1fc9cc4d8e04a8d4665313a66a98f37ed8f2528bb",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/eslint-scope/index.d.ts": {
-        "version": "274bda283ef15f4205603ca9967313fc013aa77ae89f2cbeab5fbd51439e96ed",
-        "signature": "274bda283ef15f4205603ca9967313fc013aa77ae89f2cbeab5fbd51439e96ed",
+        "version": "82772e5d55062a042a2715a555d347275a663940926fc785705eb082010cb9f6",
+        "signature": "82772e5d55062a042a2715a555d347275a663940926fc785705eb082010cb9f6",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/graceful-fs/index.d.ts": {
@@ -6728,9 +6733,7 @@
       ],
       "./src/app.controller.ts": [
         "./node_modules/@nestjs/common/index.d.ts",
-        "./node_modules/@types/express/index.d.ts",
-        "./src/app.service.ts",
-        "./src/auth/auth.service.ts"
+        "./src/app.service.ts"
       ],
       "./src/app.module.ts": [
         "./node_modules/@nestjs/common/index.d.ts",
@@ -6755,6 +6758,7 @@
         "./src/auth/auth.service.ts",
         "./src/auth/jwt.strategy.ts",
         "./src/common/config.ts",
+        "./src/resources/login/login.controller.ts",
         "./src/resources/users/user.module.ts"
       ],
       "./src/auth/auth.service.ts": [
@@ -6813,14 +6817,12 @@
         "./node_modules/@nestjs/common/index.d.ts",
         "./node_modules/@types/express/index.d.ts",
         "./src/auth/jwt-auth.guard.ts",
-        "./src/resources/boards/board.model.ts",
         "./src/resources/boards/board.service.ts",
         "./src/resources/boards/dto/board-data.dto.ts"
       ],
       "./src/resources/boards/board.model.ts": [
-        "./node_modules/@types/uuid/index.d.ts",
         "./node_modules/typeorm/index.d.ts",
-        "./src/types.ts"
+        "./src/resources/boards/column.model.ts"
       ],
       "./src/resources/boards/board.module.ts": [
         "./node_modules/@nestjs/common/index.d.ts",
@@ -6834,11 +6836,19 @@
         "./node_modules/@nestjs/typeorm/index.d.ts",
         "./node_modules/typeorm/index.d.ts",
         "./src/resources/boards/board.model.ts",
-        "./src/resources/boards/board.types.ts",
-        "./src/types.ts"
+        "./src/resources/boards/board.types.ts"
       ],
       "./src/resources/boards/board.types.ts": [
-        "./src/types.ts"
+        "./src/resources/boards/board.model.ts",
+        "./src/resources/boards/dto/board-data.dto.ts"
+      ],
+      "./src/resources/boards/column.model.ts": [
+        "./node_modules/typeorm/index.d.ts"
+      ],
+      "./src/resources/login/login.controller.ts": [
+        "./node_modules/@nestjs/common/index.d.ts",
+        "./node_modules/@types/express/index.d.ts",
+        "./src/auth/auth.service.ts"
       ],
       "./src/resources/tasks/task.controller.ts": [
         "./node_modules/@nestjs/common/index.d.ts",
@@ -6849,11 +6859,9 @@
         "./src/resources/tasks/task.service.ts"
       ],
       "./src/resources/tasks/task.model.ts": [
-        "./node_modules/@types/uuid/index.d.ts",
         "./node_modules/typeorm/index.d.ts",
         "./src/resources/boards/board.model.ts",
-        "./src/resources/users/user.model.ts",
-        "./src/types.ts"
+        "./src/resources/users/user.model.ts"
       ],
       "./src/resources/tasks/task.module.ts": [
         "./node_modules/@nestjs/common/index.d.ts",
@@ -6866,12 +6874,13 @@
         "./node_modules/@nestjs/common/index.d.ts",
         "./node_modules/@nestjs/typeorm/index.d.ts",
         "./node_modules/typeorm/index.d.ts",
+        "./src/resources/tasks/dto/task-data.dto.ts",
         "./src/resources/tasks/task.model.ts",
-        "./src/resources/tasks/task.types.ts",
-        "./src/types.ts"
+        "./src/resources/tasks/task.types.ts"
       ],
       "./src/resources/tasks/task.types.ts": [
-        "./src/types.ts"
+        "./src/resources/tasks/dto/task-data.dto.ts",
+        "./src/resources/tasks/task.model.ts"
       ],
       "./src/resources/users/user.controller.ts": [
         "./node_modules/@nestjs/common/index.d.ts",
@@ -6883,8 +6892,7 @@
       ],
       "./src/resources/users/user.model.ts": [
         "./node_modules/@types/uuid/index.d.ts",
-        "./node_modules/typeorm/index.d.ts",
-        "./src/types.ts"
+        "./node_modules/typeorm/index.d.ts"
       ],
       "./src/resources/users/user.module.ts": [
         "./node_modules/@nestjs/common/index.d.ts",
@@ -6899,11 +6907,10 @@
         "./node_modules/@types/bcryptjs/index.d.ts",
         "./node_modules/typeorm/index.d.ts",
         "./src/resources/users/user.model.ts",
-        "./src/resources/users/user.types.ts",
-        "./src/types.ts"
+        "./src/resources/users/user.types.ts"
       ],
       "./src/resources/users/user.types.ts": [
-        "./src/types.ts"
+        "./src/resources/users/user.model.ts"
       ],
       "./src/services/logger.ts": [
         "./node_modules/@types/node/fs/promises.d.ts"
@@ -9566,9 +9573,7 @@
         "./node_modules/typeorm/query-runner/queryrunner.d.ts"
       ],
       "./src/app.controller.ts": [
-        "./node_modules/@types/express/index.d.ts",
-        "./src/app.service.ts",
-        "./src/auth/auth.service.ts"
+        "./src/app.service.ts"
       ],
       "./src/app.module.ts": [
         "./node_modules/@nestjs/common/index.d.ts"
@@ -9603,15 +9608,23 @@
       ],
       "./src/resources/boards/board.model.ts": [
         "./node_modules/typeorm/index.d.ts",
-        "./src/types.ts"
+        "./src/resources/boards/column.model.ts"
       ],
       "./src/resources/boards/board.service.ts": [
         "./node_modules/typeorm/index.d.ts",
-        "./src/resources/boards/board.types.ts",
-        "./src/types.ts"
+        "./src/resources/boards/board.model.ts",
+        "./src/resources/boards/board.types.ts"
       ],
       "./src/resources/boards/board.types.ts": [
-        "./src/types.ts"
+        "./src/resources/boards/board.model.ts",
+        "./src/resources/boards/dto/board-data.dto.ts"
+      ],
+      "./src/resources/boards/column.model.ts": [
+        "./node_modules/typeorm/index.d.ts"
+      ],
+      "./src/resources/login/login.controller.ts": [
+        "./node_modules/@types/express/index.d.ts",
+        "./src/auth/auth.service.ts"
       ],
       "./src/resources/tasks/task.controller.ts": [
         "./node_modules/@types/express/index.d.ts",
@@ -9621,16 +9634,17 @@
       "./src/resources/tasks/task.model.ts": [
         "./node_modules/typeorm/index.d.ts",
         "./src/resources/boards/board.model.ts",
-        "./src/resources/users/user.model.ts",
-        "./src/types.ts"
+        "./src/resources/users/user.model.ts"
       ],
       "./src/resources/tasks/task.service.ts": [
         "./node_modules/typeorm/index.d.ts",
-        "./src/resources/tasks/task.types.ts",
-        "./src/types.ts"
+        "./src/resources/tasks/dto/task-data.dto.ts",
+        "./src/resources/tasks/task.model.ts",
+        "./src/resources/tasks/task.types.ts"
       ],
       "./src/resources/tasks/task.types.ts": [
-        "./src/types.ts"
+        "./src/resources/tasks/dto/task-data.dto.ts",
+        "./src/resources/tasks/task.model.ts"
       ],
       "./src/resources/users/user.controller.ts": [
         "./node_modules/@types/express/index.d.ts",
@@ -9638,16 +9652,15 @@
         "./src/resources/users/user.service.ts"
       ],
       "./src/resources/users/user.model.ts": [
-        "./node_modules/typeorm/index.d.ts",
-        "./src/types.ts"
+        "./node_modules/typeorm/index.d.ts"
       ],
       "./src/resources/users/user.service.ts": [
         "./node_modules/typeorm/index.d.ts",
-        "./src/resources/users/user.types.ts",
-        "./src/types.ts"
+        "./src/resources/users/user.model.ts",
+        "./src/resources/users/user.types.ts"
       ],
       "./src/resources/users/user.types.ts": [
-        "./src/types.ts"
+        "./src/resources/users/user.model.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -10443,7 +10456,9 @@
       "./src/resources/boards/board.module.ts",
       "./src/resources/boards/board.service.ts",
       "./src/resources/boards/board.types.ts",
+      "./src/resources/boards/column.model.ts",
       "./src/resources/boards/dto/board-data.dto.ts",
+      "./src/resources/login/login.controller.ts",
       "./src/resources/tasks/dto/task-data.dto.ts",
       "./src/resources/tasks/task.controller.ts",
       "./src/resources/tasks/task.model.ts",
@@ -10457,8 +10472,7 @@
       "./src/resources/users/user.service.ts",
       "./src/resources/users/user.types.ts",
       "./src/services/current.time.ts",
-      "./src/services/logger.ts",
-      "./src/types.ts"
+      "./src/services/logger.ts"
     ]
   },
   "version": "4.2.3"
