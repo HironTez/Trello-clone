@@ -22,7 +22,16 @@ let TasksService = class TasksService {
         this.tasksRepository = tasksRepository;
         this.getAllTasksByBoardId = async (boardId) => await this.tasksRepository.find({ boardId: boardId });
         this.getByIdAndBoardId = async (id, boardId) => await this.tasksRepository.findOne({ id: id, boardId: boardId });
-        this.addTask = async (task) => Boolean(await this.tasksRepository.save(task));
+        this.addTask = async (taskData, boardId) => {
+            const task = await this.tasksRepository.create({
+                ...taskData,
+                boardId,
+            });
+            console.log(10);
+            this.tasksRepository.save(task);
+            console.log(20);
+            return task;
+        };
         this.updateTask = async (id, boardId, newTask) => Boolean(this.tasksRepository.save({ ...(await this.getByIdAndBoardId(id, boardId)), ...newTask }));
         this.deleteTask = (id, boardId) => this.tasksRepository.delete({ id: id, boardId: boardId });
     }

@@ -12,9 +12,20 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Board = void 0;
 const typeorm_1 = require("typeorm");
 let Board = class Board extends typeorm_1.BaseEntity {
+    constructor({ id = uuid(), title = 'BOARD', columns = [] } = {}) {
+        super();
+        this.id = id;
+        this.title = title;
+        this.columns = columns.map((column) => {
+            const result = column;
+            result.id = uuid();
+            return result;
+        });
+    }
+    ;
 };
 __decorate([
-    typeorm_1.PrimaryGeneratedColumn('uuid'),
+    typeorm_1.PrimaryGeneratedColumn(),
     __metadata("design:type", String)
 ], Board.prototype, "id", void 0);
 __decorate([
@@ -26,8 +37,9 @@ __decorate([
     __metadata("design:type", Array)
 ], Board.prototype, "columns", void 0);
 Board = __decorate([
-    typeorm_1.Entity('Board')
+    typeorm_1.Entity('Column'),
+    __metadata("design:paramtypes", [Object])
 ], Board);
 exports.Board = Board;
 ;
-//# sourceMappingURL=board.model.js.map
+//# sourceMappingURL=column.model.js.map
