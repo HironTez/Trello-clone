@@ -1,13 +1,12 @@
-import { GetAllByBoardT, GetByIdAndBoardT, UpdateTaskT, DeleteTaskT } from './task.types';
-import { Task } from './task.model';
+import { GetAllByBoardT, GetByIdAndBoardT, AddTaskT, UpdateTaskT, DeleteTaskT } from './task.types';
+import { TaskT } from '../../types';
 import { Repository } from 'typeorm';
-import { TaskDataDto } from './dto/task-data.dto';
 export declare class TasksService {
     private tasksRepository;
-    constructor(tasksRepository: Repository<Task>);
+    constructor(tasksRepository: Repository<TaskT>);
     getAllTasksByBoardId: GetAllByBoardT;
     getByIdAndBoardId: GetByIdAndBoardT;
-    addTask: (taskData: TaskDataDto, boardId: string) => Promise<Task>;
+    addTask: AddTaskT;
     updateTask: UpdateTaskT;
     deleteTask: DeleteTaskT;
 }

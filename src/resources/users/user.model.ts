@@ -1,9 +1,10 @@
 import { v4 as uuid } from 'uuid';
-import { Entity, PrimaryColumn, Column, BaseEntity } from "typeorm";
+import { UserT } from '../../types';
+import {Entity, PrimaryColumn, Column, BaseEntity} from "typeorm";
 
 @Entity('User')
 export class User extends BaseEntity {
-
+    
     @PrimaryColumn()
     id: string;
 
@@ -29,7 +30,7 @@ export class User extends BaseEntity {
         this.password = password;
     };
 
-    static toResponse(user: User): { id: string, name: string, login: string } {
+    static toResponse(user: UserT): { id: string, name: string, login: string } {
         const { id, name, login } = user;
         return { id, name, login };
     };

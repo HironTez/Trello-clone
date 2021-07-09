@@ -1,9 +1,9 @@
 import { GetAllT, GetByIdT, AddBoardT, UpdateBoardT, DeleteBoardT } from './board.types';
-import { Board } from './board.model';
+import { BoardT } from '../../types';
 import { Repository } from 'typeorm';
 export declare class BoardsService {
     private boardsRepository;
-    constructor(boardsRepository: Repository<Board>);
+    constructor(boardsRepository: Repository<BoardT>);
     getAllBoards: GetAllT;
     getById: GetByIdT;
     addBoard: AddBoardT;

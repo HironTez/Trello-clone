@@ -10,10 +10,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Task = void 0;
+const uuid_1 = require("uuid");
 const typeorm_1 = require("typeorm");
 const user_model_1 = require("../users/user.model");
 const board_model_1 = require("../boards/board.model");
 let Task = class Task extends typeorm_1.BaseEntity {
+    constructor({ id = uuid_1.v4(), title = 'TASK', description = 'task', userId = 'task', boardId = 'board', columnId = 'column', order = 0 } = {}) {
+        super();
+        this.id = id;
+        this.title = title;
+        this.description = description;
+        this.userId = userId;
+        this.boardId = boardId;
+        this.columnId = columnId;
+        this.order = order;
+    }
+    ;
     static toResponse(task) {
         const { id, title, description, userId, boardId, columnId, order } = task;
         return { id, title, description, userId, boardId, columnId, order };
@@ -21,7 +33,7 @@ let Task = class Task extends typeorm_1.BaseEntity {
     ;
 };
 __decorate([
-    typeorm_1.PrimaryGeneratedColumn('uuid'),
+    typeorm_1.PrimaryColumn(),
     __metadata("design:type", String)
 ], Task.prototype, "id", void 0);
 __decorate([
@@ -37,7 +49,7 @@ __decorate([
     __metadata("design:type", user_model_1.User)
 ], Task.prototype, "user", void 0);
 __decorate([
-    typeorm_1.Column('varchar', { nullable: true }),
+    typeorm_1.Column({ nullable: true }),
     __metadata("design:type", Object)
 ], Task.prototype, "userId", void 0);
 __decorate([
@@ -45,7 +57,7 @@ __decorate([
     __metadata("design:type", board_model_1.Board)
 ], Task.prototype, "board", void 0);
 __decorate([
-    typeorm_1.Column('varchar', { nullable: true }),
+    typeorm_1.Column({ nullable: true }),
     __metadata("design:type", Object)
 ], Task.prototype, "boardId", void 0);
 __decorate([
@@ -57,7 +69,8 @@ __decorate([
     __metadata("design:type", Number)
 ], Task.prototype, "order", void 0);
 Task = __decorate([
-    typeorm_1.Entity('Task')
+    typeorm_1.Entity('Task'),
+    __metadata("design:paramtypes", [Object])
 ], Task);
 exports.Task = Task;
 ;

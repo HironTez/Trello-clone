@@ -1,9 +1,9 @@
-import { User } from 'src/resources/users/user.model';
+import { UserT } from '../../types';
 
-type GetAllT = () => Promise<Array<User>>;
-type GetByIdT = (id: string) => Promise<User | undefined>;
-type AddUserT = (user: User) => Promise<boolean>;
-type UpdateUserT = (id: string, newUser: User) => Promise<boolean>;
+type GetAllT = () => Promise<Array<UserT>>;
+type GetByIdT = (id: string) => Promise<UserT | undefined>;
+type AddUserT = (user: UserT) => Promise<boolean>;
+type UpdateUserT = (id: string, newUser: UserT) => Promise<boolean>;
 type DeleteUserT = (id: string) => void;
 
 export { GetAllT, GetByIdT, AddUserT, UpdateUserT, DeleteUserT };

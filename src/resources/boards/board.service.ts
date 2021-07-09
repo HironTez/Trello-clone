@@ -1,4 +1,5 @@
 import { GetAllT, GetByIdT, AddBoardT, UpdateBoardT, DeleteBoardT } from './board.types';
+import { BoardT } from '../../types';
 import { Board } from './board.model';
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
@@ -9,7 +10,7 @@ import { Repository } from 'typeorm';
 export class BoardsService {
     constructor(
         @InjectRepository(Board)
-        private boardsRepository: Repository<Board>,
+        private boardsRepository: Repository<BoardT>,
     ) {};
 
     /**
@@ -21,26 +22,26 @@ export class BoardsService {
     /**
      * Returns the board with the specified ID
      * @param {string} id ID board to search
-     * @returns {Board} Board with the specified ID
+     * @returns {BoardT} Board with the specified ID
      */
     getById: GetByIdT = async (id) => this.boardsRepository.findOne(id);
 
     /**
      * Adds a board to the DataBase
-     * @param {Board} board Board to add to the DataBase
+     * @param {BoardT} board Board to add to the DataBase
      */
-    addBoard: AddBoardT = async (board) => this.boardsRepository.save(board);
+    addBoard: AddBoardT = async (board) => Boolean(this.boardsRepository.save(board));
 
     /**
      * Updates the data of the board with the specified ID
      * @param {string} id ID board
-     * @param {string} title Title to update
+     * @param {BoardT} newBoard Data to update
      * @returns {Promise<boolean>} Board updated successfully
      */
-    updateBoard: UpdateBoardT = async (id, title) => {
+    updateBoard: UpdateBoardT = async (id, newBoard) => {
         const board = await this.getById(id);
         if (!board) return false;
-        return this.boardsRepository.save({...board, ...{id, title}});
+        return Boolean(await this.boardsRepository.save({...board, ...newBoard}));
     };
 
     /**

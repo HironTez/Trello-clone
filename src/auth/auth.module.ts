@@ -5,7 +5,6 @@ import { UserModule } from 'src/resources/users/user.module';
 import { PassportModule } from '@nestjs/passport';
 import { JwtModule } from '@nestjs/jwt';
 import { JWT_SECRET_KEY as secretKey } from 'src/common/config';
-import { LoginController } from 'src/resources/login/login.controller';
 
 @Module({
     imports: [
@@ -16,7 +15,6 @@ import { LoginController } from 'src/resources/login/login.controller';
             signOptions: { expiresIn: '60s' },
         }),
     ],
-    controllers: [LoginController],
     providers: [AuthService, JwtStrategy],
     exports: [AuthService],
 })
