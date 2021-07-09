@@ -29,34 +29,28 @@ let TasksController = class TasksController {
     }
     ;
     async getTaskById(res, id, boardId) {
-        console.log(1);
         const task = await this.tasksService.getByIdAndBoardId(id, boardId);
-        console.log(2);
         return task ? res.status(common_1.HttpStatus.OK).send(task_model_1.Task.toResponse(task)) : res.status(common_1.HttpStatus.NOT_FOUND).send();
     }
     ;
     async createTask(res, boardId, body) {
-        console.log(7);
-        const taskCreated = await this.tasksService.addTask(body, boardId);
-        console.log(8);
-        console.log(taskCreated);
-        return taskCreated ? res.status(common_1.HttpStatus.CREATED).send(task_model_1.Task.toResponse(taskCreated)) : res.status(common_1.HttpStatus.BAD_REQUEST).send();
+        body.boardId = boardId;
+        const newTask = new task_model_1.Task(body);
+        const taskCreated = await this.tasksService.addTask(newTask);
+        return taskCreated ? res.status(common_1.HttpStatus.CREATED).send(task_model_1.Task.toResponse(newTask)) : res.status(common_1.HttpStatus.BAD_REQUEST).send();
     }
     ;
     async updateTaskById(res, id, boardId, body) {
         body.id = id;
-        console.log(3);
-        const taskUpdated = await this.tasksService.updateTask(id, boardId, body);
-        console.log(4);
+        const newTask = new task_model_1.Task(body);
+        const taskUpdated = await this.tasksService.updateTask(id, boardId, newTask);
         return taskUpdated ? res.status(common_1.HttpStatus.OK).send(taskUpdated) : res.status(common_1.HttpStatus.BAD_REQUEST).send();
     }
     ;
     async deleteTaskById(res, id, boardId) {
         const taskExists = Boolean(await this.tasksService.getByIdAndBoardId(id, boardId));
-        console.log(5);
         if (taskExists)
             this.tasksService.deleteTask(id, boardId);
-        console.log(6);
         return taskExists ? res.status(common_1.HttpStatus.NO_CONTENT).send() : res.status(common_1.HttpStatus.NOT_FOUND).send();
     }
     ;

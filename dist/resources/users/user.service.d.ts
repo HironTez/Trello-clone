@@ -1,9 +1,9 @@
 import { GetAllT, GetByIdT, AddUserT, UpdateUserT, DeleteUserT } from './user.types';
-import { User } from './user.model';
+import { UserT } from '../../types';
 import { Repository } from 'typeorm';
 export declare class UsersService {
     private usersRepository;
-    constructor(usersRepository: Repository<User>);
+    constructor(usersRepository: Repository<UserT>);
     getAllUsers: GetAllT;
     getById: GetByIdT;
     addUser: AddUserT;

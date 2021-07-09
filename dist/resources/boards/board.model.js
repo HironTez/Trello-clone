@@ -10,11 +10,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Board = void 0;
+const uuid_1 = require("uuid");
 const typeorm_1 = require("typeorm");
 let Board = class Board extends typeorm_1.BaseEntity {
+    constructor({ id = uuid_1.v4(), title = 'BOARD', columns = [] } = {}) {
+        super();
+        this.id = id;
+        this.title = title;
+        this.columns = columns.map((column) => {
+            const result = column;
+            result.id = uuid_1.v4();
+            return result;
+        });
+    }
+    ;
 };
 __decorate([
-    typeorm_1.PrimaryGeneratedColumn('uuid'),
+    typeorm_1.PrimaryColumn(),
     __metadata("design:type", String)
 ], Board.prototype, "id", void 0);
 __decorate([
@@ -26,7 +38,8 @@ __decorate([
     __metadata("design:type", Array)
 ], Board.prototype, "columns", void 0);
 Board = __decorate([
-    typeorm_1.Entity('Board')
+    typeorm_1.Entity('Board'),
+    __metadata("design:paramtypes", [Object])
 ], Board);
 exports.Board = Board;
 ;

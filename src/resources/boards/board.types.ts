@@ -1,10 +1,9 @@
-import { BoardDataDto } from './dto/board-data.dto';
-import { Board } from './board.model';
+import { BoardT } from '../../types';
 
-type GetAllT = () => Promise<Array<Board>>;
-type GetByIdT = (id: string) => Promise<Board | undefined>;
-type AddBoardT = (board: BoardDataDto) => Promise<Board>;
-type UpdateBoardT = (id: string, title: string) => Promise<Board | false>;
+type GetAllT = () => Promise<Array<BoardT>>;
+type GetByIdT = (id: string) => Promise<BoardT | undefined>;
+type AddBoardT = (board: BoardT) => Promise<boolean>;
+type UpdateBoardT = (id: string, newBoard: BoardT) => Promise<boolean>;
 type DeleteBoardT = (id: string) => void;
 
 export { GetAllT, GetByIdT, AddBoardT, UpdateBoardT, DeleteBoardT };

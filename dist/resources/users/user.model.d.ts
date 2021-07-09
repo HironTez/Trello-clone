@@ -1,3 +1,4 @@
+import { UserT } from '../../types';
 import { BaseEntity } from "typeorm";
 export declare class User extends BaseEntity {
     id: string;
@@ -10,7 +11,7 @@ export declare class User extends BaseEntity {
         login?: string | undefined;
         password?: string | undefined;
     });
-    static toResponse(user: User): {
+    static toResponse(user: UserT): {
         id: string;
         name: string;
         login: string;
