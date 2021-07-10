@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.POSTGRE_DATABASE = exports.POSTGRE_PASSWORD = exports.POSTGRE_USER = exports.POSTGRE_PORT = exports.POSTGRE_HOST = exports.JWT_SECRET_KEY = exports.PORT = void 0;
+exports.USE_FASTIFY = exports.POSTGRE_DATABASE = exports.POSTGRE_PASSWORD = exports.POSTGRE_USER = exports.POSTGRE_PORT = exports.POSTGRE_HOST = exports.JWT_SECRET_KEY = exports.PORT = void 0;
 const dotenv_1 = __importDefault(require("dotenv"));
 const path_1 = __importDefault(require("path"));
 dotenv_1.default.config({
@@ -23,4 +23,6 @@ const POSTGRE_PASSWORD = process.env['POSTGRES_PASSWORD'];
 exports.POSTGRE_PASSWORD = POSTGRE_PASSWORD;
 const POSTGRE_DATABASE = process.env['POSTGRES_DB'];
 exports.POSTGRE_DATABASE = POSTGRE_DATABASE;
+const USE_FASTIFY = process.env['USE_FASTIFY'];
+exports.USE_FASTIFY = USE_FASTIFY;
 //# sourceMappingURL=config.js.map
