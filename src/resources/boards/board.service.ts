@@ -47,7 +47,6 @@ export class BoardsService {
     /**
      * Deletes the board with the specified ID
      * @param {string} id ID board to delete
-     * @returns {Promise<boolean>} Board deleted successfully
      */
     deleteBoard: DeleteBoardT = (id) => this.boardsRepository.delete(id);
 

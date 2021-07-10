@@ -4,6 +4,7 @@ import { TaskDataDto } from './dto/task-data.dto';
 import { TasksService } from './task.service';
 import { Task } from './task.model';
 import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
+import { sleep } from 'src/tools/tools';
 
 
 @Controller('boards/:boardId/tasks')
@@ -13,18 +14,24 @@ export class TasksController {
 
     @Get('')
     async getTasksByBoardId(@Res() res: Response, @Param('boardId') boardId: string) {
+        await sleep(10);
+
         const tasks = await this.tasksService.getAllTasksByBoardId(boardId);
         return res.status(HttpStatus.OK).send(tasks.map(Task.toResponse));
     };
 
     @Get(':id')
     async getTaskById(@Res() res: Response, @Param('id') id: string, @Param('boardId') boardId: string) {
+        await sleep(10);
+
         const task = await this.tasksService.getByIdAndBoardId(id, boardId);
         return task ? res.status(HttpStatus.OK).send(Task.toResponse(task)) : res.status(HttpStatus.NOT_FOUND).send();
     };
 
     @Post()
     async createTask(@Res() res: Response, @Param('boardId') boardId: string, @Body() body: TaskDataDto) {
+        await sleep(10);
+
         body.boardId = boardId;
         const newTask = new Task(body);
         const taskCreated = await this.tasksService.addTask(newTask);
@@ -33,6 +40,8 @@ export class TasksController {
 
     @Put(':id')
     async updateTaskById(@Res() res: Response, @Param('id') id: string, @Param('boardId') boardId: string, @Body() body: TaskDataDto) {
+        await sleep(10);
+
         body.id = id;
         const newTask = new Task(body);
         const taskUpdated = await this.tasksService.updateTask(id, boardId, newTask);
@@ -41,6 +50,8 @@ export class TasksController {
 
     @Delete(':id')
     async deleteTaskById(@Res() res: Response, @Param('id') id: string, @Param('boardId') boardId: string) {
+        await sleep(10);
+
         const taskExists = Boolean(await this.tasksService.getByIdAndBoardId(id, boardId));
         if (taskExists) this.tasksService.deleteTask(id, boardId);
         return taskExists ? res.status(HttpStatus.NO_CONTENT).send() : res.status(HttpStatus.NOT_FOUND).send();

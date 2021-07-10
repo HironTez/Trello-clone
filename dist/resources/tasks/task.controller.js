@@ -18,22 +18,26 @@ const task_data_dto_1 = require("./dto/task-data.dto");
 const task_service_1 = require("./task.service");
 const task_model_1 = require("./task.model");
 const jwt_auth_guard_1 = require("../../auth/jwt-auth.guard");
+const tools_1 = require("../../tools/tools");
 let TasksController = class TasksController {
     constructor(tasksService) {
         this.tasksService = tasksService;
     }
     ;
     async getTasksByBoardId(res, boardId) {
+        await tools_1.sleep(10);
         const tasks = await this.tasksService.getAllTasksByBoardId(boardId);
         return res.status(common_1.HttpStatus.OK).send(tasks.map(task_model_1.Task.toResponse));
     }
     ;
     async getTaskById(res, id, boardId) {
+        await tools_1.sleep(10);
         const task = await this.tasksService.getByIdAndBoardId(id, boardId);
         return task ? res.status(common_1.HttpStatus.OK).send(task_model_1.Task.toResponse(task)) : res.status(common_1.HttpStatus.NOT_FOUND).send();
     }
     ;
     async createTask(res, boardId, body) {
+        await tools_1.sleep(10);
         body.boardId = boardId;
         const newTask = new task_model_1.Task(body);
         const taskCreated = await this.tasksService.addTask(newTask);
@@ -41,6 +45,7 @@ let TasksController = class TasksController {
     }
     ;
     async updateTaskById(res, id, boardId, body) {
+        await tools_1.sleep(10);
         body.id = id;
         const newTask = new task_model_1.Task(body);
         const taskUpdated = await this.tasksService.updateTask(id, boardId, newTask);
@@ -48,6 +53,7 @@ let TasksController = class TasksController {
     }
     ;
     async deleteTaskById(res, id, boardId) {
+        await tools_1.sleep(10);
         const taskExists = Boolean(await this.tasksService.getByIdAndBoardId(id, boardId));
         if (taskExists)
             this.tasksService.deleteTask(id, boardId);
