@@ -13,7 +13,7 @@ import taskRouter from './resources/tasks/task.router';
 const app = express(); // Initialize express
 const swaggerDocument = YAML.load(path.join(__dirname, '../doc/api.yaml'));
 
-app.use(express.json());
+app.use(express.json() as NextFunction);
 
 app.use(logHandler); // Activate log handler
 app.use(reqErrorHandler); // Activate request error handler
@@ -33,7 +33,5 @@ app.use('/boards', boardRouter);
 app.use('/boards/:id/tasks', taskRouter);
 
 errorHandler(); // Activate handler & logger error
-
-Promise.reject(Error('Oops!'))
 
 export = app;
