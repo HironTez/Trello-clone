@@ -1,26 +1,29 @@
-import {db} from '../../db.controller';
-import {Board} from '../../types';
-import {GetAll, GetById, AddBoard, UpdateBoard, DeleteBoard} from './board.types';
+import { dbController as db } from '../../db.controller';
+import { Board } from '../../types';
+import { GetAll, GetById, AddBoard, UpdateBoard, DeleteBoard } from './board.types';
 
 /**
  * Returns an array of all boards
  * @returns {Array<Board>} Array of all boards
  */
-const getAll: GetAll = () => db['boards'];
+const getAll: GetAll = async () => {
+    const boards = await db.boards.get();
+    return boards;
+};
 
 /**
  * Returns the board with the specified ID
  * @param {string} id ID board to search
  * @returns {Board} Board with the specified ID
  */
-const getById: GetById = (id: string) => db['boards'].find((board: Board) => board.id === id);
+const getById: GetById = (id: string) => db.boards.getById(id);
 
 /**
  * Adds a board to the DataBase
  * @param {Board} board Board to add to the DataBase
  */
 const addBoard: AddBoard = (board: Board) => {
-    db['boards'].push(board);
+    db.boards.add(board);
 };
 
 /**
@@ -29,15 +32,14 @@ const addBoard: AddBoard = (board: Board) => {
  * @param {Board} data Data to update
  * @returns {boolean} Board updated successfully
  */
-const updateBoard: UpdateBoard = (id: string, data: Board) => {
+const updateBoard: UpdateBoard = async (id: string, data: Board) => {
     const board = getById(id);
     if (board !== undefined) {
-        board['title'] = data['title'];
-        board['columns'] = data['columns'];
+        await db.boards.update(id, { ...board, ...data });
 
         return true;
     }
-        return false;
+    return false;
 };
 
 /**
@@ -45,24 +47,17 @@ const updateBoard: UpdateBoard = (id: string, data: Board) => {
  * @param {string} id ID board to delete
  * @returns {boolean} Board deleted successfully
  */
-const deleteBoard: DeleteBoard = (id: string) => {
+const deleteBoard: DeleteBoard = async (id: string) => {
     const board = getById(id);
     if (board !== undefined) {
         // Delete board
-        const index = db['boards'].indexOf(board);
-        db['boards'].splice(index, 1);
-
+        db.boards.delete(id);
         // Delete all dependent tasks
-        db['boards'].forEach((board: Board) => {
-            if (board.id === id) {
-                const boardIndex = db['boards'].indexOf(board);
-                db['boards'].splice(boardIndex, 1);
-            }
-        });
+        await db.tasks.deleteByBoardId(id)
 
         return true;
     }
-        return false;
+    return false;
 };
 
-export = {getAll, getById, addBoard, updateBoard, deleteBoard};
+export = { getAll, getById, addBoard, updateBoard, deleteBoard };

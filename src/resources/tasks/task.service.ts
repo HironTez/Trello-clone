@@ -1,14 +1,14 @@
-import {db} from '../../db.controller';
-import {Task} from '../../types';
-import {GetAllByBoard, GetById, AddTask, UpdateTask, DeleteTask} from './task.types';
+import { dbController as db } from '../../db.controller';
+import { Task } from '../../types';
+import { GetAllByBoard, GetById, AddTask, UpdateTask, DeleteTask } from './task.types';
 
 /**
  * Returns an array of tasks which have a board with the specified ID
  * @param {string} boardId ID board to search
  * @returns {Array<Task>} Array of tasks
  */
-const getAllByBoard: GetAllByBoard = (boardId: string | undefined) => {
-    const result = db.tasks.filter(task => task.boardId === boardId);
+const getAllByBoard: GetAllByBoard = async (boardId: string) => {
+    const result = await db.tasks.getByBoardId(boardId);
     return result;
 };
 
@@ -18,17 +18,14 @@ const getAllByBoard: GetAllByBoard = (boardId: string | undefined) => {
  * @param {string} boardId ID board to search
  * @returns {Task} Task with the specified ID
  */
-const getById: GetById = (id: string, boardId: string | undefined) => {
-    if (db.boards.find(board => board.id === boardId) === undefined) return undefined; // Exit if no board with the specified ID
-    return db.tasks.find(task => task.id === id && task.boardId === boardId);
-};
+const getById: GetById = (id: string, boardId: string) => db.tasks.getById(id, boardId);
 
 /**
  * Adds a task to the DataBase
  * @param {Task} task Task to add to the DataBase
  */
 const addTask: AddTask = (task: Task) => {
-    db.tasks.push(task);
+    db.tasks.add(task);
 };
 
 /**
@@ -38,18 +35,14 @@ const addTask: AddTask = (task: Task) => {
  * @param {Task} data Data to update
  * @returns {boolean} Task updated successfully
  */
-const updateTask: UpdateTask = (id: string, boardId: string | undefined, data: Task) => {
+const updateTask: UpdateTask = async (id: string, boardId: string, data: Task) => {
     const task = getById(id, boardId);
     if (task !== undefined) {
-        task.title = data.title !== null? data.title: task.title;
-        task.description = data.description !== null? data.description: task.description;
-        task.userId = data.userId !== null? data.userId: task.userId;
-        task.boardId = data.boardId !== null? data.boardId: task.boardId;
-        task.columnId = data.columnId !== null? data.columnId: task.columnId;
-        
+        await db.tasks.update(id, data);
+
         return true;
     }
-        return false;
+    return false;
 };
 
 /**
@@ -58,15 +51,14 @@ const updateTask: UpdateTask = (id: string, boardId: string | undefined, data: T
  * @param {string} boardId ID board to delete
  * @returns {boolean} Task deleted successfully
  */
-const deleteTask: DeleteTask = (id: string, boardId: string | undefined) => {
+const deleteTask: DeleteTask = async (id: string, boardId: string) => {
     const task = getById(id, boardId);
     if (task !== undefined) {
-        const index = db.tasks.indexOf(task);
-        db.tasks.splice(index, 1);
+        await db.tasks.delete(id);
 
         return true;
     }
-        return false;
+    return false;
 };
 
-export = {getAllByBoard, getById, addTask, updateTask, deleteTask};
+export = { getAllByBoard, getById, addTask, updateTask, deleteTask };
