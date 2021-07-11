@@ -11,12 +11,12 @@ import { FastifyAdapter, NestFastifyApplication } from '@nestjs/platform-fastify
 async function bootstrap() {
     logger.log(`Run ${USE_FASTIFY ? 'Fastify' : 'Express'}`, true);
 
-    const app = USE_FASTIFY ?
-        await NestFactory.create<NestFastifyApplication>(
+    const app = USE_FASTIFY
+        ? await NestFactory.create<NestFastifyApplication>(
             AppModule,
             new FastifyAdapter()
-        ) :
-        await NestFactory.create(
+        )
+        : await NestFactory.create(
             AppModule,
             { logger: new MyLogger() }
         );

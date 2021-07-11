@@ -33,9 +33,9 @@ const swagger_1 = require("@nestjs/swagger");
 const platform_fastify_1 = require("@nestjs/platform-fastify");
 async function bootstrap() {
     logger_1.default.log(`Run ${config_1.USE_FASTIFY ? 'Fastify' : 'Express'}`, true);
-    const app = config_1.USE_FASTIFY ?
-        await core_1.NestFactory.create(app_module_1.AppModule, new platform_fastify_1.FastifyAdapter()) :
-        await core_1.NestFactory.create(app_module_1.AppModule, { logger: new logger_module_1.MyLogger() });
+    const app = config_1.USE_FASTIFY
+        ? await core_1.NestFactory.create(app_module_1.AppModule, new platform_fastify_1.FastifyAdapter())
+        : await core_1.NestFactory.create(app_module_1.AppModule, { logger: new logger_module_1.MyLogger() });
     const swaggerDocument = YAML.load(path.join(__dirname, '../doc/api.yaml'));
     swagger_1.SwaggerModule.setup('doc', app, swaggerDocument);
     await app.listen(config_1.PORT);
