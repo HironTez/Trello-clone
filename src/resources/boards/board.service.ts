@@ -4,20 +4,20 @@ import {GetAll, GetById, AddBoard, UpdateBoard, DeleteBoard} from './board.types
 
 /**
  * Returns an array of all boards
- * @returns {array} Array of all boards
+ * @returns {Array<Board>} Array of all boards
  */
 const getAll: GetAll = () => db['boards'];
 
 /**
  * Returns the board with the specified ID
  * @param {string} id ID board to search
- * @returns {object} Board with the specified ID
+ * @returns {Board} Board with the specified ID
  */
 const getById: GetById = (id: string) => db['boards'].find((board: Board) => board.id === id);
 
 /**
  * Adds a board to the DataBase
- * @param {object} board Board to add to the DataBase
+ * @param {Board} board Board to add to the DataBase
  */
 const addBoard: AddBoard = (board: Board) => {
     db['boards'].push(board);
@@ -26,7 +26,7 @@ const addBoard: AddBoard = (board: Board) => {
 /**
  * Updates the data of the board with the specified ID
  * @param {string} id ID board
- * @param {object} data Data to update
+ * @param {Board} data Data to update
  * @returns {boolean} Board updated successfully
  */
 const updateBoard: UpdateBoard = (id: string, data: Board) => {

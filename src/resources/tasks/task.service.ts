@@ -5,7 +5,7 @@ import {GetAllByBoard, GetById, AddTask, UpdateTask, DeleteTask} from './task.ty
 /**
  * Returns an array of tasks which have a board with the specified ID
  * @param {string} boardId ID board to search
- * @returns {array} Array of tasks
+ * @returns {Array<Task>} Array of tasks
  */
 const getAllByBoard: GetAllByBoard = (boardId: string | undefined) => {
     const result = db.tasks.filter(task => task.boardId === boardId);
@@ -16,7 +16,7 @@ const getAllByBoard: GetAllByBoard = (boardId: string | undefined) => {
  * Returns the task with the specified ID which have a board with the specified ID
  * @param {string} id ID task to search
  * @param {string} boardId ID board to search
- * @returns {object} Task with the specified ID
+ * @returns {Task} Task with the specified ID
  */
 const getById: GetById = (id: string, boardId: string | undefined) => {
     if (db.boards.find(board => board.id === boardId) === undefined) return undefined; // Exit if no board with the specified ID
@@ -25,7 +25,7 @@ const getById: GetById = (id: string, boardId: string | undefined) => {
 
 /**
  * Adds a task to the DataBase
- * @param {object} task Task to add to the DataBase
+ * @param {Task} task Task to add to the DataBase
  */
 const addTask: AddTask = (task: Task) => {
     db.tasks.push(task);
@@ -35,7 +35,7 @@ const addTask: AddTask = (task: Task) => {
  * Updates the data of the task with the specified ID
  * @param {string} id ID task
  * @param {string} boardId ID board
- * @param {object} data Data to update
+ * @param {Task} data Data to update
  * @returns {boolean} Task updated successfully
  */
 const updateTask: UpdateTask = (id: string, boardId: string | undefined, data: Task) => {
@@ -48,7 +48,7 @@ const updateTask: UpdateTask = (id: string, boardId: string | undefined, data: T
         task.columnId = data.columnId !== null? data.columnId: task.columnId;
         
         return true;
-    };
+    }
         return false;
 };
 
@@ -65,7 +65,7 @@ const deleteTask: DeleteTask = (id: string, boardId: string | undefined) => {
         db.tasks.splice(index, 1);
 
         return true;
-    };
+    }
         return false;
 };
 

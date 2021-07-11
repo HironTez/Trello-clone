@@ -4,20 +4,20 @@ import {GetAll, GetById, AddUser, UpdateUser, DeleteUser} from './user.types';
 
 /**
  * Returns an array of all users
- * @returns {array} Array of all users
+ * @returns {Array<User>} Array of all users
  */
 const getAll: GetAll = () => db['users'];
 
 /**
  * Returns the user with the specified ID
  * @param {string} id ID user to search
- * @returns {object} User with the specified ID
+ * @returns {User} User with the specified ID
  */
 const getById: GetById = (id: string) => db['users'].find(user => user['id'] === id);
 
 /**
  * Adds a user to the DataBase
- * @param {object} user User to add to the DataBase
+ * @param {User} user User to add to the DataBase
  */
 const addUser: AddUser = (user: User) => {
     db['users'].push(user);
@@ -26,7 +26,7 @@ const addUser: AddUser = (user: User) => {
 /**
  * Updates the data of the user with the specified ID
  * @param {string} id ID user
- * @param {object} data Data to update
+ * @param {User} data Data to update
  * @returns {boolean} User updated successfully
  */
 const updateUser: UpdateUser = (id: string, data: User) => {
