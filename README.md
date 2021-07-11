@@ -4,6 +4,16 @@
 
 # RS School REST service
 
+## Compare express and fastify
+⠀            |Meaning                           | Express                             | Fastify
+------------ |--------------------------------- | ----------------------------------- | -------------
+Requests     | [total, rate, throughput]        | 500, 100%                           | 500, 100%
+Duration     | [total, attack, wait]            | 10s.                                | 10s.
+Mean response| [sec]                            | 31.47s.                             | 21.32s.
+Latencies    | [min, mean, max]                 | 9ms., 1672.7ms., 6311ms.            | 9ms., 1689.3ms., 6556ms.
+Success      | [ratio]                          | 500                                 | 500
+Status Codes | [code:count]                     | `200`: 300, `201`: 100, `204`: 100  | `200`: 300, `201`: 100, `204`: 100
+
 ## Prerequisites
 
 - Git - [Download & Install Git](https://git-scm.com/downloads).
