@@ -28,7 +28,7 @@ class Task {
         this.order = order;
     }
 
-    static toResponse(task: TaskType) {
+    static toResponse(task: TaskType): {id: string | null, title: string, description: string, userId: string | null, boardId: string, columnId: string, order: number} {
         const {id, title, description, userId, boardId, columnId, order} = task;
         return {id, title, description, userId, boardId, columnId, order};
     }

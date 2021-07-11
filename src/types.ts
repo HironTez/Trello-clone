@@ -1,5 +1,3 @@
-type FunctionCallable = () => void;
-
 interface User {
     id: string;
     name: string;
@@ -35,5 +33,4 @@ interface DB {
     tasks: Array<Task>;
 }
 
-
-export {DB, User, Board, Task, Column, FunctionCallable};
+export { DB, User, Board, Task, Column };
