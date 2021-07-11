@@ -10,7 +10,6 @@ exports.AppModule = void 0;
 const common_1 = require("@nestjs/common");
 const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
-const json_headers_middleware_1 = require("./middleware/json.headers.middleware");
 const req_log_middleware_1 = require("./middleware/req.log.middleware");
 const typeorm_1 = require("@nestjs/typeorm");
 const ormconfig_1 = require("./ormconfig");
@@ -21,7 +20,7 @@ const auth_module_1 = require("./auth/auth.module");
 let AppModule = class AppModule {
     configure(consumer) {
         consumer
-            .apply(json_headers_middleware_1.JsonHeadersMiddleware, req_log_middleware_1.ReqLogMiddleware)
+            .apply(req_log_middleware_1.ReqLogMiddleware)
             .forRoutes({
             path: '*', method: common_1.RequestMethod.ALL
         });

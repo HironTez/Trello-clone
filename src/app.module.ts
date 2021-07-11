@@ -1,7 +1,6 @@
 import { Module, NestModule, MiddlewareConsumer, RequestMethod } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { JsonHeadersMiddleware } from './middleware/json.headers.middleware';
 import { ReqLogMiddleware } from './middleware/req.log.middleware';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { connectionOptions } from './ormconfig';
@@ -19,7 +18,7 @@ import { AuthModule } from './auth/auth.module';
 export class AppModule implements NestModule {
     configure(consumer: MiddlewareConsumer) {
         consumer
-            .apply(JsonHeadersMiddleware, ReqLogMiddleware)
+            .apply(ReqLogMiddleware)
             .forRoutes({
                 path: '*', method: RequestMethod.ALL
             });

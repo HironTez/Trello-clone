@@ -18,22 +18,28 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const core_1 = require("@nestjs/core");
 const app_module_1 = require("./app.module");
 const config_1 = require("./common/config");
 const logger_module_1 = require("./modules/logger.module");
+const logger_1 = __importDefault(require("./services/logger"));
 const path = __importStar(require("path"));
 const YAML = __importStar(require("yamljs"));
 const swagger_1 = require("@nestjs/swagger");
+const platform_fastify_1 = require("@nestjs/platform-fastify");
 async function bootstrap() {
-    const app = await core_1.NestFactory.create(app_module_1.AppModule, {
-        logger: new logger_module_1.MyLogger()
-    });
+    logger_1.default.log(`Run ${config_1.USE_FASTIFY ? 'Fastify' : 'Express'}`, true);
+    const app = config_1.USE_FASTIFY ?
+        await core_1.NestFactory.create(app_module_1.AppModule, new platform_fastify_1.FastifyAdapter()) :
+        await core_1.NestFactory.create(app_module_1.AppModule, { logger: new logger_module_1.MyLogger() });
     const swaggerDocument = YAML.load(path.join(__dirname, '../doc/api.yaml'));
     swagger_1.SwaggerModule.setup('doc', app, swaggerDocument);
     await app.listen(config_1.PORT);
-    console.log(`Service is running http://localhost:${config_1.PORT}`);
+    logger_1.default.log(`Service is running http://localhost:${config_1.PORT}`, true);
 }
 ;
 bootstrap();

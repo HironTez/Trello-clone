@@ -16,7 +16,7 @@ export class BoardsController {
 
     @Get()
     async getAllBoards(@Res() res: Response) {
-        await sleep(10);
+        await sleep(20);
 
         const boards = await this.boardsService.getAllBoards();
         return res.status(HttpStatus.OK).send(boards);
@@ -24,7 +24,7 @@ export class BoardsController {
 
     @Get(':id')
     async getBoardById(@Res() res: Response, @Param('id') id: string) {
-        await sleep(10);
+        await sleep(20);
 
         const board = await this.boardsService.getById(id);
         return board ? res.status(HttpStatus.OK).send(board) : res.status(HttpStatus.NOT_FOUND).send();
@@ -32,7 +32,7 @@ export class BoardsController {
 
     @Post()
     async createBoard(@Res() res: Response, @Body() body: BoardDataDto) {
-        await sleep(10);
+        await sleep(20);
 
         const newBoard = new Board(body);
         const boardCreated = await this.boardsService.addBoard(newBoard);
@@ -41,7 +41,7 @@ export class BoardsController {
 
     @Put(':id')
     async updateBoardById(@Res() res: Response, @Param('id') id: string, @Body() body: BoardDataDto) {
-        await sleep(10);
+        await sleep(20);
 
         await this.boardsService.getById(id);
 
@@ -53,7 +53,7 @@ export class BoardsController {
 
     @Delete(':id')
     async deleteBoardById(@Res() res: Response, @Param('id') id: string) {
-        await sleep(10);
+        await sleep(20);
 
         const boardExists = Boolean(await this.boardsService.getById(id));
         if (boardExists) this.boardsService.deleteBoard(id); // Delete board

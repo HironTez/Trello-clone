@@ -14,7 +14,7 @@ export class TasksController {
 
     @Get('')
     async getTasksByBoardId(@Res() res: Response, @Param('boardId') boardId: string) {
-        await sleep(10);
+        await sleep(20);
 
         const tasks = await this.tasksService.getAllTasksByBoardId(boardId);
         return res.status(HttpStatus.OK).send(tasks.map(Task.toResponse));
@@ -22,7 +22,7 @@ export class TasksController {
 
     @Get(':id')
     async getTaskById(@Res() res: Response, @Param('id') id: string, @Param('boardId') boardId: string) {
-        await sleep(10);
+        await sleep(20);
 
         const task = await this.tasksService.getByIdAndBoardId(id, boardId);
         return task ? res.status(HttpStatus.OK).send(Task.toResponse(task)) : res.status(HttpStatus.NOT_FOUND).send();
@@ -30,7 +30,7 @@ export class TasksController {
 
     @Post()
     async createTask(@Res() res: Response, @Param('boardId') boardId: string, @Body() body: TaskDataDto) {
-        await sleep(10);
+        await sleep(20);
 
         body.boardId = boardId;
         const newTask = new Task(body);
@@ -40,7 +40,7 @@ export class TasksController {
 
     @Put(':id')
     async updateTaskById(@Res() res: Response, @Param('id') id: string, @Param('boardId') boardId: string, @Body() body: TaskDataDto) {
-        await sleep(10);
+        await sleep(20);
 
         body.id = id;
         const newTask = new Task(body);
@@ -50,7 +50,7 @@ export class TasksController {
 
     @Delete(':id')
     async deleteTaskById(@Res() res: Response, @Param('id') id: string, @Param('boardId') boardId: string) {
-        await sleep(10);
+        await sleep(20);
 
         const taskExists = Boolean(await this.tasksService.getByIdAndBoardId(id, boardId));
         if (taskExists) this.tasksService.deleteTask(id, boardId);
