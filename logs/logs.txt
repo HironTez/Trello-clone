@@ -3429,3 +3429,98 @@ Service is running http://localhost:4000
 [2021-07-11 11:40:6] Method: GET; Url: /boards/6fa9436f-e323-4951-bdcf-10e5883dfbd9/tasks/a05fa7cf-2c2e-4c43-9b7a-7fb7e0a44074; Query parameters: undefined; Body: undefined; Status code: 404
 [2021-07-11 11:40:6] Method: GET; Url: /boards/6fa9436f-e323-4951-bdcf-10e5883dfbd9/tasks/0cbf09de-2917-4501-b132-94152a78a08c; Query parameters: undefined; Body: undefined; Status code: 404
 [2021-07-11 11:40:6] Method: DELETE; Url: /boards/bc361e0e-f451-4fcb-8293-5f9b31d6ae4c; Query parameters: undefined; Body: undefined; Status code: 204
+Run Fastify
+Service is running http://localhost:4000
+Run Fastify
+Service is running http://localhost:4000
+[2021-07-11 12:54:15] Method: GET; Url: /users; Query parameters: undefined; Body: undefined; Status code: 401
+[2021-07-11 12:54:15] Method: GET; Url: /boards/12345/tasks; Query parameters: undefined; Body: undefined; Status code: 401
+[2021-07-11 12:54:15] Method: GET; Url: /boards; Query parameters: undefined; Body: undefined; Status code: 401
+[2021-07-11 12:54:15] Method: GET; Url: /users/123; Query parameters: undefined; Body: undefined; Status code: 401
+[2021-07-11 12:54:15] Method: POST; Url: /users; Query parameters: undefined; Body: undefined; Status code: 401
+[2021-07-11 12:54:15] Method: GET; Url: /boards/12345/tasks/12345; Query parameters: undefined; Body: undefined; Status code: 401
+[2021-07-11 12:54:15] Method: GET; Url: /boards/12345; Query parameters: undefined; Body: undefined; Status code: 401
+[2021-07-11 12:54:15] Method: PUT; Url: /users/12345; Query parameters: undefined; Body: undefined; Status code: 401
+[2021-07-11 12:54:15] Method: POST; Url: /boards/12345/tasks; Query parameters: undefined; Body: undefined; Status code: 401
+[2021-07-11 12:54:15] Method: POST; Url: /boards; Query parameters: undefined; Body: undefined; Status code: 401
+[2021-07-11 12:54:15] Method: DELETE; Url: /users/12345; Query parameters: undefined; Body: undefined; Status code: 401
+[2021-07-11 12:54:15] Method: PUT; Url: /boards/12345/tasks/12345; Query parameters: undefined; Body: undefined; Status code: 401
+[2021-07-11 12:54:15] Method: PUT; Url: /boards/12345; Query parameters: undefined; Body: undefined; Status code: 401
+[2021-07-11 12:54:15] Method: DELETE; Url: /boards/12345/tasks/12345; Query parameters: undefined; Body: undefined; Status code: 401
+[2021-07-11 12:54:15] Method: DELETE; Url: /boards/12345; Query parameters: undefined; Body: undefined; Status code: 401
+[2021-07-11 12:54:15] Method: POST; Url: /login; Query parameters: undefined; Body: undefined; Status code: 200
+[2021-07-11 12:54:15] Method: POST; Url: /login; Query parameters: undefined; Body: undefined; Status code: 200
+[2021-07-11 12:54:15] Method: POST; Url: /login; Query parameters: undefined; Body: undefined; Status code: 200
+[2021-07-11 12:54:15] Method: POST; Url: /boards; Query parameters: undefined; Body: undefined; Status code: 201
+[2021-07-11 12:54:15] Method: POST; Url: /boards; Query parameters: undefined; Body: undefined; Status code: 201
+[2021-07-11 12:54:16] Method: GET; Url: /users; Query parameters: undefined; Body: undefined; Status code: 200
+[2021-07-11 12:54:16] Method: GET; Url: /boards; Query parameters: undefined; Body: undefined; Status code: 200
+[2021-07-11 12:54:16] Method: POST; Url: /boards/5369fc78-891b-482f-a807-20d629e835b4/tasks; Query parameters: undefined; Body: undefined; Status code: 201
+[2021-07-11 12:54:16] Method: POST; Url: /users; Query parameters: undefined; Body: undefined; Status code: 201
+[2021-07-11 12:54:16] Method: GET; Url: /users/a22047db-0889-436c-add8-6407c8b8c75f; Query parameters: undefined; Body: undefined; Status code: 200
+[2021-07-11 12:54:16] Method: DELETE; Url: /users/a22047db-0889-436c-add8-6407c8b8c75f; Query parameters: undefined; Body: undefined; Status code: 204
+[2021-07-11 12:54:16] Method: GET; Url: /boards; Query parameters: undefined; Body: undefined; Status code: 200
+[2021-07-11 12:54:16] Method: GET; Url: /boards/5369fc78-891b-482f-a807-20d629e835b4/tasks; Query parameters: undefined; Body: undefined; Status code: 200
+[2021-07-11 12:54:16] Method: POST; Url: /users; Query parameters: undefined; Body: undefined; Status code: 201
+[2021-07-11 12:54:16] Method: DELETE; Url: /users/905c8e74-7aa4-4c92-97b4-55ab5cee99f4; Query parameters: undefined; Body: undefined; Status code: 204
+[2021-07-11 12:54:16] Method: GET; Url: /boards/bbb72010-e92c-44cc-a2da-bd7cc22af542; Query parameters: undefined; Body: undefined; Status code: 200
+[2021-07-11 12:54:16] Method: GET; Url: /boards/5369fc78-891b-482f-a807-20d629e835b4/tasks; Query parameters: undefined; Body: undefined; Status code: 200
+[2021-07-11 12:54:16] Method: POST; Url: /users; Query parameters: undefined; Body: undefined; Status code: 201
+[2021-07-11 12:54:16] Method: POST; Url: /boards; Query parameters: undefined; Body: undefined; Status code: 201
+[2021-07-11 12:54:16] Method: GET; Url: /boards/5369fc78-891b-482f-a807-20d629e835b4/tasks/e6fc14e1-103c-42ef-a7d9-a0cc97352582; Query parameters: undefined; Body: undefined; Status code: 200
+[2021-07-11 12:54:16] Method: PUT; Url: /users/3d1701d5-f83f-4c4f-87e9-2196aff0d6c1; Query parameters: undefined; Body: undefined; Status code: 200
+[2021-07-11 12:54:16] Method: GET; Url: /users/3d1701d5-f83f-4c4f-87e9-2196aff0d6c1; Query parameters: undefined; Body: undefined; Status code: 200
+[2021-07-11 12:54:16] Method: DELETE; Url: /users/3d1701d5-f83f-4c4f-87e9-2196aff0d6c1; Query parameters: undefined; Body: undefined; Status code: 204
+[2021-07-11 12:54:16] Method: DELETE; Url: /boards/d12a97c2-92be-42f2-8c42-84ad6c8a9f70; Query parameters: undefined; Body: undefined; Status code: 204
+[2021-07-11 12:54:16] Method: POST; Url: /users; Query parameters: undefined; Body: undefined; Status code: 201
+[2021-07-11 12:54:16] Method: POST; Url: /boards/5369fc78-891b-482f-a807-20d629e835b4/tasks; Query parameters: undefined; Body: undefined; Status code: 201
+[2021-07-11 12:54:16] Method: DELETE; Url: /users/acf1a17b-2279-4c44-99f7-73ae5bc66cc9; Query parameters: undefined; Body: undefined; Status code: 204
+[2021-07-11 12:54:16] Method: POST; Url: /boards; Query parameters: undefined; Body: undefined; Status code: 201
+[2021-07-11 12:54:16] Method: DELETE; Url: /boards/5369fc78-891b-482f-a807-20d629e835b4/tasks/03885d25-fa9a-4e87-a81d-1614d165d59c; Query parameters: undefined; Body: undefined; Status code: 204
+[2021-07-11 12:54:16] Method: POST; Url: /users; Query parameters: undefined; Body: undefined; Status code: 201
+[2021-07-11 12:54:16] Method: POST; Url: /boards; Query parameters: undefined; Body: undefined; Status code: 201
+[2021-07-11 12:54:16] Method: POST; Url: /boards/5369fc78-891b-482f-a807-20d629e835b4/tasks; Query parameters: undefined; Body: undefined; Status code: 201
+[2021-07-11 12:54:16] Method: PUT; Url: /boards/edf7c536-01cc-4adf-be85-14ee65cd0a6f; Query parameters: undefined; Body: undefined; Status code: 200
+[2021-07-11 12:54:16] Method: POST; Url: /boards/2afdb5b6-8a1c-417b-91cc-86ba28ca8a84/tasks; Query parameters: undefined; Body: undefined; Status code: 201
+[2021-07-11 12:54:16] Method: POST; Url: /boards/2afdb5b6-8a1c-417b-91cc-86ba28ca8a84/tasks; Query parameters: undefined; Body: undefined; Status code: 201
+[2021-07-11 12:54:16] Method: PUT; Url: /boards/5369fc78-891b-482f-a807-20d629e835b4/tasks/fdf21e1b-3a47-44ab-bbc2-ec4a00fc2ff9; Query parameters: undefined; Body: undefined; Status code: 200
+[2021-07-11 12:54:16] Method: GET; Url: /boards/edf7c536-01cc-4adf-be85-14ee65cd0a6f; Query parameters: undefined; Body: undefined; Status code: 200
+[2021-07-11 12:54:16] Method: DELETE; Url: /users/4569a902-916c-4b55-ac1c-347b7ca318fb; Query parameters: undefined; Body: undefined; Status code: 204
+[2021-07-11 12:54:16] Method: GET; Url: /boards/5369fc78-891b-482f-a807-20d629e835b4/tasks/fdf21e1b-3a47-44ab-bbc2-ec4a00fc2ff9; Query parameters: undefined; Body: undefined; Status code: 200
+[2021-07-11 12:54:16] Method: DELETE; Url: /boards/edf7c536-01cc-4adf-be85-14ee65cd0a6f; Query parameters: undefined; Body: undefined; Status code: 204
+[2021-07-11 12:54:16] Method: GET; Url: /boards/2afdb5b6-8a1c-417b-91cc-86ba28ca8a84/tasks/4b312a6f-3e88-4e70-b582-939d46e54dee; Query parameters: undefined; Body: undefined; Status code: 200
+[2021-07-11 12:54:16] Method: POST; Url: /boards; Query parameters: undefined; Body: undefined; Status code: 201
+[2021-07-11 12:54:17] Method: GET; Url: /boards/5369fc78-891b-482f-a807-20d629e835b4/tasks/e6fc14e1-103c-42ef-a7d9-a0cc97352582; Query parameters: undefined; Body: undefined; Status code: 200
+[2021-07-11 12:54:17] Method: GET; Url: /boards/2afdb5b6-8a1c-417b-91cc-86ba28ca8a84/tasks/d91fa0cb-4575-43dc-b863-7988c64a1206; Query parameters: undefined; Body: undefined; Status code: 200
+[2021-07-11 12:54:17] Method: DELETE; Url: /boards/4a5cb24f-1170-45bd-8ce2-ffc5076d9e48; Query parameters: undefined; Body: undefined; Status code: 204
+[2021-07-11 12:54:17] Method: DELETE; Url: /boards/2afdb5b6-8a1c-417b-91cc-86ba28ca8a84/tasks/4b312a6f-3e88-4e70-b582-939d46e54dee; Query parameters: undefined; Body: undefined; Status code: 204
+[2021-07-11 12:54:17] Method: DELETE; Url: /boards/5369fc78-891b-482f-a807-20d629e835b4/tasks/e6fc14e1-103c-42ef-a7d9-a0cc97352582; Query parameters: undefined; Body: undefined; Status code: 204
+[2021-07-11 12:54:17] Method: DELETE; Url: /boards/2afdb5b6-8a1c-417b-91cc-86ba28ca8a84/tasks/d91fa0cb-4575-43dc-b863-7988c64a1206; Query parameters: undefined; Body: undefined; Status code: 204
+[2021-07-11 12:54:17] Method: GET; Url: /boards/4a5cb24f-1170-45bd-8ce2-ffc5076d9e48; Query parameters: undefined; Body: undefined; Status code: 404
+[2021-07-11 12:54:17] Method: GET; Url: /boards/5369fc78-891b-482f-a807-20d629e835b4/tasks/e6fc14e1-103c-42ef-a7d9-a0cc97352582; Query parameters: undefined; Body: undefined; Status code: 404
+[2021-07-11 12:54:17] Method: DELETE; Url: /boards/2afdb5b6-8a1c-417b-91cc-86ba28ca8a84; Query parameters: undefined; Body: undefined; Status code: 204
+[2021-07-11 12:54:17] Method: POST; Url: /boards; Query parameters: undefined; Body: undefined; Status code: 201
+[2021-07-11 12:54:17] Method: DELETE; Url: /boards/5369fc78-891b-482f-a807-20d629e835b4; Query parameters: undefined; Body: undefined; Status code: 204
+[2021-07-11 12:54:17] Method: POST; Url: /boards/140de6f4-3b48-4d73-9e6b-a1b6bcfb33e8/tasks; Query parameters: undefined; Body: undefined; Status code: 201
+[2021-07-11 12:54:17] Method: POST; Url: /boards/140de6f4-3b48-4d73-9e6b-a1b6bcfb33e8/tasks; Query parameters: undefined; Body: undefined; Status code: 201
+[2021-07-11 12:54:17] Method: POST; Url: /boards/140de6f4-3b48-4d73-9e6b-a1b6bcfb33e8/tasks; Query parameters: undefined; Body: undefined; Status code: 201
+[2021-07-11 12:54:17] Method: POST; Url: /boards/140de6f4-3b48-4d73-9e6b-a1b6bcfb33e8/tasks; Query parameters: undefined; Body: undefined; Status code: 201
+[2021-07-11 12:54:17] Method: POST; Url: /boards/140de6f4-3b48-4d73-9e6b-a1b6bcfb33e8/tasks; Query parameters: undefined; Body: undefined; Status code: 201
+[2021-07-11 12:54:17] Method: GET; Url: /boards/140de6f4-3b48-4d73-9e6b-a1b6bcfb33e8/tasks/dc036d14-4c21-4b61-acc9-2cef1e1648f8; Query parameters: undefined; Body: undefined; Status code: 200
+[2021-07-11 12:54:17] Method: GET; Url: /boards/140de6f4-3b48-4d73-9e6b-a1b6bcfb33e8/tasks/beeb45f2-400f-41cb-9381-065442283c30; Query parameters: undefined; Body: undefined; Status code: 200
+[2021-07-11 12:54:17] Method: GET; Url: /boards/140de6f4-3b48-4d73-9e6b-a1b6bcfb33e8/tasks/5e52eeea-eb67-4256-be6f-dd77d9f06eb0; Query parameters: undefined; Body: undefined; Status code: 200
+[2021-07-11 12:54:17] Method: GET; Url: /boards/140de6f4-3b48-4d73-9e6b-a1b6bcfb33e8/tasks/c41e41c5-f633-4099-a7de-ae8dc4cedb9b; Query parameters: undefined; Body: undefined; Status code: 200
+[2021-07-11 12:54:17] Method: GET; Url: /boards/140de6f4-3b48-4d73-9e6b-a1b6bcfb33e8/tasks/13f5b424-b081-48eb-9d2e-762f1d054abc; Query parameters: undefined; Body: undefined; Status code: 200
+[2021-07-11 12:54:17] Method: DELETE; Url: /boards/140de6f4-3b48-4d73-9e6b-a1b6bcfb33e8; Query parameters: undefined; Body: undefined; Status code: 204
+[2021-07-11 12:54:17] Method: GET; Url: /boards/140de6f4-3b48-4d73-9e6b-a1b6bcfb33e8/tasks/dc036d14-4c21-4b61-acc9-2cef1e1648f8; Query parameters: undefined; Body: undefined; Status code: 404
+[2021-07-11 12:54:17] Method: GET; Url: /boards/140de6f4-3b48-4d73-9e6b-a1b6bcfb33e8/tasks/5e52eeea-eb67-4256-be6f-dd77d9f06eb0; Query parameters: undefined; Body: undefined; Status code: 404
+[2021-07-11 12:54:17] Method: GET; Url: /boards/140de6f4-3b48-4d73-9e6b-a1b6bcfb33e8/tasks/13f5b424-b081-48eb-9d2e-762f1d054abc; Query parameters: undefined; Body: undefined; Status code: 404
+[2021-07-11 12:54:17] Method: GET; Url: /boards/140de6f4-3b48-4d73-9e6b-a1b6bcfb33e8/tasks/beeb45f2-400f-41cb-9381-065442283c30; Query parameters: undefined; Body: undefined; Status code: 404
+[2021-07-11 12:54:17] Method: GET; Url: /boards/140de6f4-3b48-4d73-9e6b-a1b6bcfb33e8/tasks/c41e41c5-f633-4099-a7de-ae8dc4cedb9b; Query parameters: undefined; Body: undefined; Status code: 404
+[2021-07-11 12:54:17] Method: DELETE; Url: /boards/bbb72010-e92c-44cc-a2da-bd7cc22af542; Query parameters: undefined; Body: undefined; Status code: 204
+Run Fastify
+Service is running http://localhost:4000
+Run Fastify
+Service is running http://localhost:4000
+Run Fastify
+Service is running http://localhost:4000
