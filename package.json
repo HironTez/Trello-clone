@@ -9,7 +9,7 @@
   "description": "REST service starter for RS School",
   "main": "src/server.js",
   "scripts": {
-    "start": "nodemon src/server.ts",
+    "start": "nodemon -L src/server.ts",
     "lint": "eslint --ext .js,.ts --fix src/",
     "test": "cross-env DEBUG=rs:* jest --testMatch \"<rootDir>/test/e2e/test/*.test.js\" --noStackTrace --runInBand",
     "test:auth": "cross-env DEBUG=rs:* TEST_MODE=auth jest --noStackTrace",
@@ -52,10 +52,11 @@
     "dotenv": "9.0.0",
     "express": "4.17.1",
     "js-to-ts-converter": "^0.18.1",
+    "nodemon": "^2.0.7",
     "swagger-ui-express": "4.1.6",
+    "ts-node": "^10.0.0",
     "uuid": "^8.3.2",
-    "yamljs": "0.3.0",
-    "ts-node": "^10.0.0"
+    "yamljs": "0.3.0"
   },
   "devDependencies": {
     "@types/express": "^4.17.12",
@@ -74,7 +75,6 @@
     "jest": "26.6.3",
     "jsdoc": "^3.6.7",
     "lint-staged": "10.5.4",
-    "nodemon": "^2.0.7",
     "prettier": "2.2.1",
     "supertest": "6.1.3"
   }
