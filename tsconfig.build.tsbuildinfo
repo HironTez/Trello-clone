@@ -3236,6 +3236,11 @@
         "signature": "c328df64329a83f2ace9eca5f25544507dab02f9ce485cb5830b7b8097ef56ad",
         "affectsGlobalScope": false
       },
+      "./src/middleware/http-exception.filter.ts": {
+        "version": "ce1ce87b27e9ac4e76c2791c640290bd03a31cd44c12de27e7650a8311934889",
+        "signature": "f9882780bff8cd14a46caccd6026138f6509b60225958e2b65fcd6c1d579c26c",
+        "affectsGlobalScope": false
+      },
       "./node_modules/@nestjs/typeorm/dist/interfaces/entity-class-or-schema.type.d.ts": {
         "version": "e15db0d01139d39213a40639352debd92786f311e0421c21ac97c2ca4003a299",
         "signature": "e15db0d01139d39213a40639352debd92786f311e0421c21ac97c2ca4003a299",
@@ -3477,7 +3482,7 @@
         "affectsGlobalScope": false
       },
       "./src/app.module.ts": {
-        "version": "867ebf00bb32f13ae6d83d5fd433a3976f2b94f956102dcb573ff0b5e62b0e5a",
+        "version": "286c5f845dfd76c2d29aec155c7349a39c938013e9ea8860cfb48505b1192713",
         "signature": "843f051400e86a3e4de923e5b7271bfa660bd889abf5fee0dce89d6ded83b42c",
         "affectsGlobalScope": false
       },
@@ -3996,11 +4001,6 @@
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
         "affectsGlobalScope": false
       },
-      "./src/middleware/http-exception.filter.ts": {
-        "version": "ce1ce87b27e9ac4e76c2791c640290bd03a31cd44c12de27e7650a8311934889",
-        "signature": "f9882780bff8cd14a46caccd6026138f6509b60225958e2b65fcd6c1d579c26c",
-        "affectsGlobalScope": false
-      },
       "./node_modules/@babel/types/lib/index.d.ts": {
         "version": "4606c6d854002b409744140a996a49c4a607c1eb0396855529836161892abef5",
         "signature": "4606c6d854002b409744140a996a49c4a607c1eb0396855529836161892abef5",
@@ -4029,11 +4029,6 @@
       "./node_modules/@types/babel__core/index.d.ts": {
         "version": "6f1d39d26959517da3bd105c552eded4c34702705c64d75b03f54d864b6e41c2",
         "signature": "6f1d39d26959517da3bd105c552eded4c34702705c64d75b03f54d864b6e41c2",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/cacheable-request/index.d.ts": {
-        "version": "f992cd6cc0bcbaa4e6c810468c90f2d8595f8c6c3cf050c806397d3de8585562",
-        "signature": "f992cd6cc0bcbaa4e6c810468c90f2d8595f8c6c3cf050c806397d3de8585562",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/cookiejar/index.d.ts": {
@@ -4074,11 +4069,6 @@
       "./node_modules/@types/graceful-fs/index.d.ts": {
         "version": "3ebae8c00411116a66fca65b08228ea0cf0b72724701f9b854442100aab55aba",
         "signature": "3ebae8c00411116a66fca65b08228ea0cf0b72724701f9b854442100aab55aba",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/http-cache-semantics/index.d.ts": {
-        "version": "cab425b5559edac18327eb2c3c0f47e7e9f71b667290b7689faafd28aac69eae",
-        "signature": "cab425b5559edac18327eb2c3c0f47e7e9f71b667290b7689faafd28aac69eae",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/istanbul-lib-coverage/index.d.ts": {
@@ -4139,11 +4129,6 @@
       "./node_modules/@types/json5/index.d.ts": {
         "version": "96d14f21b7652903852eef49379d04dbda28c16ed36468f8c9fa08f7c14c9538",
         "signature": "96d14f21b7652903852eef49379d04dbda28c16ed36468f8c9fa08f7c14c9538",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/keyv/index.d.ts": {
-        "version": "4a8b6680f577878255690971bbfe6ec951ece19a0c86a493e66a715762d04db2",
-        "signature": "4a8b6680f577878255690971bbfe6ec951ece19a0c86a493e66a715762d04db2",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/normalize-package-data/index.d.ts": {
@@ -5108,12 +5093,6 @@
         "./node_modules/@types/node/http.d.ts",
         "./node_modules/@types/node/index.d.ts"
       ],
-      "./node_modules/@types/cacheable-request/index.d.ts": [
-        "./node_modules/@types/node/events.d.ts",
-        "./node_modules/@types/node/http.d.ts",
-        "./node_modules/@types/node/index.d.ts",
-        "./node_modules/@types/node/url.d.ts"
-      ],
       "./node_modules/@types/connect/index.d.ts": [
         "./node_modules/@types/node/http.d.ts",
         "./node_modules/@types/node/index.d.ts"
@@ -5159,10 +5138,6 @@
         "./node_modules/pretty-format/build/index.d.ts"
       ],
       "./node_modules/@types/jsonwebtoken/index.d.ts": [
-        "./node_modules/@types/node/index.d.ts"
-      ],
-      "./node_modules/@types/keyv/index.d.ts": [
-        "./node_modules/@types/node/events.d.ts",
         "./node_modules/@types/node/index.d.ts"
       ],
       "./node_modules/@types/node/base.d.ts": [
@@ -7050,6 +7025,7 @@
         "./src/app.controller.ts",
         "./src/app.service.ts",
         "./src/auth/auth.module.ts",
+        "./src/middleware/http-exception.filter.ts",
         "./src/middleware/req.log.middleware.ts",
         "./src/ormconfig.ts",
         "./src/resources/boards/board.module.ts",
@@ -8109,15 +8085,6 @@
         "./node_modules/@types/node/http.d.ts",
         "./node_modules/@types/node/index.d.ts"
       ],
-      "./node_modules/@types/cacheable-request/index.d.ts": [
-        "./node_modules/@types/http-cache-semantics/index.d.ts",
-        "./node_modules/@types/keyv/index.d.ts",
-        "./node_modules/@types/node/events.d.ts",
-        "./node_modules/@types/node/http.d.ts",
-        "./node_modules/@types/node/index.d.ts",
-        "./node_modules/@types/node/url.d.ts",
-        "./node_modules/@types/responselike/index.d.ts"
-      ],
       "./node_modules/@types/connect/index.d.ts": [
         "./node_modules/@types/node/http.d.ts",
         "./node_modules/@types/node/index.d.ts"
@@ -8163,10 +8130,6 @@
         "./node_modules/pretty-format/build/index.d.ts"
       ],
       "./node_modules/@types/jsonwebtoken/index.d.ts": [
-        "./node_modules/@types/node/index.d.ts"
-      ],
-      "./node_modules/@types/keyv/index.d.ts": [
-        "./node_modules/@types/node/events.d.ts",
         "./node_modules/@types/node/index.d.ts"
       ],
       "./node_modules/@types/node/base.d.ts": [
@@ -10391,7 +10354,6 @@
       "./node_modules/@types/express-serve-static-core/index.d.ts",
       "./node_modules/@types/express/index.d.ts",
       "./node_modules/@types/graceful-fs/index.d.ts",
-      "./node_modules/@types/http-cache-semantics/index.d.ts",
       "./node_modules/@types/istanbul-lib-coverage/index.d.ts",
       "./node_modules/@types/istanbul-lib-report/index.d.ts",
       "./node_modules/@types/istanbul-reports/index.d.ts",
@@ -10399,7 +10361,6 @@
       "./node_modules/@types/json-schema/index.d.ts",
       "./node_modules/@types/json5/index.d.ts",
       "./node_modules/@types/jsonwebtoken/index.d.ts",
-      "./node_modules/@types/keyv/index.d.ts",
       "./node_modules/@types/mime/index.d.ts",
       "./node_modules/@types/node/assert.d.ts",
       "./node_modules/@types/node/async_hooks.d.ts",

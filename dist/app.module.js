@@ -11,6 +11,7 @@ const common_1 = require("@nestjs/common");
 const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
 const req_log_middleware_1 = require("./middleware/req.log.middleware");
+const http_exception_filter_1 = require("./middleware/http-exception.filter");
 const typeorm_1 = require("@nestjs/typeorm");
 const ormconfig_1 = require("./ormconfig");
 const user_module_1 = require("./resources/users/user.module");
@@ -31,7 +32,7 @@ AppModule = __decorate([
     common_1.Module({
         imports: [typeorm_1.TypeOrmModule.forRoot(ormconfig_1.connectionOptions), user_module_1.UserModule, board_module_1.BoardModule, task_module_1.TaskModule, auth_module_1.AuthModule],
         controllers: [app_controller_1.AppController],
-        providers: [app_service_1.AppService],
+        providers: [app_service_1.AppService, http_exception_filter_1.HttpErrorFilter],
     })
 ], AppModule);
 exports.AppModule = AppModule;
