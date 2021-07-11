@@ -11,7 +11,7 @@ dotenv_1.default.config({
 });
 const PORT = process.env['PORT'] || 4000;
 exports.PORT = PORT;
-const JWT_SECRET_KEY = process.env['JWT_SECRET_KEY'];
+const JWT_SECRET_KEY = process.env['JWT_SECRET_KEY'] || 'qwerty';
 exports.JWT_SECRET_KEY = JWT_SECRET_KEY;
 const POSTGRE_HOST = process.env['POSTGRES_HOST'];
 exports.POSTGRE_HOST = POSTGRE_HOST;
@@ -23,6 +23,6 @@ const POSTGRE_PASSWORD = process.env['POSTGRES_PASSWORD'];
 exports.POSTGRE_PASSWORD = POSTGRE_PASSWORD;
 const POSTGRE_DATABASE = process.env['POSTGRES_DB'];
 exports.POSTGRE_DATABASE = POSTGRE_DATABASE;
-const USE_FASTIFY = process.env['USE_FASTIFY'];
+const USE_FASTIFY = process.env['USE_FASTIFY'] === 'true';
 exports.USE_FASTIFY = USE_FASTIFY;
 //# sourceMappingURL=config.js.map

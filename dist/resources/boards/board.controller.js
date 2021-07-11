@@ -25,26 +25,26 @@ let BoardsController = class BoardsController {
     }
     ;
     async getAllBoards(res) {
-        await tools_1.sleep(10);
+        await tools_1.sleep(20);
         const boards = await this.boardsService.getAllBoards();
         return res.status(common_1.HttpStatus.OK).send(boards);
     }
     ;
     async getBoardById(res, id) {
-        await tools_1.sleep(10);
+        await tools_1.sleep(20);
         const board = await this.boardsService.getById(id);
         return board ? res.status(common_1.HttpStatus.OK).send(board) : res.status(common_1.HttpStatus.NOT_FOUND).send();
     }
     ;
     async createBoard(res, body) {
-        await tools_1.sleep(10);
+        await tools_1.sleep(20);
         const newBoard = new board_model_1.Board(body);
         const boardCreated = await this.boardsService.addBoard(newBoard);
         return boardCreated ? res.status(common_1.HttpStatus.CREATED).send(newBoard) : res.status(common_1.HttpStatus.BAD_REQUEST).send();
     }
     ;
     async updateBoardById(res, id, body) {
-        await tools_1.sleep(10);
+        await tools_1.sleep(20);
         await this.boardsService.getById(id);
         const newBoard = new board_model_1.Board(body);
         delete newBoard.columns;
@@ -53,7 +53,7 @@ let BoardsController = class BoardsController {
     }
     ;
     async deleteBoardById(res, id) {
-        await tools_1.sleep(10);
+        await tools_1.sleep(20);
         const boardExists = Boolean(await this.boardsService.getById(id));
         if (boardExists)
             this.boardsService.deleteBoard(id);

@@ -3,8 +3,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 const promises_1 = __importDefault(require("fs/promises"));
-const log = (message, cl = false) => {
-    if (cl)
+const log = (message, consoleLog = false) => {
+    if (consoleLog)
         console.log(message);
     promises_1.default.appendFile('./logs/logs.txt', `${message}\n`);
 };

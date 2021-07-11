@@ -25,46 +25,37 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.JwtAuthGuard = void 0;
+exports.AuthGuard = void 0;
 const common_1 = require("@nestjs/common");
-const passport_1 = require("@nestjs/passport");
-const config_1 = require("../common/config");
 const jwt = __importStar(require("jsonwebtoken"));
-let JwtAuthGuard = class JwtAuthGuard extends passport_1.AuthGuard('jwt') {
-    canActivate(context) {
-        const res = context.switchToHttp().getResponse();
-        const req = context.switchToHttp().getRequest();
+const config_1 = require("../common/config");
+let AuthGuard = class AuthGuard {
+    canActivate(ctx) {
+        const res = ctx.switchToHttp().getResponse();
+        const req = ctx.switchToHttp().getRequest();
         try {
-            const token = req.headers.authorization?.replace('Bearer ', '');
-            if (token) {
-                if (jwt.verify(token, config_1.JWT_SECRET_KEY)) {
-                    return true;
-                }
-                ;
+            const token = req.headers?.authorization?.split(' ')[1];
+            if (!token) {
+                res.status(common_1.HttpStatus.UNAUTHORIZED).send({ msg: 'Unauthorized' });
+                return false;
             }
-            ;
+            jwt.verify(token, config_1.JWT_SECRET_KEY, (err) => {
+                if (err) {
+                    res.status(common_1.HttpStatus.FORBIDDEN).send({ msg: 'Wrong token' });
+                    return false;
+                }
+                return true;
+            });
+            return true;
         }
-        catch {
-            res.status(common_1.HttpStatus.FORBIDDEN).send();
+        catch (e) {
+            res.status(common_1.HttpStatus.FORBIDDEN).send({ msg: 'Wrong token' });
             return false;
         }
-        ;
-        res.status(common_1.HttpStatus.UNAUTHORIZED).send();
-        return false;
     }
-    ;
-    handleRequest(err, user) {
-        if (err || !user) {
-            throw err || new common_1.UnauthorizedException();
-        }
-        ;
-        return user;
-    }
-    ;
 };
-JwtAuthGuard = __decorate([
+AuthGuard = __decorate([
     common_1.Injectable()
-], JwtAuthGuard);
-exports.JwtAuthGuard = JwtAuthGuard;
-;
-//# sourceMappingURL=jwt-auth.guard.js.map
+], AuthGuard);
+exports.AuthGuard = AuthGuard;
+//# sourceMappingURL=auth.guard.js.map

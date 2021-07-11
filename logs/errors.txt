@@ -1,217 +1,176 @@
-[2021-07-09 15:45:52] QueryFailedError: insert or update on table "Task" violates foreign key constraint "FK_498d662fc3defa2b901e89f2ffd"
+[2021-07-11 11:25:49] JsonWebTokenError: jwt must be provided
+    at Object.module.exports (D:\Programing\Node js\RS school\nestjs\node_modules\jsonwebtoken\verify.js:53:17)
+    at JwtAuthGuard.canActivate (D:\Programing\Node js\RS school\nestjs\dist\auth\jwt-auth.guard.js:39:17)
+    at GuardsConsumer.tryActivate (D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\guards\guards-consumer.js:15:34)
+    at canActivateFn (D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-execution-context.js:134:59)
+    at D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-execution-context.js:42:37
+    at D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-proxy.js:9:23
+    at Layer.handle [as handle_request] (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\layer.js:95:5)
+[2021-07-11 11:25:49] JsonWebTokenError: jwt must be provided
+    at Object.module.exports (D:\Programing\Node js\RS school\nestjs\node_modules\jsonwebtoken\verify.js:53:17)
+    at JwtAuthGuard.canActivate (D:\Programing\Node js\RS school\nestjs\dist\auth\jwt-auth.guard.js:39:17)
+    at GuardsConsumer.tryActivate (D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\guards\guards-consumer.js:15:34)
+    at canActivateFn (D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-execution-context.js:134:59)
+    at D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-execution-context.js:42:37
+    at D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-proxy.js:9:23
+    at Layer.handle [as handle_request] (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\layer.js:95:5)
+[2021-07-11 11:25:49] JsonWebTokenError: jwt must be provided
+    at Object.module.exports (D:\Programing\Node js\RS school\nestjs\node_modules\jsonwebtoken\verify.js:53:17)
+    at JwtAuthGuard.canActivate (D:\Programing\Node js\RS school\nestjs\dist\auth\jwt-auth.guard.js:39:17)
+    at GuardsConsumer.tryActivate (D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\guards\guards-consumer.js:15:34)
+    at canActivateFn (D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-execution-context.js:134:59)
+    at D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-execution-context.js:42:37
+    at D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-proxy.js:9:23
+    at Layer.handle [as handle_request] (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\layer.js:95:5)
+[2021-07-11 11:25:49] JsonWebTokenError: jwt must be provided
+    at Object.module.exports (D:\Programing\Node js\RS school\nestjs\node_modules\jsonwebtoken\verify.js:53:17)
+    at JwtAuthGuard.canActivate (D:\Programing\Node js\RS school\nestjs\dist\auth\jwt-auth.guard.js:39:17)
+    at GuardsConsumer.tryActivate (D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\guards\guards-consumer.js:15:34)
+    at canActivateFn (D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-execution-context.js:134:59)
+    at D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-execution-context.js:42:37
+    at D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-proxy.js:9:23
+    at Layer.handle [as handle_request] (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\layer.js:95:5)
+[2021-07-11 11:25:49] JsonWebTokenError: jwt must be provided
+    at Object.module.exports (D:\Programing\Node js\RS school\nestjs\node_modules\jsonwebtoken\verify.js:53:17)
+    at JwtAuthGuard.canActivate (D:\Programing\Node js\RS school\nestjs\dist\auth\jwt-auth.guard.js:39:17)
+    at GuardsConsumer.tryActivate (D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\guards\guards-consumer.js:15:34)
+    at canActivateFn (D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-execution-context.js:134:59)
+    at D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-execution-context.js:42:37
+    at D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-proxy.js:9:23
+    at Layer.handle [as handle_request] (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\layer.js:95:5)
+[2021-07-11 11:25:50] JsonWebTokenError: jwt must be provided
+    at Object.module.exports (D:\Programing\Node js\RS school\nestjs\node_modules\jsonwebtoken\verify.js:53:17)
+    at JwtAuthGuard.canActivate (D:\Programing\Node js\RS school\nestjs\dist\auth\jwt-auth.guard.js:39:17)
+    at GuardsConsumer.tryActivate (D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\guards\guards-consumer.js:15:34)
+    at canActivateFn (D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-execution-context.js:134:59)
+    at D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-execution-context.js:42:37
+    at D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-proxy.js:9:23
+    at Layer.handle [as handle_request] (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\layer.js:95:5)
+[2021-07-11 11:25:50] JsonWebTokenError: jwt must be provided
+    at Object.module.exports (D:\Programing\Node js\RS school\nestjs\node_modules\jsonwebtoken\verify.js:53:17)
+    at JwtAuthGuard.canActivate (D:\Programing\Node js\RS school\nestjs\dist\auth\jwt-auth.guard.js:39:17)
+    at GuardsConsumer.tryActivate (D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\guards\guards-consumer.js:15:34)
+    at canActivateFn (D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-execution-context.js:134:59)
+    at D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-execution-context.js:42:37
+    at D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-proxy.js:9:23
+    at Layer.handle [as handle_request] (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\layer.js:95:5)
+[2021-07-11 11:25:50] JsonWebTokenError: jwt must be provided
+    at Object.module.exports (D:\Programing\Node js\RS school\nestjs\node_modules\jsonwebtoken\verify.js:53:17)
+    at JwtAuthGuard.canActivate (D:\Programing\Node js\RS school\nestjs\dist\auth\jwt-auth.guard.js:39:17)
+    at GuardsConsumer.tryActivate (D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\guards\guards-consumer.js:15:34)
+    at canActivateFn (D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-execution-context.js:134:59)
+    at D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-execution-context.js:42:37
+    at D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-proxy.js:9:23
+    at Layer.handle [as handle_request] (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\layer.js:95:5)
+[2021-07-11 11:25:50] JsonWebTokenError: jwt must be provided
+    at Object.module.exports (D:\Programing\Node js\RS school\nestjs\node_modules\jsonwebtoken\verify.js:53:17)
+    at JwtAuthGuard.canActivate (D:\Programing\Node js\RS school\nestjs\dist\auth\jwt-auth.guard.js:39:17)
+    at GuardsConsumer.tryActivate (D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\guards\guards-consumer.js:15:34)
+    at canActivateFn (D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-execution-context.js:134:59)
+    at D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-execution-context.js:42:37
+    at D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-proxy.js:9:23
+    at Layer.handle [as handle_request] (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\layer.js:95:5)
+[2021-07-11 11:25:50] JsonWebTokenError: jwt must be provided
+    at Object.module.exports (D:\Programing\Node js\RS school\nestjs\node_modules\jsonwebtoken\verify.js:53:17)
+    at JwtAuthGuard.canActivate (D:\Programing\Node js\RS school\nestjs\dist\auth\jwt-auth.guard.js:39:17)
+    at GuardsConsumer.tryActivate (D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\guards\guards-consumer.js:15:34)
+    at canActivateFn (D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-execution-context.js:134:59)
+    at D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-execution-context.js:42:37
+    at D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-proxy.js:9:23
+    at Layer.handle [as handle_request] (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\layer.js:95:5)
+[2021-07-11 11:25:50] JsonWebTokenError: jwt must be provided
+    at Object.module.exports (D:\Programing\Node js\RS school\nestjs\node_modules\jsonwebtoken\verify.js:53:17)
+    at JwtAuthGuard.canActivate (D:\Programing\Node js\RS school\nestjs\dist\auth\jwt-auth.guard.js:39:17)
+    at GuardsConsumer.tryActivate (D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\guards\guards-consumer.js:15:34)
+    at canActivateFn (D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-execution-context.js:134:59)
+    at D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-execution-context.js:42:37
+    at D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-proxy.js:9:23
+    at Layer.handle [as handle_request] (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\layer.js:95:5)
+[2021-07-11 11:25:50] JsonWebTokenError: jwt must be provided
+    at Object.module.exports (D:\Programing\Node js\RS school\nestjs\node_modules\jsonwebtoken\verify.js:53:17)
+    at JwtAuthGuard.canActivate (D:\Programing\Node js\RS school\nestjs\dist\auth\jwt-auth.guard.js:39:17)
+    at GuardsConsumer.tryActivate (D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\guards\guards-consumer.js:15:34)
+    at canActivateFn (D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-execution-context.js:134:59)
+    at D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-execution-context.js:42:37
+    at D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-proxy.js:9:23
+    at Layer.handle [as handle_request] (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\layer.js:95:5)
+[2021-07-11 11:25:50] JsonWebTokenError: jwt must be provided
+    at Object.module.exports (D:\Programing\Node js\RS school\nestjs\node_modules\jsonwebtoken\verify.js:53:17)
+    at JwtAuthGuard.canActivate (D:\Programing\Node js\RS school\nestjs\dist\auth\jwt-auth.guard.js:39:17)
+    at GuardsConsumer.tryActivate (D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\guards\guards-consumer.js:15:34)
+    at canActivateFn (D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-execution-context.js:134:59)
+    at D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-execution-context.js:42:37
+    at D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-proxy.js:9:23
+    at Layer.handle [as handle_request] (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\layer.js:95:5)
+[2021-07-11 11:25:50] JsonWebTokenError: jwt must be provided
+    at Object.module.exports (D:\Programing\Node js\RS school\nestjs\node_modules\jsonwebtoken\verify.js:53:17)
+    at JwtAuthGuard.canActivate (D:\Programing\Node js\RS school\nestjs\dist\auth\jwt-auth.guard.js:39:17)
+    at GuardsConsumer.tryActivate (D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\guards\guards-consumer.js:15:34)
+    at canActivateFn (D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-execution-context.js:134:59)
+    at D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-execution-context.js:42:37
+    at D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-proxy.js:9:23
+    at Layer.handle [as handle_request] (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\layer.js:95:5)
+[2021-07-11 11:25:50] JsonWebTokenError: jwt must be provided
+    at Object.module.exports (D:\Programing\Node js\RS school\nestjs\node_modules\jsonwebtoken\verify.js:53:17)
+    at JwtAuthGuard.canActivate (D:\Programing\Node js\RS school\nestjs\dist\auth\jwt-auth.guard.js:39:17)
+    at GuardsConsumer.tryActivate (D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\guards\guards-consumer.js:15:34)
+    at canActivateFn (D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-execution-context.js:134:59)
+    at D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-execution-context.js:42:37
+    at D:\Programing\Node js\RS school\nestjs\node_modules\@nestjs\core\router\router-proxy.js:9:23
+    at Layer.handle [as handle_request] (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Programing\Node js\RS school\nestjs\node_modules\express\lib\router\layer.js:95:5)
+[2021-07-11 11:32:49] QueryFailedError: insert or update on table "Task" violates foreign key constraint "FK_498d662fc3defa2b901e89f2ffd"
     at new QueryFailedError (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\error\QueryFailedError.js:12:28)
     at PostgresQueryRunner.<anonymous> (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\driver\postgres\PostgresQueryRunner.js:248:31)
     at step (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
     at Object.throw (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
     at rejected (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:115:69)
     at processTicksAndRejections (internal/process/task_queues.js:95:5)
-[2021-07-09 15:46:1] QueryFailedError: insert or update on table "Task" violates foreign key constraint "FK_498d662fc3defa2b901e89f2ffd"
-    at new QueryFailedError (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\error\QueryFailedError.js:12:28)
-    at PostgresQueryRunner.<anonymous> (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\driver\postgres\PostgresQueryRunner.js:248:31)
-    at step (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
-    at Object.throw (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
-    at rejected (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:115:69)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-[2021-07-09 15:48:38] QueryFailedError: insert or update on table "Task" violates foreign key constraint "FK_498d662fc3defa2b901e89f2ffd"
-    at new QueryFailedError (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\error\QueryFailedError.js:12:28)
-    at PostgresQueryRunner.<anonymous> (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\driver\postgres\PostgresQueryRunner.js:248:31)
-    at step (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
-    at Object.throw (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
-    at rejected (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:115:69)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-[2021-07-09 15:51:21] QueryFailedError: insert or update on table "Task" violates foreign key constraint "FK_498d662fc3defa2b901e89f2ffd"
-    at new QueryFailedError (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\error\QueryFailedError.js:12:28)
-    at PostgresQueryRunner.<anonymous> (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\driver\postgres\PostgresQueryRunner.js:248:31)
-    at step (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
-    at Object.throw (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
-    at rejected (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:115:69)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-[2021-07-09 15:52:58] QueryFailedError: insert or update on table "Task" violates foreign key constraint "FK_498d662fc3defa2b901e89f2ffd"
-    at new QueryFailedError (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\error\QueryFailedError.js:12:28)
-    at PostgresQueryRunner.<anonymous> (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\driver\postgres\PostgresQueryRunner.js:248:31)
-    at step (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
-    at Object.throw (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
-    at rejected (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:115:69)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-[2021-07-09 15:53:9] QueryFailedError: insert or update on table "Task" violates foreign key constraint "FK_498d662fc3defa2b901e89f2ffd"
-    at new QueryFailedError (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\error\QueryFailedError.js:12:28)
-    at PostgresQueryRunner.<anonymous> (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\driver\postgres\PostgresQueryRunner.js:248:31)
-    at step (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
-    at Object.throw (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
-    at rejected (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:115:69)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-[2021-07-09 15:53:9] QueryFailedError: insert or update on table "Task" violates foreign key constraint "FK_498d662fc3defa2b901e89f2ffd"
-    at new QueryFailedError (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\error\QueryFailedError.js:12:28)
-    at PostgresQueryRunner.<anonymous> (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\driver\postgres\PostgresQueryRunner.js:248:31)
-    at step (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
-    at Object.throw (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
-    at rejected (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:115:69)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-[2021-07-09 15:53:55] QueryFailedError: insert or update on table "Task" violates foreign key constraint "FK_498d662fc3defa2b901e89f2ffd"
-    at new QueryFailedError (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\error\QueryFailedError.js:12:28)
-    at PostgresQueryRunner.<anonymous> (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\driver\postgres\PostgresQueryRunner.js:248:31)
-    at step (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
-    at Object.throw (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
-    at rejected (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:115:69)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-[2021-07-09 15:54:50] QueryFailedError: insert or update on table "Task" violates foreign key constraint "FK_498d662fc3defa2b901e89f2ffd"
-    at new QueryFailedError (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\error\QueryFailedError.js:12:28)
-    at PostgresQueryRunner.<anonymous> (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\driver\postgres\PostgresQueryRunner.js:248:31)
-    at step (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
-    at Object.throw (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
-    at rejected (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:115:69)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-[2021-07-09 15:55:1] QueryFailedError: insert or update on table "Task" violates foreign key constraint "FK_498d662fc3defa2b901e89f2ffd"
-    at new QueryFailedError (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\error\QueryFailedError.js:12:28)
-    at PostgresQueryRunner.<anonymous> (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\driver\postgres\PostgresQueryRunner.js:248:31)
-    at step (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
-    at Object.throw (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
-    at rejected (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:115:69)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-[2021-07-09 15:55:41] QueryFailedError: insert or update on table "Task" violates foreign key constraint "FK_498d662fc3defa2b901e89f2ffd"
-    at new QueryFailedError (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\error\QueryFailedError.js:12:28)
-    at PostgresQueryRunner.<anonymous> (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\driver\postgres\PostgresQueryRunner.js:248:31)
-    at step (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
-    at Object.throw (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
-    at rejected (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:115:69)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-[2021-07-09 15:55:54] QueryFailedError: insert or update on table "Task" violates foreign key constraint "FK_498d662fc3defa2b901e89f2ffd"
-    at new QueryFailedError (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\error\QueryFailedError.js:12:28)
-    at PostgresQueryRunner.<anonymous> (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\driver\postgres\PostgresQueryRunner.js:248:31)
-    at step (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
-    at Object.throw (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
-    at rejected (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:115:69)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-[2021-07-09 15:57:1] QueryFailedError: insert or update on table "Task" violates foreign key constraint "FK_498d662fc3defa2b901e89f2ffd"
-    at new QueryFailedError (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\error\QueryFailedError.js:12:28)
-    at PostgresQueryRunner.<anonymous> (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\driver\postgres\PostgresQueryRunner.js:248:31)
-    at step (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
-    at Object.throw (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
-    at rejected (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:115:69)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-[2021-07-09 15:57:22] QueryFailedError: insert or update on table "Task" violates foreign key constraint "FK_498d662fc3defa2b901e89f2ffd"
-    at new QueryFailedError (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\error\QueryFailedError.js:12:28)
-    at PostgresQueryRunner.<anonymous> (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\driver\postgres\PostgresQueryRunner.js:248:31)
-    at step (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
-    at Object.throw (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
-    at rejected (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:115:69)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-[2021-07-09 15:58:57] QueryFailedError: insert or update on table "Task" violates foreign key constraint "FK_498d662fc3defa2b901e89f2ffd"
-    at new QueryFailedError (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\error\QueryFailedError.js:12:28)
-    at PostgresQueryRunner.<anonymous> (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\driver\postgres\PostgresQueryRunner.js:248:31)
-    at step (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
-    at Object.throw (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
-    at rejected (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:115:69)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-[2021-07-09 15:59:42] QueryFailedError: insert or update on table "Task" violates foreign key constraint "FK_498d662fc3defa2b901e89f2ffd"
-    at new QueryFailedError (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\error\QueryFailedError.js:12:28)
-    at PostgresQueryRunner.<anonymous> (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\driver\postgres\PostgresQueryRunner.js:248:31)
-    at step (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
-    at Object.throw (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
-    at rejected (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:115:69)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-[2021-07-09 16:11:45] QueryFailedError: insert or update on table "Task" violates foreign key constraint "FK_498d662fc3defa2b901e89f2ffd"
-    at new QueryFailedError (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\error\QueryFailedError.js:12:28)
-    at PostgresQueryRunner.<anonymous> (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\driver\postgres\PostgresQueryRunner.js:248:31)
-    at step (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
-    at Object.throw (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
-    at rejected (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:115:69)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-[2021-07-09 16:15:31] QueryFailedError: insert or update on table "Task" violates foreign key constraint "FK_498d662fc3defa2b901e89f2ffd"
-    at new QueryFailedError (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\error\QueryFailedError.js:12:28)
-    at PostgresQueryRunner.<anonymous> (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\driver\postgres\PostgresQueryRunner.js:248:31)
-    at step (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
-    at Object.throw (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
-    at rejected (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:115:69)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-[2021-07-09 16:16:19] QueryFailedError: insert or update on table "Task" violates foreign key constraint "FK_498d662fc3defa2b901e89f2ffd"
-    at new QueryFailedError (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\error\QueryFailedError.js:12:28)
-    at PostgresQueryRunner.<anonymous> (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\driver\postgres\PostgresQueryRunner.js:248:31)
-    at step (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
-    at Object.throw (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
-    at rejected (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:115:69)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-[2021-07-09 19:2:32] QueryFailedError: insert or update on table "Task" violates foreign key constraint "FK_498d662fc3defa2b901e89f2ffd"
-    at new QueryFailedError (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\error\QueryFailedError.js:12:28)
-    at PostgresQueryRunner.<anonymous> (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\driver\postgres\PostgresQueryRunner.js:248:31)
-    at step (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
-    at Object.throw (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
-    at rejected (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:115:69)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-[2021-07-09 19:7:58] QueryFailedError: insert or update on table "Task" violates foreign key constraint "FK_498d662fc3defa2b901e89f2ffd"
-    at new QueryFailedError (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\error\QueryFailedError.js:12:28)
-    at PostgresQueryRunner.<anonymous> (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\driver\postgres\PostgresQueryRunner.js:248:31)
-    at step (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
-    at Object.throw (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
-    at rejected (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:115:69)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-[2021-07-09 19:8:19] QueryFailedError: insert or update on table "Task" violates foreign key constraint "FK_498d662fc3defa2b901e89f2ffd"
-    at new QueryFailedError (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\error\QueryFailedError.js:12:28)
-    at PostgresQueryRunner.<anonymous> (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\driver\postgres\PostgresQueryRunner.js:248:31)
-    at step (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
-    at Object.throw (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
-    at rejected (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:115:69)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-[2021-07-09 19:8:54] QueryFailedError: insert or update on table "Task" violates foreign key constraint "FK_498d662fc3defa2b901e89f2ffd"
-    at new QueryFailedError (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\error\QueryFailedError.js:12:28)
-    at PostgresQueryRunner.<anonymous> (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\driver\postgres\PostgresQueryRunner.js:248:31)
-    at step (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
-    at Object.throw (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
-    at rejected (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:115:69)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-[2021-07-09 19:17:20] QueryFailedError: insert or update on table "Task" violates foreign key constraint "FK_498d662fc3defa2b901e89f2ffd"
-    at new QueryFailedError (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\error\QueryFailedError.js:12:28)
-    at PostgresQueryRunner.<anonymous> (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\driver\postgres\PostgresQueryRunner.js:248:31)
-    at step (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
-    at Object.throw (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
-    at rejected (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:115:69)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-[2021-07-09 19:17:38] QueryFailedError: insert or update on table "Task" violates foreign key constraint "FK_498d662fc3defa2b901e89f2ffd"
-    at new QueryFailedError (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\error\QueryFailedError.js:12:28)
-    at PostgresQueryRunner.<anonymous> (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\driver\postgres\PostgresQueryRunner.js:248:31)
-    at step (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
-    at Object.throw (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
-    at rejected (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:115:69)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-[2021-07-09 19:18:9] QueryFailedError: insert or update on table "Task" violates foreign key constraint "FK_498d662fc3defa2b901e89f2ffd"
-    at new QueryFailedError (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\error\QueryFailedError.js:12:28)
-    at PostgresQueryRunner.<anonymous> (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\driver\postgres\PostgresQueryRunner.js:248:31)
-    at step (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
-    at Object.throw (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
-    at rejected (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:115:69)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-[2021-07-10 10:1:44] QueryFailedError: insert or update on table "Task" violates foreign key constraint "FK_498d662fc3defa2b901e89f2ffd"
-    at new QueryFailedError (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\error\QueryFailedError.js:12:28)
-    at PostgresQueryRunner.<anonymous> (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\driver\postgres\PostgresQueryRunner.js:248:31)
-    at step (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
-    at Object.throw (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
-    at rejected (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:115:69)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-[2021-07-10 10:1:53] QueryFailedError: insert or update on table "Task" violates foreign key constraint "FK_498d662fc3defa2b901e89f2ffd"
-    at new QueryFailedError (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\error\QueryFailedError.js:12:28)
-    at PostgresQueryRunner.<anonymous> (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\driver\postgres\PostgresQueryRunner.js:248:31)
-    at step (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
-    at Object.throw (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
-    at rejected (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:115:69)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-[2021-07-10 10:2:54] QueryFailedError: insert or update on table "Task" violates foreign key constraint "FK_498d662fc3defa2b901e89f2ffd"
-    at new QueryFailedError (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\error\QueryFailedError.js:12:28)
-    at PostgresQueryRunner.<anonymous> (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\driver\postgres\PostgresQueryRunner.js:248:31)
-    at step (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
-    at Object.throw (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
-    at rejected (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:115:69)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-[2021-07-10 10:3:2] QueryFailedError: insert or update on table "Task" violates foreign key constraint "FK_498d662fc3defa2b901e89f2ffd"
+[2021-07-11 11:34:39] QueryFailedError: insert or update on table "Task" violates foreign key constraint "FK_498d662fc3defa2b901e89f2ffd"
     at new QueryFailedError (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\error\QueryFailedError.js:12:28)
     at PostgresQueryRunner.<anonymous> (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\driver\postgres\PostgresQueryRunner.js:248:31)
     at step (D:\Programing\Node js\RS school\nestjs\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
