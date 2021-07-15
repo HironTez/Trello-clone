@@ -1,18 +1,18 @@
-import {v4 as uuid} from 'uuid';
-import {Column as ColumnType} from '../../types';
+import { v4 as uuid } from 'uuid';
+import { ColumnT } from '../../types';
 import {Entity, PrimaryColumn, Column, BaseEntity} from "typeorm";
 
-@Entity()
-class Board extends BaseEntity {
+@Entity('Board')
+export class Board extends BaseEntity {
 
     @PrimaryColumn()
-    id!: string;
+    id: string;
 
     @Column()
-    title!: string;
+    title: string;
 
     @Column('json')
-    columns!: Array<ColumnType>;
+    columns?: Array<ColumnT>;
 
     constructor({
         id = uuid(),
@@ -22,12 +22,10 @@ class Board extends BaseEntity {
         super();
         this.id = id;
         this.title = title;
-        this.columns = columns.map((column: ColumnType) => {
+        this.columns = columns.map((column: ColumnT) => {
             const result = column;
             result.id = uuid();
             return result;
         });
-    }
-}
-
-export = Board;
+    };
+};

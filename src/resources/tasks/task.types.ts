@@ -1,9 +1,9 @@
-import {Task} from '../../types';
+import { TaskT } from '../../types';
 
-type GetAllByBoard = (boardId: string) => Promise<Array<Task>>;
-type GetById = (id: string, boardId: string) => Promise<Task | undefined>;
-type AddTask = (task: Task) => void;
-type UpdateTask = (id: string, boardId: string, data: Task) => Promise<boolean>;
-type DeleteTask = (id: string, boardId: string) => Promise<boolean>;
+type GetAllByBoardT = (boardId: string) => Promise<Array<TaskT>>;
+type GetByIdAndBoardT = (id: string, boardId: string) => Promise<TaskT | undefined>;
+type AddTaskT = (task: TaskT) => Promise<boolean>;
+type UpdateTaskT = (id: string, boardId: string, newTask: TaskT) => Promise<boolean>;
+type DeleteTaskT = (id: string, boardId: string) => void;
 
-export {GetAllByBoard, GetById, AddTask, UpdateTask, DeleteTask};
+export { GetAllByBoardT, GetByIdAndBoardT, AddTaskT, UpdateTaskT, DeleteTaskT };

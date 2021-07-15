@@ -1,36 +1,44 @@
 import { v4 as uuid } from 'uuid';
-import { Task as TaskType } from '../../types';
-import { Entity, PrimaryColumn, Column, BaseEntity } from "typeorm";
+import { TaskT } from '../../types';
+import { Entity, PrimaryColumn, Column, BaseEntity, ManyToOne } from "typeorm";
+import { User } from '../users/user.model';
+import { Board } from '../boards/board.model';
 
-@Entity()
-class Task extends BaseEntity {
+@Entity('Task')
+export class Task extends BaseEntity {
 
     @PrimaryColumn()
-    id!: string;
+    id: string;
 
     @Column()
-    title!: string;
+    title: string;
 
     @Column()
-    description!: string;
+    description: string;
 
-    @Column({ type: 'varchar', nullable: true })
-    userId!: string | null;
+    @ManyToOne(() => User, { onDelete: 'SET NULL' })
+    user!: User;
+
+    @Column({ nullable: true })
+    userId: string | null;
+
+    @ManyToOne(() => Board, { onDelete: 'CASCADE' })
+    board!: Board;
+
+    @Column({ nullable: true })
+    boardId: string | null;
+
+    @Column('varchar', { nullable: true })
+    columnId: string | null;
 
     @Column()
-    boardId!: string;
-
-    @Column({ type: 'varchar', nullable: true })
-    columnId!: string | null;
-
-    @Column()
-    order!: number;
+    order: number;
 
     constructor({
         id = uuid(),
         title = 'TASK',
         description = 'task',
-        userId = 'user',
+        userId = 'task',
         boardId = 'board',
         columnId = 'column',
         order = 0
@@ -43,12 +51,10 @@ class Task extends BaseEntity {
         this.boardId = boardId;
         this.columnId = columnId;
         this.order = order;
-    }
+    };
 
-    static toResponse(task: TaskType): { id: string | null, title: string, description: string, userId: string | null, boardId: string, columnId: string | null, order: number } {
+    static toResponse(task: TaskT): { id: string, title: string, description: string, userId: string | null, boardId: string | null, columnId: string | null, order: number } {
         const { id, title, description, userId, boardId, columnId, order } = task;
         return { id, title, description, userId, boardId, columnId, order };
-    }
-}
-
-export = Task;
+    };
+};

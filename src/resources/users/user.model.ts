@@ -1,21 +1,21 @@
-import {v4 as uuid} from 'uuid';
-import {User as UserType} from '../../types';
+import { v4 as uuid } from 'uuid';
+import { UserT } from '../../types';
 import {Entity, PrimaryColumn, Column, BaseEntity} from "typeorm";
 
-@Entity()
-class User extends BaseEntity {
+@Entity('User')
+export class User extends BaseEntity {
     
     @PrimaryColumn()
-    id!: string;
+    id: string;
 
     @Column()
-    name!: string;
+    name: string;
 
     @Column()
-    login!: string;
+    login: string;
 
     @Column()
-    password!: string;
+    password: string;
 
     constructor({
         id = uuid(),
@@ -28,12 +28,10 @@ class User extends BaseEntity {
         this.name = name;
         this.login = login;
         this.password = password;
-    }
+    };
 
-    static toResponse(user: UserType): {id: string, name: string, login: string} {
-        const {id, name, login} = user;
-        return {id, name, login};
-    }
-}
-
-export = User;
+    static toResponse(user: UserT): { id: string, name: string, login: string } {
+        const { id, name, login } = user;
+        return { id, name, login };
+    };
+};

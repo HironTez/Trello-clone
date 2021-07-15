@@ -1,0 +1,13 @@
+NODE_ENV=development
+PORT=4000
+AUTH_MODE=false
+JWT_SECRET_KEY=qawsedrftgyhujikolp
+USE_FASTIFY=true
+# Set your database connection information here
+MONGO_CONNECTION_STRING=your-mongo-db-connection-string
+
+POSTGRES_HOST=localhost
+POSTGRES_PORT=5433
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=password
+POSTGRES_DB=postgres

@@ -1,63 +1,53 @@
-import { dbController as db } from '../../db.controller';
-import { Board } from '../../types';
-import { GetAll, GetById, AddBoard, UpdateBoard, DeleteBoard } from './board.types';
+import { GetAllT, GetByIdT, AddBoardT, UpdateBoardT, DeleteBoardT } from './board.types';
+import { BoardT } from '../../types';
+import { Board } from './board.model';
+import { Injectable } from '@nestjs/common';
+import { InjectRepository } from '@nestjs/typeorm';
+import { Repository } from 'typeorm';
 
-/**
- * Returns an array of all boards
- * @returns {Array<Board>} Array of all boards
- */
-const getAll: GetAll = async () => {
-    const boards = await db.boards.get();
-    return boards;
+
+@Injectable()
+export class BoardsService {
+    constructor(
+        @InjectRepository(Board)
+        private boardsRepository: Repository<BoardT>,
+    ) {};
+
+    /**
+     * Returns an array of all boards
+     * @returns {Array<Board>} Array of all boards
+     */
+    getAllBoards: GetAllT = async () => this.boardsRepository.find();
+
+    /**
+     * Returns the board with the specified ID
+     * @param {string} id ID board to search
+     * @returns {BoardT} Board with the specified ID
+     */
+    getById: GetByIdT = async (id) => this.boardsRepository.findOne(id);
+
+    /**
+     * Adds a board to the DataBase
+     * @param {BoardT} board Board to add to the DataBase
+     */
+    addBoard: AddBoardT = async (board) => Boolean(this.boardsRepository.save(board));
+
+    /**
+     * Updates the data of the board with the specified ID
+     * @param {string} id ID board
+     * @param {BoardT} newBoard Data to update
+     * @returns {Promise<boolean>} Board updated successfully
+     */
+    updateBoard: UpdateBoardT = async (id, newBoard) => {
+        const board = await this.getById(id);
+        if (!board) return false;
+        return Boolean(await this.boardsRepository.save({...board, ...newBoard}));
+    };
+
+    /**
+     * Deletes the board with the specified ID
+     * @param {string} id ID board to delete
+     */
+    deleteBoard: DeleteBoardT = (id) => this.boardsRepository.delete(id);
+
 };
-
-/**
- * Returns the board with the specified ID
- * @param {string} id ID board to search
- * @returns {Board} Board with the specified ID
- */
-const getById: GetById = (id: string) => db.boards.getById(id);
-
-/**
- * Adds a board to the DataBase
- * @param {Board} board Board to add to the DataBase
- */
-const addBoard: AddBoard = (board: Board) => {
-    db.boards.add(board);
-};
-
-/**
- * Updates the data of the board with the specified ID
- * @param {string} id ID board
- * @param {Board} data Data to update
- * @returns {boolean} Board updated successfully
- */
-const updateBoard: UpdateBoard = async (id: string, data: Board) => {
-    const board = getById(id);
-    if (board !== undefined) {
-        await db.boards.update(id, { ...board, ...data });
-
-        return true;
-    }
-    return false;
-};
-
-/**
- * Deletes the board with the specified ID
- * @param {string} id ID board to delete
- * @returns {boolean} Board deleted successfully
- */
-const deleteBoard: DeleteBoard = async (id: string) => {
-    const board = getById(id);
-    if (board !== undefined) {
-        // Delete board
-        db.boards.delete(id);
-        // Delete all dependent tasks
-        await db.tasks.deleteByBoardId(id)
-
-        return true;
-    }
-    return false;
-};
-
-export = { getAll, getById, addBoard, updateBoard, deleteBoard };

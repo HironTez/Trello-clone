@@ -1,9 +1,9 @@
-import {Board} from '../../types';
+import { BoardT } from '../../types';
 
-type GetAll = () => Promise<Array<Board>>;
-type GetById = (id: string) => Promise<Board | undefined>;
-type AddBoard = (board: Board) => void;
-type UpdateBoard = (id: string, data: Board) => Promise<boolean>;
-type DeleteBoard = (id: string) => Promise<boolean>;
+type GetAllT = () => Promise<Array<BoardT>>;
+type GetByIdT = (id: string) => Promise<BoardT | undefined>;
+type AddBoardT = (board: BoardT) => Promise<boolean>;
+type UpdateBoardT = (id: string, newBoard: BoardT) => Promise<boolean>;
+type DeleteBoardT = (id: string) => void;
 
-export {GetAll, GetById, AddBoard, UpdateBoard, DeleteBoard};
+export { GetAllT, GetByIdT, AddBoardT, UpdateBoardT, DeleteBoardT };
